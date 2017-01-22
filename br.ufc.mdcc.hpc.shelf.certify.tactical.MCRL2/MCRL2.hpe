@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000001120408f1e70062f0008b12ca4e9ff58dfb0a2b6ff0f2edb113d3174a4596157d3f9be1fb8b40de97e69b4711cfdcac2e6384ab83904e3e39c5af223f89c59ffdc87c2000bfa74000d11ed731d6727ceee533ae6c1f7030843098d7a1eee117a263c53c60f7db6f75072e0d722a39270603e963e8bc29fca6034d62c2e6cdaf" isAbstract="true" kind="Computation" name="MCRL2" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b720f4ad17128d7a94e4729e9697900867dd48c0778de422a3e5f547eca507cdbc871587b0c1d1bff8b4fccaf7306e4f76a24c7f85ba64bc49462cf465b0b033995717ede557b9b6ac589e0b1436a9fc417d8b4d26fd361530be6a388c9dee677127e1859b7ce552f95c4aa513d1770ac0dd2f337ddf40048e092792bc3cfba4" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.hpe" name="Tactical" package="br.ufc.mdcc.hpc.shelf.tactical" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="221" y="135">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="verify_data_port_client_type" varName="C"/>
+        <parameter formFieldId="tactical_name" varName="N"/>
+        <parameter formFieldId="verify_task_port_type" varName="T"/>
+        <parameter formFieldId="verify_data_port_server_type" varName="S"/>
+        <port localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
+          <visualDescription h="60" w="146" x="378" y="126">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <parameter formFieldId="task_port_type" varName="T"/>
+          <unitBounds parallel="true" uRef="peer">
+            <visualDescription h="20" w="20" x="14" y="19"/>
+          </unitBounds>
+        </port>
+        <port localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+          <visualDescription h="63" w="218" x="340" y="330">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <parameter formFieldId="server_port_type" varName="S"/>
+          <parameter formFieldId="client_port_type" varName="C"/>
+          <unitBounds parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="178" y="21"/>
+          </unitBounds>
+          <unitBounds parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="23" y="21"/>
+          </unitBounds>
+        </port>
+        <unitBounds parallel="true" uRef="Tactical">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <innerComponent localRef="verify_data_port_server_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/VerifyDataPortServerType.hpe" multiple="false" name="VerifyDataPortServerType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="294" y="212">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_data_port_client_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/VerifyDataPortClientType.hpe" multiple="false" name="VerifyDataPortClientType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="157" y="323">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_port_type" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
+      <visualDescription h="60" w="100" x="101" y="176">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="task_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="tactical_type" location="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type/MCRL2Type.hpe" multiple="false" name="MCRL2Type" package="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier" exposed="false">
+      <visualDescription h="60" w="100" x="199" y="237">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="tactical_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="verify_data_port_server_type" direct="true" varName="S"/>
+    <supplyParameter cRef="verify_data_port_client_type" direct="true" varName="C"/>
+    <supplyParameter cRef="verify_port_type" direct="true" varName="T"/>
+    <supplyParameter cRef="tactical_type" direct="true" varName="N"/>
+    <interface iRef="IMCRL2" nArgs="0">
+      <visualDescription h="40" w="80" x="144" y="50">
+        <color b="0" g="255" r="255"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="IMCRL2" multiple="true" private="false" replica="0" uRef="Tactical" visibleInterface="true">
+      <super cRef="base" uRef="Tactical"/>
+      <visualDescription h="40" w="80" x="90" y="236"/>
+    </unit>
+  </componentInfo>
+</component:component>

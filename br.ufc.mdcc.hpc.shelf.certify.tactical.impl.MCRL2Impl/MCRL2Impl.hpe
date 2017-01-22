@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000019c54a7b3832b4718c8a0a126f6507e12bca7a25e9741b478a1ebc90ea4875b088dc2803cd88e64baa63586c9d4b154d6083ec46869b4de44004735ea504ae82bd36a6ec07f59c5d668f3f38f54ab7fb84be3eb5caa394bb4c747704e398bfe139d7f23bd31108886f2295ef3475bb1e6a8ca4f10ae1fb844be482b1777a3bab" isAbstract="false" kind="Computation" name="MCRL2Impl" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical.impl">
+    <baseType>
+      <extensionType>
+        <implements>true</implements>
+      </extensionType>
+      <component hash_component_UID="002400000480000094000000060200000024000052534131000400001100000001120408f1e70062f0008b12ca4e9ff58dfb0a2b6ff0f2edb113d3174a4596157d3f9be1fb8b40de97e69b4711cfdcac2e6384ab83904e3e39c5af223f89c59ffdc87c2000bfa74000d11ed731d6727ceee533ae6c1f7030843098d7a1eee117a263c53c60f7db6f75072e0d722a39270603e963e8bc29fca6034d62c2e6cdaf" localRef="base" location="br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/MCRL2.hpe" name="MCRL2" package="br.ufc.mdcc.hpc.shelf.certify.tactical" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="278" y="182">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <port localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
+          <visualDescription h="60" w="146" x="378" y="126">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <parameter formFieldId="task_port_type" varName="T"/>
+          <unitBounds parallel="true" uRef="peer">
+            <visualDescription h="20" w="20" x="14" y="19"/>
+          </unitBounds>
+        </port>
+        <port localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+          <visualDescription h="63" w="218" x="340" y="330">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <parameter formFieldId="server_port_type" varName="S"/>
+          <parameter formFieldId="client_port_type" varName="C"/>
+          <unitBounds parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="178" y="21"/>
+          </unitBounds>
+          <unitBounds parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="23" y="21"/>
+          </unitBounds>
+        </port>
+        <unitBounds parallel="true" uRef="Tactical">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="IMCRL2Impl" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl &#xA;{&#xA;&#x9;public abstract class BaseIMCRL2Impl: Computation, BaseITactical&#xA;&#x9;{&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyServerPort&lt;IVerifyDataPortServerType> verify_data = null;&#xA;&#xA;&#x9;&#x9;public IVerifyServerPort&lt;IVerifyDataPortServerType> Verify_data&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data = (IVerifyServerPort&lt;IVerifyDataPortServerType>) Services.getPort(&quot;verify_data&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}" name="BaseIMCRL2Impl.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0/BaseIMCRL2Impl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/1.0.0.0/BaseITactical.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl&#xA;{&#xA;&#x9;public class IMCRL2Impl : BaseIMCRL2Impl, ITactical&#xA;&#x9;{&#xA;&#x9;&#x9;public override void main()&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;   &#xA;&#x9;&#x9;   &#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;" name="IMCRL2Impl.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0/IMCRL2Impl.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0/BaseIMCRL2Impl.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/1.0.0.0/ITactical.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="80" x="144" y="50">
+        <color b="0" g="255" r="255"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="IMCRL2Impl" multiple="true" private="false" replica="0" uRef="Tactical" visibleInterface="true">
+      <super cRef="base" uRef="Tactical"/>
+      <visualDescription h="40" w="80" x="48" y="127"/>
+    </unit>
+  </componentInfo>
+</component:component>

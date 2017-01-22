@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/allberson/hpe/root/cache" default="all" name="MCRL2Impl">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="MCRL2Impl-1.0.0.0">
+    <ifnot targetexists="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0">
+      <mkdir dir="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/MCRL2Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0/BaseIMCRL2Impl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/BaseIMCRL2Impl.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/1.0.0.0/BaseITactical.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/MCRL2Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0/IMCRL2Impl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/IMCRL2Impl.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/bin/1.0.0.0/BaseIMCRL2Impl.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/1.0.0.0/ITactical.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="MCRL2Impl-1.0.0.0" name="all"/>
+</project>

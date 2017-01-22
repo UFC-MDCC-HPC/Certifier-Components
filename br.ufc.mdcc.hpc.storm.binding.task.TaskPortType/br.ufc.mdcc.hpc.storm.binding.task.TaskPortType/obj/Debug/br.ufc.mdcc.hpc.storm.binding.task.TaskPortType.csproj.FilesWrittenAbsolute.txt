@@ -1,0 +1,12 @@
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/obj/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/obj/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/DGAC.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/obj/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/obj/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/DGAC.dll

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000237549b37761451e8f47776658ec1e125ada89751ceff356dc1eca6d3cbcb926a7bf348fc7b55f5fd3d54f02a2636257bf34fcf943d7ae50758780a8736cca99df935fcf1e00a4c4c6ae982d2b6c48aefa1c7823208659bb1960242a446bf5f6606b3d638d94b562a1e2bba0b0e1f7b83775a411c2102f90f7e276c59d030bc3" isAbstract="true" kind="Qualifier" name="TacticalType" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier">
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="ITacticalType" nArgs="0">
+      <visualDescription h="40" w="80" x="369" y="58">
+        <color b="0" g="165" r="255"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="ITacticalType" multiple="true" private="false" replica="0" uRef="tactical_type" visibleInterface="true">
+      <visualDescription h="40" w="80" x="369" y="138"/>
+    </unit>
+  </componentInfo>
+</component:component>

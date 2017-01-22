@@ -1,0 +1,12 @@
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/obj/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/obj/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll.mdb
+/home/heron/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/bin/Debug/DGAC.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll.mdb
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/obj/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/obj/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll.mdb
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-MapReduce/br.ufc.mdcc.hpc.storm.kind.Binding/br.ufc.mdcc.hpc.storm.kind.Binding/bin/Debug/DGAC.dll

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000bf87f17b918a0a4f67cfa74481e1758c1336b7b4641028e660cb0408e4fcd368717546f24a2bb1ecf8f3cf6f8d4d13bd1f10dff90bc853ab36cfbaf0210655ac9d83ffa111e817d4b7407a989a70728fe8b5e7c1ee5feb91e7cb2cd45aca9927c443f3205366e9d16a1f8b20a98811534f429b1510d8f7e6fa9c0e699dcf2fc7" isAbstract="true" kind="Environment" name="VerifyPortType" packagePath="br.ufc.mdcc.hpc.shelf.tactical.task">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="00240000048000009400000006020000002400005253413100040000110000004daa1ee2938e29c032e1bfd578bc01e6b54f60176df2b00f4dee47b56f06c8456587bbdf638394e9571f559e8927ca4f05ddf3db00078919c5eb020f9a90765ebde8ceada7d0b17dac25fa926e084deb80271de15d62a4df665e31a30b644531ed8c9257cc26d4e877ec42492c86527b3ff535411b8f68bc7019a638b767f69c" localRef="base" location="br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/TaskPortType.hpe" name="TaskPortType" package="br.ufc.mdcc.hpc.storm.binding.task" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="176" y="109">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="true" uRef="task_port_type">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="IVerifyPortType" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType&#xA;{&#xA;&#x9;public interface BaseIVerifyPortType : BaseITaskPortType, IEnvironmentKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyPortType.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/BaseIVerifyPortType.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/1.0.0.0/BaseITaskPortType.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType&#xA;{&#xA;&#x9;public interface IVerifyPortType : BaseIVerifyPortType, ITaskPortType&#xA;&#x9;{&#xA;&#x9;   &#xA;&#x9;}&#xA;&#x9;public class IVerifyPortType{&#xA;&#x9;&#xA;&#x9;    &#xA;&#x9;&#xA;&#x9;}&#xA;}" name="IVerifyPortType.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/BaseIVerifyPortType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/1.0.0.0/ITaskPortType.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="189" x="339" y="151">
+        <color b="230" g="216" r="173"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="IVerifyPortType" multiple="true" private="false" replica="0" uRef="task_port_type" visibleInterface="true">
+      <super cRef="base" uRef="task_port_type"/>
+      <visualDescription h="40" w="189" x="125" y="332"/>
+    </unit>
+  </componentInfo>
+</component:component>
