@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000061d199c695add57ea4802b7e35d845bab68e87155e490eb4f79ef404ae53430d8de08f9c454832d95b8ddcd10a6a26a3200c2b787cc0e73be9257fcfc5607c5459e8812bd5ad344d25c3cffd7ef7d38c66e344dab1230f3516a31e0fe346cfac875fd3932177425cb2cf6bf2b760ed0db99e217ce62520430e45e077ee6a3897" isAbstract="false" kind="Computation" name="ISPImpl" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical.impl">
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo/>
+</component:component>

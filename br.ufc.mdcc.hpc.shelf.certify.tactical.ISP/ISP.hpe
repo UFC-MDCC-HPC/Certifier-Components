@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="00240000048000009400000006020000002400005253413100040000110000004915c83120755567a2ee4a1ea5e706412b0d204ee81d21512214b8c577bcef1d3754c811ce0f0783b0e827dbc889bcf77476fbfe577cfd565deaa92d7883207fdc9358f9e2b38eb0ff0719bdc5bf307cdbdf9ca05976167598d3c3168693cc1b1a21b44ecad3cbf151dd19b45826de329f7c719c3a040c6687c92d8db1b1f88b" isAbstract="true" kind="Computation" name="ISP" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical">
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <innerComponent localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.hpe" multiple="false" name="Tactical" package="br.ufc.mdcc.hpc.shelf.tactical" exposed="false">
+      <visualDescription h="60" w="100" x="156" y="118">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="verify_data_port_client_type" varName="C"/>
+      <parameter formFieldId="tactical_name" varName="N"/>
+      <parameter formFieldId="verify_task_port_type" varName="T"/>
+      <parameter formFieldId="verify_data_port_server_type" varName="S"/>
+      <port localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
+        <visualDescription h="60" w="146" x="378" y="126">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="task_port_type" varName="T"/>
+        <unitBounds parallel="true" uRef="peer">
+          <visualDescription h="20" w="20" x="14" y="19"/>
+        </unitBounds>
+      </port>
+      <port localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+        <visualDescription h="63" w="218" x="340" y="330">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="server_port_type" varName="S"/>
+        <parameter formFieldId="client_port_type" varName="C"/>
+        <unitBounds parallel="false" uRef="client">
+          <visualDescription h="20" w="20" x="178" y="21"/>
+        </unitBounds>
+        <unitBounds parallel="false" uRef="server">
+          <visualDescription h="20" w="20" x="23" y="21"/>
+        </unitBounds>
+      </port>
+      <unitBounds parallel="true" uRef="Tactical">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+  </componentInfo>
+</component:component>

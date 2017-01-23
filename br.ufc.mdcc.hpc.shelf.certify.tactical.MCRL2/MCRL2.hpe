@@ -92,7 +92,7 @@
     </interface>
     <unit facet="0" iRef="IMCRL2" multiple="true" private="false" replica="0" uRef="Tactical" visibleInterface="true">
       <super cRef="base" uRef="Tactical"/>
-      <visualDescription h="40" w="80" x="90" y="236"/>
+      <visualDescription h="40" w="80" x="19" y="197"/>
     </unit>
   </componentInfo>
 </component:component>

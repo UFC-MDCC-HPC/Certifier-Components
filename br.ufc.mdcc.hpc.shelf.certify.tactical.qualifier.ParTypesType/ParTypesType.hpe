@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000510cc1fad81c1c2893e705cdb19bb33cc9fc79561b9592da4f55552c3c41aa3679b33b56750c5f0681d4d595a171bf39f985964f1ced0d2fd149a19188b2a88e1560539dbc85ebef70aefb674a4ac7f3250a28b18f0f02e10d9b8748e3ea48a4ee646a2dca3238ac6c322d9e27b305f46eba0c076a4b28eb71126dbeca75a8d8" isAbstract="true" kind="Qualifier" name="ParTypesType" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000237549b37761451e8f47776658ec1e125ada89751ceff356dc1eca6d3cbcb926a7bf348fc7b55f5fd3d54f02a2636257bf34fcf943d7ae50758780a8736cca99df935fcf1e00a4c4c6ae982d2b6c48aefa1c7823208659bb1960242a446bf5f6606b3d638d94b562a1e2bba0b0e1f7b83775a411c2102f90f7e276c59d030bc3" localRef="base" location="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType/TacticalType.hpe" name="TacticalType" package="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="134" y="175">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="true" uRef="tactical_type">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="IParTypesType" nArgs="0">
+      <visualDescription h="40" w="80" x="369" y="58">
+        <color b="0" g="165" r="255"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="IParTypesType" multiple="true" private="false" replica="0" uRef="tactical_type" visibleInterface="true">
+      <super cRef="base" uRef="tactical_type"/>
+      <visualDescription h="40" w="80" x="369" y="138"/>
+    </unit>
+  </componentInfo>
+</component:component>
