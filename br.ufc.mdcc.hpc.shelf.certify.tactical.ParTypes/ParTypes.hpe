@@ -1,45 +1,98 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
   <header hash_component_UID="00240000048000009400000006020000002400005253413100040000110000006dc60a6293c703edcbd45b610539fb9c63db3b378d7066a03a6169a3c75bcd130316ebc1ef2a34991a2145db42aa3e1b753e6b3e49ac71ba100f4222d23e62f76922be12da76bbd23ad3690ba1f035a7049cf86aefeeca1ab6240cb17d4566345ce891b10d73ce2b777d48fd3b884232661e618a1eb5eb032883d1c488412499" isAbstract="true" kind="Computation" name="ParTypes" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b720f4ad17128d7a94e4729e9697900867dd48c0778de422a3e5f547eca507cdbc871587b0c1d1bff8b4fccaf7306e4f76a24c7f85ba64bc49462cf465b0b033995717ede557b9b6ac589e0b1436a9fc417d8b4d26fd361530be6a388c9dee677127e1859b7ce552f95c4aa513d1770ac0dd2f337ddf40048e092792bc3cfba4" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.hpe" name="Tactical" package="br.ufc.mdcc.hpc.shelf.tactical" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="137" y="90">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="verify_data_port_client_type" varName="C"/>
+        <parameter formFieldId="tactical_name" varName="N"/>
+        <parameter formFieldId="verify_task_port_type" varName="T"/>
+        <parameter formFieldId="verify_data_port_server_type" varName="S"/>
+        <port localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
+          <visualDescription h="60" w="146" x="381" y="86">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <parameter formFieldId="task_port_type" varName="T"/>
+          <unitBounds parallel="true" uRef="peer">
+            <visualDescription h="20" w="20" x="14" y="19"/>
+          </unitBounds>
+        </port>
+        <port localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+          <visualDescription h="63" w="218" x="223" y="330">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <parameter formFieldId="server_port_type" varName="S"/>
+          <parameter formFieldId="client_port_type" varName="C"/>
+          <unitBounds parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="178" y="21"/>
+          </unitBounds>
+          <unitBounds parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="23" y="21"/>
+          </unitBounds>
+        </port>
+        <unitBounds parallel="true" uRef="Tactical">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
     <versions field1="1" field2="0" field3="0" field4="0"/>
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
   </header>
   <componentInfo>
-    <innerComponent localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.hpe" multiple="false" name="Tactical" package="br.ufc.mdcc.hpc.shelf.tactical" exposed="false">
-      <visualDescription h="60" w="100" x="96" y="115">
+    <innerComponent localRef="partypes_type" location="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ParTypesType/ParTypesType.hpe" multiple="false" name="ParTypesType" package="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier" exposed="false">
+      <visualDescription h="60" w="100" x="45" y="245">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="verify_data_port_client_type" varName="C"/>
-      <parameter formFieldId="tactical_name" varName="N"/>
-      <parameter formFieldId="verify_task_port_type" varName="T"/>
-      <parameter formFieldId="verify_data_port_server_type" varName="S"/>
-      <port localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
-        <visualDescription h="60" w="146" x="378" y="126">
-          <color b="255" g="255" r="255"/>
-        </visualDescription>
-        <parameter formFieldId="task_port_type" varName="T"/>
-        <unitBounds parallel="true" uRef="peer">
-          <visualDescription h="20" w="20" x="14" y="19"/>
-        </unitBounds>
-      </port>
-      <port localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-        <visualDescription h="63" w="218" x="340" y="330">
-          <color b="255" g="255" r="255"/>
-        </visualDescription>
-        <parameter formFieldId="server_port_type" varName="S"/>
-        <parameter formFieldId="client_port_type" varName="C"/>
-        <unitBounds parallel="false" uRef="client">
-          <visualDescription h="20" w="20" x="178" y="21"/>
-        </unitBounds>
-        <unitBounds parallel="false" uRef="server">
-          <visualDescription h="20" w="20" x="23" y="21"/>
-        </unitBounds>
-      </port>
-      <unitBounds parallel="true" uRef="Tactical">
+      <unitBounds parallel="true" uRef="tactical_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
+    <innerComponent localRef="verify_data_port_client_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/VerifyDataPortClientType.hpe" multiple="false" name="VerifyDataPortClientType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="74" y="345">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_data_port_server_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/VerifyDataPortServerType.hpe" multiple="false" name="VerifyDataPortServerType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="163" y="410">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_port_type" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
+      <visualDescription h="60" w="100" x="189" y="202">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="task_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="partypes_type" direct="true" varName="N"/>
+    <supplyParameter cRef="verify_data_port_client_type" direct="true" varName="C"/>
+    <supplyParameter cRef="verify_data_port_server_type" direct="true" varName="S"/>
+    <supplyParameter cRef="verify_port_type" direct="true" varName="T"/>
+    <interface iRef="IParTypes" nArgs="0">
+      <visualDescription h="40" w="80" x="62" y="58">
+        <color b="0" g="255" r="255"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="IParTypes" multiple="true" private="false" replica="0" uRef="Tactical" visibleInterface="true">
+      <super cRef="base" uRef="Tactical"/>
+      <visualDescription h="40" w="80" x="15" y="243"/>
+    </unit>
   </componentInfo>
 </component:component>
