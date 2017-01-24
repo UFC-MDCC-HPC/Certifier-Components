@@ -1,7 +1,35 @@
-<?xml version='1.0'?>
-<project basedir='.' default='all' name='br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl'>
-  <property name='src' value='src'/>
-  <property name='build' value='bin'/>
-  <property name='nant.settings.currentframework' value='mono-3.5'/>
-  <target depends='' name='all'/>
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/heron/hpe/heron/cache" default="all" name="ISPImpl">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="ISPImpl-1.0.0.0">
+    <ifnot targetexists="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/bin/1.0.0.0">
+      <mkdir dir="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/ISPImpl.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/bin/1.0.0.0/BaseIISPImpl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/src/1.0.0.0/BaseIISPImpl.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/BaseIISP.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/ISPImpl.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/bin/1.0.0.0/IISPImpl.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/src/1.0.0.0/IISPImpl.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/bin/1.0.0.0/BaseIISPImpl.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/IISP.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="ISPImpl-1.0.0.0" name="all"/>
 </project>
