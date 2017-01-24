@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="HPC-Shelf-Certification.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs">
+    <Files>
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/src/1.0.0.0/IISPImpl.cs" Line="12" Column="4" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs" Line="4" Column="29" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/IISP.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
