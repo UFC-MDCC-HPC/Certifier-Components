@@ -1,0 +1,2 @@
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/Debug/DGAC.dll
