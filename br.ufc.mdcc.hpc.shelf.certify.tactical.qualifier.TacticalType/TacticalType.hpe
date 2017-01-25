@@ -8,6 +8,12 @@
   </header>
   <componentInfo>
     <interface iRef="ITacticalType" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType&#xA;{&#xA;&#x9;public interface BaseITacticalType : IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseITacticalType.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType/bin/1.0.0.0/BaseITacticalType.dll" versionId="1.0.0.0"/>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType&#xA;{&#xA;&#x9;public interface ITacticalType : BaseITacticalType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="ITacticalType.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType/bin/1.0.0.0/ITacticalType.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType/bin/1.0.0.0/BaseITacticalType.dll</dependency>
+        </file>
+      </sources>
       <visualDescription h="40" w="80" x="369" y="58">
         <color b="0" g="165" r="255"/>
       </visualDescription>

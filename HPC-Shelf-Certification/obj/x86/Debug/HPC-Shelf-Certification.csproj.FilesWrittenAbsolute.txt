@@ -1,0 +1,5 @@
+/home/allberson/Dropbox/HPC-Shelf-Certification/HPC-Shelf-Certification/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/allberson/Dropbox/HPC-Shelf-Certification/HPC-Shelf-Certification/bin/Debug/HPC-Shelf-Certification.exe.mdb
+/home/allberson/Dropbox/HPC-Shelf-Certification/HPC-Shelf-Certification/bin/Debug/HPC-Shelf-Certification.exe
+/home/allberson/Dropbox/HPC-Shelf-Certification/HPC-Shelf-Certification/obj/x86/Debug/HPC-Shelf-Certification.exe
+/home/allberson/Dropbox/HPC-Shelf-Certification/HPC-Shelf-Certification/obj/x86/Debug/HPC-Shelf-Certification.exe.mdb

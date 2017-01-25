@@ -9,10 +9,10 @@
         <visualDescription h="60" w="100" x="117" y="207">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="verify_data_port_server_type" varName="S"/>
-        <parameter formFieldId="tactical_name" varName="N"/>
         <parameter formFieldId="verify_data_port_client_type" varName="C"/>
+        <parameter formFieldId="tactical_name" varName="N"/>
         <parameter formFieldId="verify_task_port_type" varName="T"/>
+        <parameter formFieldId="verify_data_port_server_type" varName="S"/>
         <port localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
           <visualDescription h="60" w="146" x="410" y="67">
             <color b="255" g="255" r="255"/>
@@ -26,8 +26,8 @@
           <visualDescription h="63" w="218" x="340" y="330">
             <color b="255" g="255" r="255"/>
           </visualDescription>
-          <parameter formFieldId="client_port_type" varName="C"/>
           <parameter formFieldId="server_port_type" varName="S"/>
+          <parameter formFieldId="client_port_type" varName="C"/>
           <unitBounds parallel="false" uRef="client">
             <visualDescription h="20" w="20" x="178" y="21"/>
           </unitBounds>

@@ -3,7 +3,10 @@ using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartn
 
 namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType
 {
-	public interface IVerifyDataPortServerType : BaseIVerifyDataPortServerType, IEnvironmentPortTypeMultiplePartner
+	public interface IVerifyDataPortServerType : BaseIVerifyDataPortServerType,
+	IEnvironmentPortTypeMultiplePartner
+
+
 	{
 	   
 	}

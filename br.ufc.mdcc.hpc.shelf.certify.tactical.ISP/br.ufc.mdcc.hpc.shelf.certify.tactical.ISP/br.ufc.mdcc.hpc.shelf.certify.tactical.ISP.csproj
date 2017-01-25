@@ -32,7 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="DGAC">
-      <HintPath>..\..\..\..\..\..\..\..\opt\mono-4.2.2\lib\mono\DGAC\DGAC.dll</HintPath>
+      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\DGAC.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -45,4 +45,10 @@
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical.csproj">
+      <Project>{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.Tactical</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

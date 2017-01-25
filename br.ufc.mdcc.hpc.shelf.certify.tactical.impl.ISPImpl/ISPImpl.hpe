@@ -22,8 +22,8 @@
           <visualDescription h="63" w="218" x="340" y="330">
             <color b="255" g="255" r="255"/>
           </visualDescription>
-          <parameter formFieldId="client_port_type" varName="C"/>
           <parameter formFieldId="server_port_type" varName="S"/>
+          <parameter formFieldId="client_port_type" varName="C"/>
           <unitBounds parallel="false" uRef="client">
             <visualDescription h="20" w="20" x="178" y="21"/>
           </unitBounds>

@@ -7,20 +7,86 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certify.tactical.ISP", "..\br.ufc.mdcc.hpc.shelf.certify.tactical.ISP\br.ufc.mdcc.hpc.shelf.certify.tactical.ISP\br.ufc.mdcc.hpc.shelf.certify.tactical.ISP.csproj", "{E5EAEEA1-B1C9-45E7-97F2-F0825E8F358C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.tactical.Tactical", "..\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical.csproj", "{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType", "..\br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType\br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType\br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType.csproj", "{441F820E-19F7-498D-97B0-860B55D44FDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.task.TaskPortType", "..\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.csproj", "{B785892B-10B1-43BA-897F-E6F02CC932D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType", "..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType.csproj", "{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner", "..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner.csproj", "{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType", "..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType.csproj", "{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType", "..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType.csproj", "{EC5B2D36-475D-4BFE-8EE0-E6C051E51D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner", "..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner.csproj", "{B1988D74-54AE-4031-B185-E046226BC359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort", "..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort.csproj", "{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase", "..\br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase\br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase\br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase.csproj", "{816B876F-E438-4F9E-85D8-B98BCCE57044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase", "..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase.csproj", "{226E5496-FDF2-4765-9C43-D2A2770EE760}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{226E5496-FDF2-4765-9C43-D2A2770EE760}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{226E5496-FDF2-4765-9C43-D2A2770EE760}.Debug|x86.Build.0 = Debug|Any CPU
+		{226E5496-FDF2-4765-9C43-D2A2770EE760}.Release|x86.ActiveCfg = Release|Any CPU
+		{226E5496-FDF2-4765-9C43-D2A2770EE760}.Release|x86.Build.0 = Release|Any CPU
+		{441F820E-19F7-498D-97B0-860B55D44FDD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{441F820E-19F7-498D-97B0-860B55D44FDD}.Debug|x86.Build.0 = Debug|Any CPU
+		{441F820E-19F7-498D-97B0-860B55D44FDD}.Release|x86.ActiveCfg = Release|Any CPU
+		{441F820E-19F7-498D-97B0-860B55D44FDD}.Release|x86.Build.0 = Release|Any CPU
+		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Debug|x86.Build.0 = Debug|Any CPU
+		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Release|x86.ActiveCfg = Release|Any CPU
+		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Release|x86.Build.0 = Release|Any CPU
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Debug|x86.ActiveCfg = Debug|x86
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Debug|x86.Build.0 = Debug|x86
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Release|x86.ActiveCfg = Release|x86
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Release|x86.Build.0 = Release|x86
+		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Debug|x86.Build.0 = Debug|Any CPU
+		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Release|x86.ActiveCfg = Release|Any CPU
+		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Release|x86.Build.0 = Release|Any CPU
+		{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}.Debug|x86.Build.0 = Debug|Any CPU
+		{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}.Release|x86.ActiveCfg = Release|Any CPU
+		{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}.Release|x86.Build.0 = Release|Any CPU
+		{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}.Debug|x86.Build.0 = Debug|Any CPU
+		{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}.Release|x86.Build.0 = Release|Any CPU
+		{B1988D74-54AE-4031-B185-E046226BC359}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B1988D74-54AE-4031-B185-E046226BC359}.Debug|x86.Build.0 = Debug|Any CPU
+		{B1988D74-54AE-4031-B185-E046226BC359}.Release|x86.ActiveCfg = Release|Any CPU
+		{B1988D74-54AE-4031-B185-E046226BC359}.Release|x86.Build.0 = Release|Any CPU
+		{B785892B-10B1-43BA-897F-E6F02CC932D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B785892B-10B1-43BA-897F-E6F02CC932D0}.Debug|x86.Build.0 = Debug|Any CPU
+		{B785892B-10B1-43BA-897F-E6F02CC932D0}.Release|x86.ActiveCfg = Release|Any CPU
+		{B785892B-10B1-43BA-897F-E6F02CC932D0}.Release|x86.Build.0 = Release|Any CPU
+		{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}.Debug|x86.Build.0 = Debug|Any CPU
+		{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}.Release|x86.Build.0 = Release|Any CPU
 		{E5EAEEA1-B1C9-45E7-97F2-F0825E8F358C}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{E5EAEEA1-B1C9-45E7-97F2-F0825E8F358C}.Debug|x86.Build.0 = Debug|Any CPU
 		{E5EAEEA1-B1C9-45E7-97F2-F0825E8F358C}.Release|x86.ActiveCfg = Release|Any CPU
 		{E5EAEEA1-B1C9-45E7-97F2-F0825E8F358C}.Release|x86.Build.0 = Release|Any CPU
+		{EC5B2D36-475D-4BFE-8EE0-E6C051E51D77}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EC5B2D36-475D-4BFE-8EE0-E6C051E51D77}.Debug|x86.Build.0 = Debug|Any CPU
+		{EC5B2D36-475D-4BFE-8EE0-E6C051E51D77}.Release|x86.ActiveCfg = Release|Any CPU
+		{EC5B2D36-475D-4BFE-8EE0-E6C051E51D77}.Release|x86.Build.0 = Release|Any CPU
+		{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}.Debug|x86.Build.0 = Debug|Any CPU
+		{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}.Release|x86.Build.0 = Release|Any CPU
 		{FDEE458A-7B64-4B4F-884F-793726B7CD51}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{FDEE458A-7B64-4B4F-884F-793726B7CD51}.Debug|x86.Build.0 = Debug|Any CPU
 		{FDEE458A-7B64-4B4F-884F-793726B7CD51}.Release|x86.ActiveCfg = Release|Any CPU

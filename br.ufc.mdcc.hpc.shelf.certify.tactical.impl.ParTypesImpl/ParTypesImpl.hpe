@@ -43,6 +43,19 @@
   </header>
   <componentInfo>
     <interface iRef="IParTypesImpl" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl &#xA;{&#xA;&#x9;public abstract class BaseIParTypesImpl: Computation, BaseIParTypes&#xA;&#x9;{&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyServerPort&lt;IVerifyDataPortServerType> verify_data = null;&#xA;&#xA;&#x9;&#x9;public IVerifyServerPort&lt;IVerifyDataPortServerType> Verify_data&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data = (IVerifyServerPort&lt;IVerifyDataPortServerType>) Services.getPort(&quot;verify_data&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}" name="BaseIParTypesImpl.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl/bin/1.0.0.0/BaseIParTypesImpl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl&#xA;{&#xA;&#x9;public class IParTypesImpl : BaseIParTypesImpl, IParTypes&#xA;&#x9;{&#xA;&#x9;&#x9;public override void main()&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;" name="IParTypesImpl.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl/bin/1.0.0.0/IParTypesImpl.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl/bin/1.0.0.0/BaseIParTypesImpl.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/IParTypes.dll</dependency>
+        </file>
+      </sources>
       <visualDescription h="40" w="80" x="62" y="58">
         <color b="0" g="255" r="255"/>
       </visualDescription>

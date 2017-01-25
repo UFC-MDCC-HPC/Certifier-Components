@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{816B876F-E438-4F9E-85D8-B98BCCE57044}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase</RootNamespace>
@@ -34,10 +32,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="DGAC">
-      <HintPath>..\..\..\..\..\..\..\..\usr\lib\mono\DGAC\DGAC.dll</HintPath>
+      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\DGAC.dll</HintPath>
     </Reference>
     <Reference Include="MPI">
-      <HintPath>..\..\..\..\..\..\..\usr\lib\mono\MPI\MPI.dll</HintPath>
+      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\MPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

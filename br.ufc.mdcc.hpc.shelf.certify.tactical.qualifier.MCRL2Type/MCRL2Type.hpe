@@ -21,6 +21,15 @@
   </header>
   <componentInfo>
     <interface iRef="IMCRL2Type" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type&#xA;{&#xA;&#x9;public interface BaseIMCRL2Type : BaseITacticalType, IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIMCRL2Type.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type/bin/1.0.0.0/BaseIMCRL2Type.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType/bin/1.0.0.0/BaseITacticalType.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type&#xA;{&#xA;&#x9;public interface IMCRL2Type : BaseIMCRL2Type, ITacticalType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IMCRL2Type.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type/bin/1.0.0.0/IMCRL2Type.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type/bin/1.0.0.0/BaseIMCRL2Type.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType/bin/1.0.0.0/ITacticalType.dll</dependency>
+        </file>
+      </sources>
       <visualDescription h="40" w="80" x="369" y="58">
         <color b="0" g="165" r="255"/>
       </visualDescription>

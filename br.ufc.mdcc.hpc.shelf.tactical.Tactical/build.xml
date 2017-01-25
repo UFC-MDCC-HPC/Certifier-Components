@@ -1,7 +1,37 @@
-<?xml version='1.0'?>
-<project basedir='.' default='all' name='br.ufc.mdcc.hpc.shelf.tactical.Tactical'>
-  <property name='src' value='src'/>
-  <property name='build' value='bin'/>
-  <property name='nant.settings.currentframework' value='mono-3.5'/>
-  <target depends='' name='all'/>
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/allberson/hpe/root/cache" default="all" name="Tactical">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="Tactical-1.0.0.0">
+    <ifnot targetexists="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0">
+      <mkdir dir="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/src/1.0.0.0/BaseITactical.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/1.0.0.0/ITaskPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/ITactical.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/src/1.0.0.0/ITactical.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="Tactical-1.0.0.0" name="all"/>
 </project>

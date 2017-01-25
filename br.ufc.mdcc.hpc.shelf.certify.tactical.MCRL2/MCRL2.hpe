@@ -83,6 +83,15 @@
     <supplyParameter cRef="verify_port_type" direct="true" varName="T"/>
     <supplyParameter cRef="tactical_type" direct="true" varName="N"/>
     <interface iRef="IMCRL2" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2&#xA;{&#xA;&#x9;public interface BaseIMCRL2 : BaseITactical, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIMCRL2.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/1.0.0.0/BaseIMCRL2.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2&#xA;{&#xA;&#x9;public interface IMCRL2 : BaseIMCRL2, ITactical&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IMCRL2.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/1.0.0.0/IMCRL2.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/1.0.0.0/BaseIMCRL2.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/ITactical.dll</dependency>
+        </file>
+      </sources>
       <visualDescription h="40" w="80" x="144" y="50">
         <color b="0" g="255" r="255"/>
       </visualDescription>

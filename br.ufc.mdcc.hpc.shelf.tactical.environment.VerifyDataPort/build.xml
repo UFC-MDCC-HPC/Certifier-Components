@@ -1,7 +1,7 @@
-<?xml version='1.0'?>
-<project basedir='.' default='all' name='br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort'>
-  <property name='src' value='src'/>
-  <property name='build' value='bin'/>
-  <property name='nant.settings.currentframework' value='mono-3.5'/>
-  <target depends='' name='all'/>
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/allberson/hpe/root/cache" default="all" name="VerifyDataPort">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target depends="" name="all"/>
 </project>

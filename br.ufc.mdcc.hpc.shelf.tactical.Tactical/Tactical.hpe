@@ -66,27 +66,42 @@
       </unitBounds>
     </innerComponent>
     <interface iRef="ITactical" nArgs="2">
-      <slice isRef="verify">
-        <originRef cRef="verify" iRef="ITaskPort"/>
-        <visualDescription h="10" w="10" x="58" y="25"/>
-      </slice>
       <slice isRef="verify_data">
         <originRef cRef="verify_data" iRef="IVerifyServerPort"/>
         <visualDescription h="10" w="10" x="25" y="25"/>
       </slice>
+      <slice isRef="verify">
+        <originRef cRef="verify" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="58" y="25"/>
+      </slice>
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskPortType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.Tactical&#xA;{&#xA;&#x9;public interface BaseITactical&lt;S, T> : IComputationKind &#xA;&#x9;&#x9;where S:IVerifyDataPortServerType&#xA;&#x9;&#x9;where T:IVerifyPortType&#xA;&#x9;{&#xA;&#x9;&#x9;IVerifyServerPort&lt;S> Verify_data {get;}&#xA;&#x9;&#x9;ITaskPort&lt;T> Verify {get;}&#xA;&#x9;}&#xA;}" name="BaseITactical.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/1.0.0.0/ITaskPortType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.Tactical&#xA;{&#xA;&#x9;public interface ITactical&lt;S, T> : BaseITactical&lt;S, T>&#xA;&#x9;&#x9;where S:IVerifyDataPortServerType&#xA;&#x9;&#x9;where T:IVerifyPortType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="ITactical.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/ITactical.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll</dependency>
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll</dependency>
+        </file>
+      </sources>
       <visualDescription h="40" w="80" x="144" y="50">
         <color b="0" g="255" r="255"/>
       </visualDescription>
-      <port name="verify">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify" sRef="verify"/>
-      </port>
       <port name="verify_data">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify_data" sRef="verify_data"/>
       </port>
-      <parameter iname="IVerifyPortType" order="0" parid="verify_task_port_type" uname="task_port_type" varid="T"/>
+      <port name="verify">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify" sRef="verify"/>
+      </port>
       <parameter iname="IVerifyDataPortServerType" order="1" parid="verify_data_port_server_type" uname="environment_port_type" varid="S"/>
+      <parameter iname="IVerifyPortType" order="0" parid="verify_task_port_type" uname="task_port_type" varid="T"/>
       <action id="main">
         <protocol/>
       </action>

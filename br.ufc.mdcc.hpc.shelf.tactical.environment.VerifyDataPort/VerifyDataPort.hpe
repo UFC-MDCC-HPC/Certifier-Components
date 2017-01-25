@@ -44,6 +44,17 @@
       </unitBounds>
     </innerComponent>
     <interface iRef="IVerifyClientPort" nArgs="1">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort&#xA;{&#xA;&#x9;public interface BaseIVerifyClientPort&lt;C> : BaseIClientBase&lt;C>, ISynchronizerKind &#xA;&#x9;&#x9;where C:IVerifyDataPortClientType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyClientPort.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIVerifyClientPort.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/1.0.0.0/BaseIClientBase.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort&#xA;{&#xA;&#x9;public interface IVerifyClientPort&lt;C> : BaseIVerifyClientPort&lt;C>, IClientBase&lt;C>&#xA;&#x9;&#x9;where C:IVerifyDataPortClientType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IVerifyClientPort.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyClientPort.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll</dependency>
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIVerifyClientPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/1.0.0.0/IClientBase.dll</dependency>
+        </file>
+      </sources>
       <visualDescription h="40" w="80" x="30" y="66">
         <color b="0" g="255" r="255"/>
       </visualDescription>
