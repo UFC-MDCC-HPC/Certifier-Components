@@ -64,6 +64,17 @@
       </action>
     </interface>
     <interface iRef="IVerifyServerPort" nArgs="1">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort&#xA;{&#xA;&#x9;public interface BaseIVerifyServerPort&lt;S> : BaseIServerBase&lt;S>, ISynchronizerKind &#xA;&#x9;&#x9;where S:IVerifyDataPortServerType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyServerPort.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIVerifyServerPort.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/1.0.0.0/BaseIServerBase.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort&#xA;{&#xA;&#x9;public interface IVerifyServerPort&lt;S> : BaseIVerifyServerPort&lt;S>, IServerBase&lt;S>&#xA;&#x9;&#x9;where S:IVerifyDataPortServerType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IVerifyServerPort.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIVerifyServerPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/1.0.0.0/IServerBase.dll</dependency>
+        </file>
+      </sources>
       <visualDescription h="40" w="80" x="422" y="136">
         <color b="0" g="165" r="255"/>
       </visualDescription>

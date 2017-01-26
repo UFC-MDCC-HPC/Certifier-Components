@@ -78,5 +78,9 @@
       <Project>{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase.csproj">
+      <Project>{226E5496-FDF2-4765-9C43-D2A2770EE760}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -43,6 +43,12 @@
     <Compile Include="..\src\1.0.0.0\BaseIVerifyClientPort.cs">
       <Link>BaseIVerifyClientPort.cs</Link>
     </Compile>
+    <Compile Include="..\src\1.0.0.0\IVerifyServerPort.cs">
+      <Link>IVerifyServerPort.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIVerifyServerPort.cs">
+      <Link>BaseIVerifyServerPort.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -57,6 +63,18 @@
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType.csproj">
       <Project>{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType.csproj">
+      <Project>{EC5B2D36-475D-4BFE-8EE0-E6C051E51D77}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner.csproj">
+      <Project>{B1988D74-54AE-4031-B185-E046226BC359}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner.csproj">
+      <Project>{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

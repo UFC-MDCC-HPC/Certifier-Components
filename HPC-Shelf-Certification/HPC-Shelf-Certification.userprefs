@@ -1,10 +1,9 @@
 ﻿<Properties StartupItem="HPC-Shelf-Certification.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.tactical.Tactical/src/1.0.0.0/BaseITactical.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs">
     <Files>
-      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/src/1.0.0.0/IVerifyDataPortServerType.cs" Line="7" Column="2" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner/src/1.0.0.0/BaseIEnvironmentPortTypeSinglePartner.cs" Line="4" Column="37" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.Tactical/src/1.0.0.0/BaseITactical.cs" Line="4" Column="38" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.Tactical/src/1.0.0.0/BaseITactical.cs" Line="16" Column="3" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs" Line="8" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
