@@ -6,7 +6,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 {
-	public class IMCRL2Impl : BaseIMCRL2Impl, ITactical
+	public class IMCRL2Impl : BaseIMCRL2Impl
 	{
 		public override void main()
 		{

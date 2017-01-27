@@ -12,7 +12,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl 
 {
-	public abstract class BaseIMCRL2Impl: Computation, BaseITactical
+	public abstract class BaseIMCRL2Impl: Computation
 	{
 		private ITaskPort<IVerifyPortType> verify = null;
 

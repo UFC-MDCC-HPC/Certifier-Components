@@ -29,6 +29,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.bindi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase", "..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase.csproj", "{226E5496-FDF2-4765-9C43-D2A2770EE760}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2", "..\br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2\br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2\br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2.csproj", "{5E4C6006-E2D0-48DE-AA11-AEA835998999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl", "..\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl.csproj", "{BF282024-C1FA-4B7E-BB63-9089022654A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes", "..\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes.csproj", "{4B74BEFC-F291-4844-806A-1AC8A081E087}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -43,6 +49,10 @@ Global
 		{441F820E-19F7-498D-97B0-860B55D44FDD}.Debug|x86.Build.0 = Debug|Any CPU
 		{441F820E-19F7-498D-97B0-860B55D44FDD}.Release|x86.ActiveCfg = Release|Any CPU
 		{441F820E-19F7-498D-97B0-860B55D44FDD}.Release|x86.Build.0 = Release|Any CPU
+		{4B74BEFC-F291-4844-806A-1AC8A081E087}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4B74BEFC-F291-4844-806A-1AC8A081E087}.Debug|x86.Build.0 = Debug|Any CPU
+		{4B74BEFC-F291-4844-806A-1AC8A081E087}.Release|x86.ActiveCfg = Release|Any CPU
+		{4B74BEFC-F291-4844-806A-1AC8A081E087}.Release|x86.Build.0 = Release|Any CPU
 		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Debug|x86.Build.0 = Debug|Any CPU
 		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Release|x86.ActiveCfg = Release|Any CPU
@@ -51,6 +61,10 @@ Global
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Debug|x86.Build.0 = Debug|x86
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Release|x86.ActiveCfg = Release|x86
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Release|x86.Build.0 = Release|x86
+		{5E4C6006-E2D0-48DE-AA11-AEA835998999}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E4C6006-E2D0-48DE-AA11-AEA835998999}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E4C6006-E2D0-48DE-AA11-AEA835998999}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E4C6006-E2D0-48DE-AA11-AEA835998999}.Release|x86.Build.0 = Release|Any CPU
 		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Debug|x86.Build.0 = Debug|Any CPU
 		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Release|x86.ActiveCfg = Release|Any CPU
@@ -71,6 +85,10 @@ Global
 		{B785892B-10B1-43BA-897F-E6F02CC932D0}.Debug|x86.Build.0 = Debug|Any CPU
 		{B785892B-10B1-43BA-897F-E6F02CC932D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{B785892B-10B1-43BA-897F-E6F02CC932D0}.Release|x86.Build.0 = Release|Any CPU
+		{BF282024-C1FA-4B7E-BB63-9089022654A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BF282024-C1FA-4B7E-BB63-9089022654A2}.Debug|x86.Build.0 = Debug|Any CPU
+		{BF282024-C1FA-4B7E-BB63-9089022654A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{BF282024-C1FA-4B7E-BB63-9089022654A2}.Release|x86.Build.0 = Release|Any CPU
 		{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}.Debug|x86.Build.0 = Debug|Any CPU
 		{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}.Release|x86.ActiveCfg = Release|Any CPU

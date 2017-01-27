@@ -7,6 +7,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes</RootNamespace>
     <AssemblyName>br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ParTypes.snk</AssemblyOriginatorKeyFile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -29,10 +31,52 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="DGAC">
+      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\DGAC.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\src\1.0.0.0\IParTypes.cs">
+      <Link>IParTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIParTypes.cs">
+      <Link>BaseIParTypes.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType.csproj">
+      <Project>{EC5B2D36-475D-4BFE-8EE0-E6C051E51D77}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType.csproj">
+      <Project>{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical.csproj">
+      <Project>{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.Tactical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType\br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType\br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType.csproj">
+      <Project>{441F820E-19F7-498D-97B0-860B55D44FDD}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType.csproj">
+      <Project>{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner.csproj">
+      <Project>{B1988D74-54AE-4031-B185-E046226BC359}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner\br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner.csproj">
+      <Project>{CFC8E9C1-30F7-4A4A-9B1E-9AFA4B474D9A}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.csproj">
+      <Project>{B785892B-10B1-43BA-897F-E6F02CC932D0}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.task.TaskPortType</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
