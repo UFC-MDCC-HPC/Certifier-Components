@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes", "..\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes.csproj", "{4B74BEFC-F291-4844-806A-1AC8A081E087}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl", "..\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl.csproj", "{83DEA083-5F8F-42BC-A1A0-BB6DA811C5CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -69,6 +71,10 @@ Global
 		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Debug|x86.Build.0 = Debug|Any CPU
 		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Release|x86.ActiveCfg = Release|Any CPU
 		{816B876F-E438-4F9E-85D8-B98BCCE57044}.Release|x86.Build.0 = Release|Any CPU
+		{83DEA083-5F8F-42BC-A1A0-BB6DA811C5CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{83DEA083-5F8F-42BC-A1A0-BB6DA811C5CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{83DEA083-5F8F-42BC-A1A0-BB6DA811C5CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{83DEA083-5F8F-42BC-A1A0-BB6DA811C5CA}.Release|x86.Build.0 = Release|Any CPU
 		{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}.Debug|x86.Build.0 = Debug|Any CPU
 		{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}.Release|x86.ActiveCfg = Release|Any CPU

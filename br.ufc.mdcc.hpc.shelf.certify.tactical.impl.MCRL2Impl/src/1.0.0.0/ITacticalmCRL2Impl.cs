@@ -1,53 +1,40 @@
 using System;
-using br.ufc.pargo.hpe.backend.DGAC;
-using br.ufc.pargo.hpe.basic;
-using br.ufc.pargo.hpe.kinds;
-using br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2;
-using System.Diagnostics;
+using MPI;
+using System.IO;
+using System.Threading;
+using System.Collections.Concurrent;
 
-namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
+namespace br.ufc.mdcc.hpcshelf.certifier.impl.computation.TacticalImpl
 {
-	public class IMCRL2Impl : BaseIMCRL2Impl
-	{   
-		public string []property_files; 
-		public int num_properties; 
-		public int index_my_first_prop;
-		public int dataCertifierTactical = 71; 
-		public int num_threads = 1;
-		public int certifier = 0; 
-		public int verify_perform = 72; 
-		public int verify_conclusive=73;
-		public int verify_inconclusive=74; 
-		public int status_verification=75;
-		public int number_thread=0; 
+	class ITacticalmCRL2Impl : ITactical
 
-		public bool verification_is_inconclusive = false;
-		//public int[] properties_status;// status da prova das propriedades
-		public int number_prop_consumed=0;
-		public int number_units_tactical;
-		public int [] num_properties_thread;
-		public string path;
-		public int status_verification_properties=76;
-		public int[] properties_status;
-		//public ConcurrentDictionary <string,int> properties_status2;
-		public override void main()
+
+		//IMPORTANTE: SUPONHO QUE O CERTIFICADOR TEM RANK 0, O NÓ MASTER DO TÁTICO RANK 1 E OS DEMAIS NÓS DO TÁTICO TEM OS RANKS EM SEGUIDA
+	{   string mCRL2_file; 
+
+		//int number_properties_per_unit_tactical=0;
+		static void Main(string[] args)
 		{
-		   
-			receiveDataFromCertifier();
-			invoke_verify_perform ();
-			if (!verification_is_inconclusive) {
-				invoke_verify_conclusive ();
-			} else {
-				invoke_verify_inconclusive ();
-			}
-			sendStatusVerification ();
-		}
 
+				/*Console.Write("Rank {0} of {1} running on {2}\n",
+				              Communicator.world.Rank,
+				              Communicator.world.Size,
+				              MPI.Environment.ProcessorName);*/
+			MPI.Environment e =  new MPI.Environment(ref args, Threading.Multiple);
+			ITacticalmCRL2Impl t = new ITacticalmCRL2Impl ();
+			t.receiveDataFromCertifier();
+			t.invoke_verify_perform ();
+			if (!t.verification_is_inconclusive) {
+				t.invoke_verify_conclusive ();
+			} else {
+				t.invoke_verify_inconclusive ();
+			}
+		    t.sendStatusVerification ();
+			e.Dispose ();
+		}
 
 		public void receiveDataFromCertifier(){
 			//Console.WriteLine (Communicator.world.Rank);
-
-
 			Communicator.world.Broadcast<string>(ref mCRL2_file,certifier);
 			//Communicator.world.Broadcast<int>(ref num_properties_total,certifier);
 			//mCRL2_file = Communicator.world.Receive<string>(certifier,dataCertifierTactical);
@@ -124,10 +111,10 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 						for (int j = 0; j < num_properties_thread [my_number_thread]; j++) {
 
 							index_property = index_my_first_prop + prop + j;
-
+								
 
 							Console.WriteLine ("Thread " + my_number_thread + " from " + Communicator.world.Rank + " dealing with property " + "property" + index_property + ".mcf");
-
+			                         
 							TacticalAdaptermCRL2 t = new TacticalAdaptermCRL2 (path, "workflow.mcrl2", "property" + index_property + ".mcf");
 							int result = t.run ();
 							Console.WriteLine ("Thread" + my_number_thread + " de " + Communicator.world.Rank + ":Result of verification of property " + "property" + index_property + ".mcf" + ": " + result + " storing status for " + (prop + j));
@@ -176,7 +163,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 
 
 				}
-
+			
 			}
 
 		}
@@ -191,7 +178,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 
 			//for(int j = 0 ; j < num_properties;j++){
 			//	Console.WriteLine ("Status verification of property " + j + " : " +properties_status[j]);
-			//properties_status [j] = -2;
+				//properties_status [j] = -2;
 
 			//}
 			//
@@ -208,68 +195,5 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 			//Console.WriteLine ("invoking verify_inconclusive");
 			Communicator.world.Send<int>(Communicator.world.Rank+200,certifier,status_verification);
 		}
-
 	}
-	class TacticalAdaptermCRL2
-
-	{  
-		string mCRL2_file; string property_file; //int result;
-		string path;
-		public static void _Main(){
-			Console.WriteLine ("Teste Adaptador Tático mCRL2\n");
-
-			TacticalAdaptermCRL2 t = new TacticalAdaptermCRL2 
-				("~/Dropbox/HPC-Shelf-MapReduce/br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierSWC2Impl/br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierSWC2Impl/bin/Debug", "map-reduce.mcrl2", "property0.mcf");
-			int result = t.run ();
-
-			Console.WriteLine ("Resultado da verificação da propriedade: " + result);
-		}
-		public TacticalAdaptermCRL2 (string path, string mCRL2_file, string property_file)
-		{
-			this.mCRL2_file = mCRL2_file;
-			this.property_file = property_file;
-			this.path = path;
-		}
-		public int run(){
-
-			Process proc = new System.Diagnostics.Process ();
-			proc.StartInfo.FileName = "/bin/bash";
-			//proc.StartInfo.WorkingDirectory = "/home/00292431309/Dropbox/HPC-Shelf-MapReduce-master/br.ufc.mdcc.hpcshelf.mapreduce.impl.computation.ReducerImpl/src/1.0.0.0";
-
-			proc.StartInfo.Arguments = path+"/run.sh " + path+"/"+ mCRL2_file + " " +  path+"/properties/"+ property_file;
-			proc.StartInfo.UseShellExecute = false; 
-			proc.StartInfo.RedirectStandardOutput = true;
-			proc.StartInfo.RedirectStandardError = true;
-			proc.Start ();
-			string output;
-
-			/*while (!proc.StandardError.EndOfStream) {
-				output = proc.StandardError.ReadLine ();
-				Console.WriteLine ("Log de Erro - Adaptador Tático mCRL2 para prop "+ property_file+ " "  + output );
-				//onsole.WriteLine ();
-				//result Convert.ToBoolean(result);
-			}*/
-
-
-			while (!proc.StandardOutput.EndOfStream) {
-				output = proc.StandardOutput.ReadLine ();
-				Console.WriteLine ("Saída padrão - Adaptador Tático mCRL2 para prop " + property_file +" " + output);
-
-				//Console.WriteLine ();
-				if (output == "true") {
-					return 1;
-				}
-				else if(output == "false"){
-					return 0;
-
-				}
-				//result Convert.ToBoolean(result);
-			}
-			return -1;
-
-		}
-	}
-	
-	
-	
 }

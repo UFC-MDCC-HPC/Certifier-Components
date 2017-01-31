@@ -1,15 +1,14 @@
 ﻿<Properties StartupItem="HPC-Shelf-Certification.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/src/1.0.0.0/BaseIISPImpl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/IMCRL2Impl.cs">
     <Files>
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/IMCRL2Impl.cs" Line="9" Column="42" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/src/1.0.0.0/IISPImpl.cs" Line="9" Column="44" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/BaseIMCRL2Impl.cs" Line="15" Column="51" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl/src/1.0.0.0/BaseIISPImpl.cs" Line="10" Column="58" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/IMCRL2Impl.cs" Line="49" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/ITacticalmCRL2Impl.cs" line="2" column="7" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
