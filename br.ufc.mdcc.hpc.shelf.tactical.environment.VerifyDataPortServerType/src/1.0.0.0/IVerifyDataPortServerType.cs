@@ -8,9 +8,6 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType
 
 
 	{
-		void getmCRL2FileContent(ref string mCRL2_file);
-		int getNumProperties();
-		int getIndexMyFirstProp();
-		void getProperties (ref string [] property_files);
+
 	}
 }

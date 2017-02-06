@@ -7,9 +7,7 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType
 	public interface IVerifyDataPortClientType : BaseIVerifyDataPortClientType, 
 	IEnvironmentPortType
 	{
-	   //metdos da porta
-
-		int[] getResultVerification();
+	  
 
 	}
 }
