@@ -8,5 +8,8 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType
 	IEnvironmentPortType
 	{
 	   //metdos da porta
+
+		int[] getResultVerification();
+
 	}
 }

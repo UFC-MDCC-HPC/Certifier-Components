@@ -34,6 +34,9 @@
     <Reference Include="DGAC">
       <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\DGAC.dll</HintPath>
     </Reference>
+    <Reference Include="MPI">
+      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\MPI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +96,10 @@
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2\br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2\br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2.csproj">
       <Project>{5E4C6006-E2D0-48DE-AA11-AEA835998999}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl.csproj">
+      <Project>{58E752B1-C03E-4331-A7AE-A7CF6F211614}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

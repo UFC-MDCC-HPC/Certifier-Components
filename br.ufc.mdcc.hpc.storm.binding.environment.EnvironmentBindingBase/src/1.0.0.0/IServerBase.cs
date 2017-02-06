@@ -6,6 +6,6 @@ namespace br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase
 	public interface IServerBase<S> : BaseIServerBase<S>
 		where S:IEnvironmentPortType
 	{
-		S Server { set; }
+		S Server { set; get;}
 	}
 }

@@ -7,5 +7,9 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort
 	public interface IVerifyServerPort<S> : BaseIVerifyServerPort<S>, IServerBase<S>
 		where S:IVerifyDataPortServerType
 	{
+
+
 	}
+
+
 }

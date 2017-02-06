@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000a339213bf1da97078c1e8ec31fa816bbc784ce73708a0a31a134003023aed47c7b4591db8681a3368d71148ead1c517661ba866ab1136cc2f9e0e698e7b38808cef0ee439f9308c0733f74e68fc6f2e4d93f5bdad074c24290aee64aa66c17550040fcd165091313a170efc23264a20dd7cb66d76f4b49a3c5a5c654c4de048c" isAbstract="true" kind="Computation" name="Certifier" packagePath="br.ufc.mdcc.hpc.shelf.certifier">
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <innerComponent localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="264" y="228">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <parameter formFieldId="client_port_type" varName="C"/>
+      <unitBounds parallel="false" uRef="client">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+      <unitBounds parallel="false" uRef="server">
+        <visualDescription h="20" w="20" x="28" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+      <visualDescription h="60" w="100" x="171" y="332">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="task_port_type" varName="T"/>
+      <unitBounds parallel="true" uRef="peer">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <unit facet="0" multiple="true" private="false" replica="0" uRef="Certifier" visibleInterface="false">
+      <visualDescription h="40" w="80" x="254" y="96"/>
+    </unit>
+  </componentInfo>
+</component:component>

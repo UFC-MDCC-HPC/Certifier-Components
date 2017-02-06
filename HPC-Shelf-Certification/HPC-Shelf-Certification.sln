@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl", "..\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl\br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl.csproj", "{83DEA083-5F8F-42BC-A1A0-BB6DA811C5CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl", "..\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl.csproj", "{58E752B1-C03E-4331-A7AE-A7CF6F211614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -59,6 +61,10 @@ Global
 		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Debug|x86.Build.0 = Debug|Any CPU
 		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Release|x86.ActiveCfg = Release|Any CPU
 		{4BB52CBE-64B0-4E9C-812F-921ED3FB87AF}.Release|x86.Build.0 = Release|Any CPU
+		{58E752B1-C03E-4331-A7AE-A7CF6F211614}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{58E752B1-C03E-4331-A7AE-A7CF6F211614}.Debug|x86.Build.0 = Debug|Any CPU
+		{58E752B1-C03E-4331-A7AE-A7CF6F211614}.Release|x86.ActiveCfg = Release|Any CPU
+		{58E752B1-C03E-4331-A7AE-A7CF6F211614}.Release|x86.Build.0 = Release|Any CPU
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Debug|x86.ActiveCfg = Debug|x86
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Debug|x86.Build.0 = Debug|x86
 		{5DE6F12B-BDE1-451B-97AE-910C417E8489}.Release|x86.ActiveCfg = Release|x86

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/allberson/hpe/root/cache" default="all" name="VerifyDataPortImpl">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="VerifyDataPortImpl-1.0.0.0">
+    <ifnot targetexists="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0">
+      <mkdir dir="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/VerifyDataPortImpl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0/BaseIVerifyClientPort.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/BaseIVerifyClientPort.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType/bin/1.0.0.0/IEnvironmentPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIClientBase.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/VerifyDataPortImpl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0/IVerifyClientPort.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/IVerifyClientPort.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0/BaseIVerifyClientPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IClientBase.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/VerifyDataPortImpl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0/BaseIVerifyServerPort.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/BaseIVerifyServerPort.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType/bin/1.0.0.0/IEnvironmentPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIVerifyServerPort.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/VerifyDataPortImpl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0/IVerifyServerPort.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/IVerifyServerPort.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/bin/1.0.0.0/BaseIVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="VerifyDataPortImpl-1.0.0.0" name="all"/>
+</project>
