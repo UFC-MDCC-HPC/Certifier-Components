@@ -1,4 +1,5 @@
 using System;
+
 using br.ufc.pargo.hpe.backend.DGAC;
 using br.ufc.pargo.hpe.basic;
 using br.ufc.pargo.hpe.kinds;
@@ -24,23 +25,25 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 		public int status_verification=75;
 		public int number_thread=0; 
 		public string mCRL2_file; 
+		public int num_properties;
+		public int index_my_first_prop;
+
+		public string path;
+		public int number_units_tactical;
+		public int[] properties_status;
 
 		public bool verification_is_inconclusive = false;
 		//public int[] properties_status;// status da prova das propriedades
 		public int number_prop_consumed=0;
-		public int number_units_tactical;
 		public int [] num_properties_thread;
-		public string path;
 		public int status_verification_properties=76;
 	
-		public IVerifyServerPort vsp; 
-		//public ConcurrentDictionary <string,int> properties_status2;
+	
 		public override void main()
 		{   
 
+			while(true){
 
-			vsp = new IVerifyServerPort ();
-			
 
 			Verify.invoke (IVerify.VERIFY_PERFORM);
 			invoke_verify_perform ();
@@ -52,9 +55,48 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 				Verify.invoke (IVerify.VERIFY_INCONCLUSIVE);
 			}
 			//sendStatusVerification ();
+			}
 		}
 
 
+		void setMcrl2File(ref string filename){
+			mCRL2_file = filename;
+			path =System.Environment.GetEnvironmentVariable("PATH_TAC_MCRL2_EXEC");
+			Console.WriteLine("path " + path); 
+			File.WriteAllText(@path+"/workflow.mcrl2", mCRL2_file);
+
+		}
+		void setNumProperties(int number){
+
+			num_properties = number;
+		}
+
+		void setIndexMyFirstProp(int index){
+
+			index_my_first_prop = index;
+
+			number_units_tactical = this.Size - 1;
+			//number_units_tactical = Communicator.world.Size - 1;
+
+			Console.WriteLine ("rank tactical "+ this.Rank + " num prop:" + num_properties);
+			property_files = new string[num_properties];
+		}
+		void setPropertyFiles(ref string [] files){
+			
+			property_files = files;
+
+			int index_property;
+			for (int i=0; i<num_properties; i++) {
+				index_property =  index_my_first_prop + i;
+
+				File.WriteAllText(@path+"/properties/property"+index_property+".mcf", property_files[i]);
+				Console.WriteLine (this.Rank + " " + "property"+index_property+".mcf" + "\n"+property_files[i]);
+			}
+			properties_status = new int[num_properties];
+
+			Console.WriteLine ("recebi tudo :" + this.Rank);
+
+		}
 
 		public void invoke_verify_perform(){
 
@@ -67,12 +109,12 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 			if (num_threads > 1) {
 				num_properties_thread = new int[num_threads];
 				Thread[] threadv = new Thread[num_threads];
-				int offset = (int)Math.Ceiling ((double)vsp.num_properties / num_threads);
-				Console.WriteLine ("Rank ThreadOffset number_properties_unit " + this.Rank + " " + offset + " " + vsp.num_properties);
+				int offset = (int)Math.Ceiling ((double)num_properties / num_threads);
+				Console.WriteLine ("Rank ThreadOffset number_properties_unit " + this.Rank + " " + offset + " " + num_properties);
 				//assumo que cada nó de processamento possui 2 núcleos
 
 				// "gnome-terminal -x bash -ic 'cd $HOME; ls; bash'";
-				int num_properties_aux = vsp.num_properties;
+				int num_properties_aux = num_properties;
 				//string command = "run.sh" + mCRL2_file;
 				for (int i = 0; i < num_threads; i++) {
 					if (num_properties_aux > offset) {
@@ -93,10 +135,10 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 							number_prop_consumed += num_properties_thread [my_number_thread];
 						}
 						int index_property;
-						Console.WriteLine ("TACTICAL MCRL2 - CREATING THREAD: " + my_number_thread + " from " + this.Rank + " num properties " + vsp.num_properties + " num properties thread " + num_properties_thread [my_number_thread]);
+						Console.WriteLine ("TACTICAL MCRL2 - CREATING THREAD: " + my_number_thread + " from " + this.Rank + " num properties " + num_properties + " num properties thread " + num_properties_thread [my_number_thread]);
 						for (int j = 0; j < num_properties_thread [my_number_thread]; j++) {
 
-							index_property = vsp.index_my_first_prop + prop + j;
+							index_property = index_my_first_prop + prop + j;
 
 
 							Console.WriteLine ("Thread " + my_number_thread + " from " + this.Rank + " dealing with property " + "property" + index_property + ".mcf");
@@ -105,7 +147,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 							int result = t.run ();
 							Console.WriteLine ("Thread" + my_number_thread + " de " + this.Rank + ":Result of verification of property " + "property" + index_property + ".mcf" + ": " + result + " storing status for " + (prop + j));
 							//	Console.WriteLine("Storing status of index );
-							vsp.properties_status [prop + j] = result;
+							properties_status [prop + j] = result;
 							//lock(this){
 							//properties_status[index_property] = result;
 							//properties_status2.TryAdd(index_property+".mcf", result);
@@ -127,18 +169,18 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 					threadv [i].Join ();
 				}
 			} else {
-				for (int j = 0; j < vsp.num_properties; j++) {
+				for (int j = 0; j < num_properties; j++) {
 
 
 
 
-					Console.WriteLine ( this.Rank + " dealing with property " + "property" + (vsp.index_my_first_prop+j) + ".mcf");
+					Console.WriteLine ( this.Rank + " dealing with property " + "property" + (index_my_first_prop+j) + ".mcf");
 
-					TacticalAdaptermCRL2 t = new TacticalAdaptermCRL2 (path, "workflow.mcrl2", "property" + (vsp.index_my_first_prop+j) + ".mcf");
+					TacticalAdaptermCRL2 t = new TacticalAdaptermCRL2 (path, "workflow.mcrl2", "property" + (index_my_first_prop+j) + ".mcf");
 					int result = t.run ();
-					Console.WriteLine (this.Rank + ":Resultado da verificação da propriedade " + "property" + (vsp.index_my_first_prop+j) + ".mcf" + ": " + result + " storing status for " + j);
+					Console.WriteLine (this.Rank + ":Resultado da verificação da propriedade " + "property" + (index_my_first_prop+j) + ".mcf" + ": " + result + " storing status for " + j);
 					//	Console.WriteLine("Storing status of index );
-					vsp.properties_status [j] = result;
+					properties_status [j] = result;
 					//lock(this){
 					//properties_status[index_property] = result;
 					//properties_status2.TryAdd(index_property+".mcf", result);
