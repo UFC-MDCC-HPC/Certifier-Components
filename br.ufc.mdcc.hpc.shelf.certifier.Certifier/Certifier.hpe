@@ -8,7 +8,7 @@
   </header>
   <componentInfo>
     <innerComponent localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
-      <visualDescription h="60" w="100" x="264" y="228">
+      <visualDescription h="60" w="100" x="355" y="182">
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="server_port_type" varName="S"/>
@@ -21,7 +21,7 @@
       </unitBounds>
     </innerComponent>
     <innerComponent localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
-      <visualDescription h="60" w="100" x="171" y="332">
+      <visualDescription h="60" w="100" x="164" y="230">
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="task_port_type" varName="T"/>
@@ -30,7 +30,7 @@
       </unitBounds>
     </innerComponent>
     <unit facet="0" multiple="true" private="false" replica="0" uRef="Certifier" visibleInterface="false">
-      <visualDescription h="40" w="80" x="254" y="96"/>
+      <visualDescription h="40" w="80" x="146" y="90"/>
     </unit>
   </componentInfo>
 </component:component>

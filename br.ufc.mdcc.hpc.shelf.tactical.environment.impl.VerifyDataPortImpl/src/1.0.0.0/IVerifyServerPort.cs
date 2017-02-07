@@ -24,9 +24,9 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 		public int[] properties_status;
 		public override void main()
 		{  
-
-			setData();
-
+			while (true) {
+				setData ();
+			}
 
 		
 		}
