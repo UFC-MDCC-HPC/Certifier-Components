@@ -7,7 +7,10 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType
 	public interface IVerifyDataPortClientType : BaseIVerifyDataPortClientType, 
 	IEnvironmentPortType
 	{
-	  
+		void setMcrl2File(ref string filename);
+		void setNumProperties(int number);
+		void setIndexMyFirstProp (int index);
+		void setPropertyFiles(ref string [] files);
 
 	}
 }

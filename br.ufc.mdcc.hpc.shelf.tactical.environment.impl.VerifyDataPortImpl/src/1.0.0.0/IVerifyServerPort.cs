@@ -14,16 +14,37 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 	IVerifyServerPort<IVerifyDataPortServerType>
 	{   
 		public int certifier = 0; 
+		public int operation, operation_tag = 1 ;
 		public string mCRL2_file;
 		public int dataCertifierTactical = 71; 
 		public string []property_files; 
 		public override void main()
 		{  
 			while (true) {
-				setMcrl2File ();
-				setNumProperties ();
-				setIndexMyFirstProp ();
-				setPropertyFiles();
+				
+
+				operation = channel.Receive<int> (certifier, operation_tag);
+				switch(operation){
+
+				case 0:
+					setMcrl2File ();
+					break;
+ 					
+				case 1:	setNumProperties ();
+					break;
+					
+				case 2:setIndexMyFirstProp ();
+					break;
+					
+				case 3: setPropertyFiles();
+					break;
+
+
+				}
+			
+			
+
+
 
 			}
 
@@ -31,7 +52,7 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 		}
 	
 		public void setMcrl2File(){
-			channel.Broadcast<string>(ref mCRL2_file,certifier);
+			mCRL2_file = channel.Receive<string>(certifier, dataCertifierTactical);
 			service.setMcrl2File(ref mCRL2_file);
 		}
 		void setNumProperties(){
