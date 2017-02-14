@@ -24,7 +24,10 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 			
 		}
 
-
+		public int getRemoteSize(){
+			return channel.RemoteSize;
+		
+		}
 
 		public void setMcrl2File(ref string mCRL2_file){
 			for (int s = 0; s < channel.RemoteSize; s++) {
@@ -33,23 +36,23 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 
 
 		}
-		void setNumProperties(int numProperties){
+		void setNumProperties(int destination, int numProperties){
 
-			for (int s = 0; s < channel.RemoteSize; s++) {
-				channel.Send<int>(numProperties, s, dataCertifierTactical);
-			}
+
+			channel.Send<int>(numProperties, destination, dataCertifierTactical);
+
 		}
-		void setIndexMyFirstProp(int indexMyFirstProp){
+		void setIndexMyFirstProp(int destination, int indexMyFirstProp){
 
-			for (int s = 0; s < channel.RemoteSize; s++) {
-				channel.Send<int>(indexMyFirstProp, s, dataCertifierTactical);
-			}
+
+			channel.Send<int>(indexMyFirstProp, destination, dataCertifierTactical);
+
 		}
 
-		void setPropertyFiles(ref string [] property_files){
-			for (int s = 0; s < channel.RemoteSize; s++) {
-				channel.Send<string>(property_files, s, dataCertifierTactical);
-			}
+		void setPropertyFiles(int destination, ref string [] property_files){
+			
+			channel.Send<string>(property_files, destination, dataCertifierTactical);
+
 
 		}
 

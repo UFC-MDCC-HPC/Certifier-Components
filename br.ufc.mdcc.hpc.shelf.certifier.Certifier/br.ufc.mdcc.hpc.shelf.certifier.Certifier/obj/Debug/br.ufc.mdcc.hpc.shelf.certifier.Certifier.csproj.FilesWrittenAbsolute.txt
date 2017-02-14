@@ -1,0 +1,8 @@
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/br.ufc.mdcc.hpc.shelf.certifier.Certifier.dll.mdb
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/br.ufc.mdcc.hpc.shelf.certifier.Certifier.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/obj/Debug/br.ufc.mdcc.hpc.shelf.certifier.Certifier.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/obj/Debug/br.ufc.mdcc.hpc.shelf.certifier.Certifier.dll.mdb
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/DGAC.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/MPI.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/MySql.Data.dll

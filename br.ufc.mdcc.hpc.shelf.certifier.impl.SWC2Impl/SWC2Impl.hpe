@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000019aa69e7ca7be3ee4825e96509c7b6463c663fe4244c8e30ce5f1beb9a682f50e464d312d1d0847f4f49f307d378417320aacf3c92d4d24ea22e23f2bcd0ca62c14f47328609a3b87bb6380818d4595a7eb42567ccfab53ef958a095a7f85d3efb282dda86ef5b2255e1507f5ebd1604bed356a1f8f055c9a024b2da414e3cb3" isAbstract="false" kind="Computation" name="SWC2Impl" packagePath="br.ufc.mdcc.hpc.shelf.certifier.impl">
+    <baseType>
+      <extensionType>
+        <implements>true</implements>
+      </extensionType>
+      <component hash_component_UID="00240000048000009400000006020000002400005253413100040000110000006bb7641a8d6c6038cc0995f9adc25bb40c27df77feb45dc060afcfb572026b828bd6198104923a6d41e14ab333f5157c386594f82870808552926a4dfc8e9068230cd80d4ef95ea485ec12420214e1ae7c2b55ba9e3be924adff3fcf90e62cb8d29cf24dca16ebf75e5dfddba574ab5fb50d6317dd1202fbfbf38ff2700ecbcb" localRef="base" location="br.ufc.mdcc.hpc.shelf.certifier.SWC2/SWC2.hpe" name="SWC2" package="br.ufc.mdcc.hpc.shelf.certifier" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="142" y="307">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="true" uRef="SWC2">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="ISWC2Impl" nArgs="0">
+      <slice isRef="verify_data1">
+        <originRef cRef="verify_data1" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="27" y="18"/>
+      </slice>
+      <slice isRef="verify_data2">
+        <originRef cRef="verify_data2" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="44" y="21"/>
+      </slice>
+      <slice isRef="verify_data3">
+        <originRef cRef="verify_data3" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="33" y="21"/>
+      </slice>
+      <slice isRef="verify_data4">
+        <originRef cRef="verify_data4" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="17" y="10"/>
+      </slice>
+      <slice isRef="verify1">
+        <originRef cRef="verify1" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="9" y="27"/>
+      </slice>
+      <slice isRef="verify2">
+        <originRef cRef="verify2" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="29" y="17"/>
+      </slice>
+      <slice isRef="verify3">
+        <originRef cRef="verify3" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="45" y="20"/>
+      </slice>
+      <slice isRef="verify4">
+        <originRef cRef="verify4" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="49" y="23"/>
+      </slice>
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.SWC2;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl &#xA;{&#xA;&#x9;public abstract class BaseISWC2Impl: Computation, BaseICertifier&#xA;&#x9;{&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data1 = null;&#xA;&#xA;&#x9;&#x9;protected IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data1&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data1 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data1 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data1&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data1;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data2 = null;&#xA;&#xA;&#x9;&#x9;protected IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data2&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data2 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data2 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data2&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data2;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data3 = null;&#xA;&#xA;&#x9;&#x9;protected IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data3&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data3 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data3 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data3&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data3;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data4 = null;&#xA;&#xA;&#x9;&#x9;protected IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data4&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data4 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data4 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data4&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data4;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify1 = null;&#xA;&#xA;&#x9;&#x9;protected ITaskPort&lt;IVerifyPortType> Verify1&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify1 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify1 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify1&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify1;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify2 = null;&#xA;&#xA;&#x9;&#x9;protected ITaskPort&lt;IVerifyPortType> Verify2&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify2 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify2 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify2&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify2;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify3 = null;&#xA;&#xA;&#x9;&#x9;protected ITaskPort&lt;IVerifyPortType> Verify3&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify3 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify3 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify3&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify3;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify4 = null;&#xA;&#xA;&#x9;&#x9;protected ITaskPort&lt;IVerifyPortType> Verify4&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify4 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify4 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify4&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify4;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}" name="BaseISWC2Impl.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/1.0.0.0/BaseISWC2Impl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyClientPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.certifier.SWC2/bin/1.0.0.0/BaseICertifier.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.SWC2;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl&#xA;{&#xA;&#x9;public class ISWC2Impl : BaseISWC2Impl, ICertifier&#xA;&#x9;{&#xA;&#x9;&#x9;public override void main()&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;" name="ISWC2Impl.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/1.0.0.0/ISWC2Impl.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/1.0.0.0/BaseISWC2Impl.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.certifier.SWC2/bin/1.0.0.0/ICertifier.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="80" x="202" y="67">
+        <color b="255" g="0" r="0"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="ISWC2Impl" multiple="true" private="false" replica="0" uRef="SWC2" visibleInterface="true">
+      <super cRef="base" uRef="SWC2"/>
+      <visualDescription h="40" w="80" x="139" y="153"/>
+    </unit>
+  </componentInfo>
+</component:component>

@@ -8,9 +8,10 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType
 	IEnvironmentPortType
 	{
 		void setMcrl2File(ref string filename);
-		void setNumProperties(int number);
-		void setIndexMyFirstProp (int index);
-		void setPropertyFiles(ref string [] files);
+		void setNumProperties(int destination, int number);
+		void setIndexMyFirstProp (int destination, int index);
+		void setPropertyFiles(int destination, ref string [] files);
+		int getRemoteSize ();
 
 	}
 }

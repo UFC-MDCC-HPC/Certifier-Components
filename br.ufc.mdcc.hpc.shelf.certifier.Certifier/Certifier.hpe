@@ -7,30 +7,22 @@
     </visualAttributes>
   </header>
   <componentInfo>
-    <innerComponent localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
-      <visualDescription h="60" w="100" x="355" y="182">
-        <color b="255" g="255" r="255"/>
+    <interface iRef="ICertifier" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.Certifier&#xA;{&#xA;&#x9;public interface BaseICertifier : IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseICertifier.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/BaseICertifier.dll" versionId="1.0.0.0"/>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.Certifier&#xA;{&#xA;&#x9;public interface ICertifier : BaseICertifier&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="ICertifier.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/ICertifier.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/BaseICertifier.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="80" x="198" y="34">
+        <color b="128" g="128" r="128"/>
       </visualDescription>
-      <parameter formFieldId="server_port_type" varName="S"/>
-      <parameter formFieldId="client_port_type" varName="C"/>
-      <unitBounds parallel="false" uRef="client">
-        <visualDescription h="20" w="20" x="5" y="2"/>
-      </unitBounds>
-      <unitBounds parallel="false" uRef="server">
-        <visualDescription h="20" w="20" x="28" y="2"/>
-      </unitBounds>
-    </innerComponent>
-    <innerComponent localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
-      <visualDescription h="60" w="100" x="164" y="230">
-        <color b="255" g="255" r="255"/>
-      </visualDescription>
-      <parameter formFieldId="task_port_type" varName="T"/>
-      <unitBounds parallel="true" uRef="peer">
-        <visualDescription h="20" w="20" x="5" y="2"/>
-      </unitBounds>
-    </innerComponent>
-    <unit facet="0" multiple="true" private="false" replica="0" uRef="Certifier" visibleInterface="false">
-      <visualDescription h="40" w="80" x="146" y="90"/>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="ICertifier" multiple="true" private="false" replica="0" uRef="Certifier" visibleInterface="true">
+      <visualDescription h="40" w="80" x="198" y="114"/>
     </unit>
   </componentInfo>
 </component:component>
