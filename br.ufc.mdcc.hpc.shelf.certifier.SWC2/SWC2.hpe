@@ -20,7 +20,7 @@
     </visualAttributes>
   </header>
   <componentInfo>
-    <innerComponent localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="185" y="298">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -33,7 +33,7 @@
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="295" y="293">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -46,7 +46,7 @@
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="74" y="281">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -59,7 +59,7 @@
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="405" y="281">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -88,7 +88,7 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify1" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+    <innerComponent localRef="verify1" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
       <visualDescription h="60" w="100" x="16" y="354">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -97,7 +97,7 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify2" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+    <innerComponent localRef="verify2" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
       <visualDescription h="60" w="100" x="112" y="407">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -106,7 +106,7 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify3" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+    <innerComponent localRef="verify3" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
       <visualDescription h="60" w="100" x="263" y="418">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -115,7 +115,7 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify4" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+    <innerComponent localRef="verify4" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
       <visualDescription h="60" w="100" x="403" y="410">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -136,21 +136,21 @@
     <supplyParameter cRef="verify_data_port_server_type" direct="true" varName="S"/>
     <supplyParameter cRef="verify_port_type" direct="true" varName="T"/>
     <interface iRef="ISWC2" nArgs="0">
-      <slice isRef="verify_data1">
-        <originRef cRef="verify_data1" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="27" y="18"/>
-      </slice>
-      <slice isRef="verify_data2">
-        <originRef cRef="verify_data2" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="44" y="21"/>
+      <slice isRef="verify_data4">
+        <originRef cRef="verify_data4" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="17" y="10"/>
       </slice>
       <slice isRef="verify_data3">
         <originRef cRef="verify_data3" iRef="IVerifyClientPort"/>
         <visualDescription h="10" w="10" x="33" y="21"/>
       </slice>
-      <slice isRef="verify_data4">
-        <originRef cRef="verify_data4" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="17" y="10"/>
+      <slice isRef="verify_data2">
+        <originRef cRef="verify_data2" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="44" y="21"/>
+      </slice>
+      <slice isRef="verify_data1">
+        <originRef cRef="verify_data1" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="27" y="18"/>
       </slice>
       <slice isRef="verify1">
         <originRef cRef="verify1" iRef="ITaskPort"/>
@@ -180,23 +180,55 @@
       <visualDescription h="40" w="80" x="354" y="43">
         <color b="255" g="0" r="0"/>
       </visualDescription>
+      <port name="verify_data4">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data4" sRef="verify_data4"/>
+      </port>
+      <port name="verify_data3">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data3" sRef="verify_data3"/>
+      </port>
+      <port name="verify_data2">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data2" sRef="verify_data2"/>
+      </port>
+      <port name="verify_data1">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data1" sRef="verify_data1"/>
+      </port>
+      <port name="verify1">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify1" sRef="verify1"/>
+      </port>
+      <port name="verify2">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify2" sRef="verify2"/>
+      </port>
+      <port name="verify3">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify3" sRef="verify3"/>
+      </port>
+      <port name="verify4">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify4" sRef="verify4"/>
+      </port>
       <action id="main">
         <protocol/>
       </action>
     </interface>
     <unit facet="0" iRef="ISWC2" multiple="true" private="false" replica="0" uRef="SWC2" visibleInterface="true">
       <super cRef="base" uRef="Certifier"/>
-      <slices cRef="verify_data1" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data1" transitive="false">
-        <visualDescription h="10" w="10" x="27" y="18"/>
-      </slices>
-      <slices cRef="verify_data2" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data2" transitive="false">
-        <visualDescription h="10" w="10" x="44" y="21"/>
+      <slices cRef="verify_data4" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data4" transitive="false">
+        <visualDescription h="10" w="10" x="17" y="10"/>
       </slices>
       <slices cRef="verify_data3" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data3" transitive="false">
         <visualDescription h="10" w="10" x="33" y="21"/>
       </slices>
-      <slices cRef="verify_data4" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data4" transitive="false">
-        <visualDescription h="10" w="10" x="17" y="10"/>
+      <slices cRef="verify_data2" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data2" transitive="false">
+        <visualDescription h="10" w="10" x="44" y="21"/>
+      </slices>
+      <slices cRef="verify_data1" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data1" transitive="false">
+        <visualDescription h="10" w="10" x="27" y="18"/>
       </slices>
       <slices cRef="verify1" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify1" transitive="false">
         <visualDescription h="10" w="10" x="9" y="27"/>

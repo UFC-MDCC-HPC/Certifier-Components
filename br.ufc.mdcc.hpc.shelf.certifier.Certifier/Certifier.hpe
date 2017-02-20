@@ -21,7 +21,7 @@
         <protocol/>
       </action>
     </interface>
-    <unit facet="0" iRef="ICertifier" multiple="true" private="false" replica="0" uRef="Certifier" visibleInterface="true">
+    <unit facet="0" iRef="ICertifier" multiple="false" private="false" replica="0" uRef="Certifier" visibleInterface="true">
       <visualDescription h="40" w="80" x="198" y="114"/>
     </unit>
   </componentInfo>
