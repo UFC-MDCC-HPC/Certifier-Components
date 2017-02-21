@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b30734546701c5793cd20cd7eb2ad7a6a4b9bc13c935176ea1e2a0ff25c1ddcc3b3a56e5c732702ab7ca89b90557500df26600d9e47cefe0cb50e1977025b2c89cbafb1ff840f4129e443d1563f80139a9551daa3f0b7536b95fe5fc35411c24a055e2e92fcdaad65a9632e016bf1e58b2dee1578f968635b7f1e99e3a8f5f9f" isAbstract="true" kind="Computation" name="C4" packagePath="br.ufc.mdcc.hpc.shelf.certifier">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000a339213bf1da97078c1e8ec31fa816bbc784ce73708a0a31a134003023aed47c7b4591db8681a3368d71148ead1c517661ba866ab1136cc2f9e0e698e7b38808cef0ee439f9308c0733f74e68fc6f2e4d93f5bdad074c24290aee64aa66c17550040fcd165091313a170efc23264a20dd7cb66d76f4b49a3c5a5c654c4de048c" localRef="base" location="br.ufc.mdcc.hpc.shelf.certifier.Certifier/Certifier.hpe" name="Certifier" package="br.ufc.mdcc.hpc.shelf.certifier" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="30" y="122">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="false" uRef="Certifier">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <innerComponent localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="80" w="95" x="24" y="261">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <parameter formFieldId="client_port_type" varName="C"/>
+      <unitBounds parallel="false" uRef="client">
+        <visualDescription h="19" w="19" x="14" y="13"/>
+      </unitBounds>
+      <unitBounds parallel="false" uRef="server">
+        <visualDescription h="20" w="20" x="37" y="12"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="143" y="259">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <parameter formFieldId="client_port_type" varName="C"/>
+      <unitBounds parallel="false" uRef="client">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+      <unitBounds parallel="false" uRef="server">
+        <visualDescription h="20" w="20" x="28" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="257" y="249">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <parameter formFieldId="client_port_type" varName="C"/>
+      <unitBounds parallel="false" uRef="client">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+      <unitBounds parallel="false" uRef="server">
+        <visualDescription h="20" w="20" x="28" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="372" y="254">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <parameter formFieldId="client_port_type" varName="C"/>
+      <unitBounds parallel="false" uRef="client">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+      <unitBounds parallel="false" uRef="server">
+        <visualDescription h="20" w="20" x="28" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify1" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+      <visualDescription h="60" w="100" x="39" y="378">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="task_port_type" varName="T"/>
+      <unitBounds parallel="true" uRef="peer">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify2" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+      <visualDescription h="60" w="100" x="161" y="388">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="task_port_type" varName="T"/>
+      <unitBounds parallel="true" uRef="peer">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify3" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+      <visualDescription h="60" w="100" x="289" y="381">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="task_port_type" varName="T"/>
+      <unitBounds parallel="true" uRef="peer">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify4" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
+      <visualDescription h="60" w="100" x="412" y="387">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <parameter formFieldId="task_port_type" varName="T"/>
+      <unitBounds parallel="true" uRef="peer">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="client" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/VerifyDataPortClientType.hpe" multiple="false" name="VerifyDataPortClientType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="70" y="324">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="server" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/VerifyDataPortServerType.hpe" multiple="false" name="VerifyDataPortServerType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="266" y="329">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
+      <visualDescription h="60" w="100" x="86" y="480">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="task_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="client" direct="true" varName="C"/>
+    <supplyParameter cRef="server" direct="true" varName="S"/>
+    <supplyParameter cRef="verify" direct="true" varName="T"/>
+    <interface iRef="IC4" nArgs="0">
+      <visualDescription h="40" w="80" x="198" y="34">
+        <color b="255" g="0" r="0"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="IC4" multiple="false" private="false" replica="0" uRef="C4" visibleInterface="false">
+      <super cRef="base" uRef="Certifier"/>
+      <visualDescription h="40" w="80" x="269" y="59"/>
+    </unit>
+  </componentInfo>
+</component:component>

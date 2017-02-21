@@ -6,7 +6,7 @@
         <extends>true</extends>
       </extensionType>
       <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000a339213bf1da97078c1e8ec31fa816bbc784ce73708a0a31a134003023aed47c7b4591db8681a3368d71148ead1c517661ba866ab1136cc2f9e0e698e7b38808cef0ee439f9308c0733f74e68fc6f2e4d93f5bdad074c24290aee64aa66c17550040fcd165091313a170efc23264a20dd7cb66d76f4b49a3c5a5c654c4de048c" localRef="base" location="br.ufc.mdcc.hpc.shelf.certifier.Certifier/Certifier.hpe" name="Certifier" package="br.ufc.mdcc.hpc.shelf.certifier" version="1.0.0.0">
-        <visualDescription h="60" w="100" x="85" y="173">
+        <visualDescription h="60" w="100" x="26" y="99">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <unitBounds parallel="true" uRef="Certifier">
@@ -21,7 +21,7 @@
   </header>
   <componentInfo>
     <innerComponent localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-      <visualDescription h="60" w="100" x="185" y="298">
+      <visualDescription h="60" w="100" x="177" y="269">
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="server_port_type" varName="S"/>
@@ -47,7 +47,7 @@
       </unitBounds>
     </innerComponent>
     <innerComponent localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-      <visualDescription h="60" w="100" x="74" y="281">
+      <visualDescription h="60" w="100" x="40" y="199">
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="server_port_type" varName="S"/>
