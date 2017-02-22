@@ -6,10 +6,10 @@
         <extends>true</extends>
       </extensionType>
       <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000a339213bf1da97078c1e8ec31fa816bbc784ce73708a0a31a134003023aed47c7b4591db8681a3368d71148ead1c517661ba866ab1136cc2f9e0e698e7b38808cef0ee439f9308c0733f74e68fc6f2e4d93f5bdad074c24290aee64aa66c17550040fcd165091313a170efc23264a20dd7cb66d76f4b49a3c5a5c654c4de048c" localRef="base" location="br.ufc.mdcc.hpc.shelf.certifier.Certifier/Certifier.hpe" name="Certifier" package="br.ufc.mdcc.hpc.shelf.certifier" version="1.0.0.0">
-        <visualDescription h="60" w="100" x="26" y="99">
+        <visualDescription h="60" w="100" x="13" y="112">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <unitBounds parallel="true" uRef="Certifier">
+        <unitBounds parallel="false" uRef="Certifier">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
       </component>
@@ -177,7 +177,7 @@
           <dependency>br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/ICertifier.dll</dependency>
         </file>
       </sources>
-      <visualDescription h="40" w="80" x="354" y="43">
+      <visualDescription h="40" w="80" x="251" y="53">
         <color b="255" g="0" r="0"/>
       </visualDescription>
       <port name="verify_data4">
@@ -216,7 +216,7 @@
         <protocol/>
       </action>
     </interface>
-    <unit facet="0" iRef="ISWC2" multiple="true" private="false" replica="0" uRef="SWC2" visibleInterface="true">
+    <unit facet="0" iRef="ISWC2" multiple="false" private="false" replica="0" uRef="SWC2" visibleInterface="true">
       <super cRef="base" uRef="Certifier"/>
       <slices cRef="verify_data4" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data4" transitive="false">
         <visualDescription h="10" w="10" x="17" y="10"/>

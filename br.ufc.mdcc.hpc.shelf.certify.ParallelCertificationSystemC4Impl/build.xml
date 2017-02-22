@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/allberson/hpe/root/cache" default="all" name="ParallelCertificationSystemC4Impl">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="ParallelCertificationSystemC4Impl-1.0.0.0">
+    <ifnot targetexists="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0">
+      <mkdir dir="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIRoot.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/BaseIRoot.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyClientPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll"/>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/IC4.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/BaseIRoot.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/IRoot.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IRoot.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIRoot.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/IRoot.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer1.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/BaseIPeer1.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/IParTypes.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/BaseIPeer1.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/IPeer1.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer1.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer1.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/IPeer1.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer2.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/BaseIPeer2.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/IISP.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/BaseIPeer2.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/IPeer2.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer2.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer2.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/IPeer2.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer3.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/BaseIPeer3.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/IParTypes.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/BaseIPeer3.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/IPeer3.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer3.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer3.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/IPeer3.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer4.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/BaseIPeer4.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/IISP.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/BaseIPeer4.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/ParallelCertificationSystemC4Impl.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/IPeer4.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer4.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/bin/1.0.0.0/BaseIPeer4.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4/bin/1.0.0.0/IPeer4.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="ParallelCertificationSystemC4Impl-1.0.0.0" name="all"/>
+</project>
