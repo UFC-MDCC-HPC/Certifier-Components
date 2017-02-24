@@ -9,6 +9,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;
 using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;
 using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
 using br.ufc.mdcc.hpc.shelf.certifier.C4;
+using br.ufc.mdcc.hpc.shelf.certifier.Certifier;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl 
 {

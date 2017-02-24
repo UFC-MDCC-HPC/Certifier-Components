@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19945C60-4E24-4D1F-ADDC-58DAB515880D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl</RootNamespace>
+    <AssemblyName>br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\ParallelCertificationSystemC4Impl.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\src\1.0.0.0\IPeer4.cs">
+      <Link>IPeer4.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIPeer4.cs">
+      <Link>BaseIPeer4.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\IPeer3.cs">
+      <Link>IPeer3.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIPeer3.cs">
+      <Link>BaseIPeer3.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\IPeer2.cs">
+      <Link>IPeer2.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIPeer2.cs">
+      <Link>BaseIPeer2.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\IPeer1.cs">
+      <Link>IPeer1.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIPeer1.cs">
+      <Link>BaseIPeer1.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\IRoot.cs">
+      <Link>IRoot.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\BaseIRoot.cs">
+      <Link>BaseIRoot.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

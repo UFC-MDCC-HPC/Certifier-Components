@@ -1,14 +1,18 @@
 ﻿<Properties StartupItem="HPC-Shelf-Certification.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/IVerifyClientPort.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl/src/1.0.0.0/BaseIPeer4.cs">
     <Files>
-      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/IVerifyServerPort.cs" Line="16" Column="3" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/IVerifyClientPort.cs" Line="39" Column="61" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/IVerifyServerPort.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl/src/1.0.0.0/IVerifyClientPort.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/src/1.0.0.0/IVerifyDataPortClientType.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/src/1.0.0.0/IVerifyDataPortServerType.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.Certifier/src/1.0.0.0/BaseICertifier.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.SWC2/src/1.0.0.0/BaseISWC2.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.SWC2/src/1.0.0.0/ISWC2.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/src/1.0.0.0/BaseC4Impl.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/src/1.0.0.0/C4Impl.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/BaseIPeer4.cs" Line="36" Column="57" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl/src/1.0.0.0/BaseIPeer4.cs" Line="31" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

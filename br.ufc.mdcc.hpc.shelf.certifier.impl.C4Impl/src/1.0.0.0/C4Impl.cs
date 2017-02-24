@@ -3,6 +3,7 @@ using br.ufc.pargo.hpe.backend.DGAC;
 using br.ufc.pargo.hpe.basic;
 using br.ufc.pargo.hpe.kinds;
 using br.ufc.mdcc.hpc.shelf.certifier.C4;
+using br.ufc.mdcc.hpc.shelf.certifier.Certifier;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl
 {
