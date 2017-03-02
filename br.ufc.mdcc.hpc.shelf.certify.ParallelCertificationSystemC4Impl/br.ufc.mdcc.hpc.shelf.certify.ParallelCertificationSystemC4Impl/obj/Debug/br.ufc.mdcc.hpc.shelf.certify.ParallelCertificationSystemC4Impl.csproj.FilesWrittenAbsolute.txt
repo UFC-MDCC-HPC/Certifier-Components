@@ -1,0 +1,1 @@
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
