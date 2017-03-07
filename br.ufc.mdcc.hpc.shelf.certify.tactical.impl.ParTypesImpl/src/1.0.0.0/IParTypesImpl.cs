@@ -4,15 +4,168 @@ using br.ufc.pargo.hpe.basic;
 using br.ufc.pargo.hpe.kinds;
 using br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes;
 using System.Diagnostics;
+using br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl;
+using  br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
+using System.Threading;
+using MPI;
+
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 {
 	public class IParTypesImpl : BaseIParTypesImpl, IParTypes
 	{
+		public string []programs; 
+		public int num_programs; 
+		public string[] args_programs;
+		public int []num_units_program;
+		public int num_threads = 1;
+		public int number_thread=0; 
+		public int number_progs_consumed=0;
+		public bool verification_is_inconclusive = false;
+		public int number_programs_consumed=0;
+		public int [] num_programs_thread;
+		public string [][] programs_properties_status;
+		public string path;
+		public string []property_names;
+		public Boolean status_verification_properties;
 		public override void main()
 		{
+
+		
+			while(true){
+				Verify.invoke (IVerify.VERIFY_PERFORM);
+				invoke_verify_perform ();
+				if (!verification_is_inconclusive) {
+					status_verification_properties = this.Communicator.Allreduce(false, Operation<Boolean>.LogicalAnd);
+				} else {
+					status_verification_properties = this.Communicator.Allreduce(true, Operation<Boolean>.LogicalAnd);
+				}
+				if	(status_verification_properties) Verify.invoke (IVerify.VERIFY_CONCLUSIVE);
+				else Verify.invoke (IVerify.VERIFY_INCONCLUSIVE);
+			}
+		}
+		public void invoke_verify_perform(){
+
+			//	Communicator.world.Receive<int>(certifier,verify_perform);
+			verify_ ();
+
+		}
+
+		void setNumProgs(int number){
+			path =System.Environment.GetEnvironmentVariable("PATH_TAC_ISP_EXEC");
+			Console.WriteLine("path " + path); 
+			property_names = new string[4];
+			property_names [0] = "deadlock absence";
+			property_names [1] = "no_irrelevant_barriers";
+			property_names [2] = "no_object_leaks";
+			property_names [3] = "no_comm_races";
+
+			num_programs = number;
+
+
+			//	my_certifier_tag= Communicator.world.Receive<int>(certifier,dataCertifierTactical);
+
+			Console.WriteLine ("rank tactical "+ this.Rank + 
+				" num progs:" + num_programs);
+			programs = new string[num_programs];
+			args_programs = new string[num_programs];
+
+			num_units_program=new int[num_programs+1];
+			programs_properties_status = new string[num_programs][];
+
+		}
+
+		void setUnitsProgs(ref int [] num_units_program){
+			this.num_units_program = num_units_program;
+
+			//Communicator.world.Receive<int>(certifier,dataCertifierTactical, ref num_units_program);
+		}
+		void setArgsProgs(ref string [] args_programs){
+			this.args_programs = args_programs;
+
+			//Communicator.world.Receive<string>(certifier,dataCertifierTactical, ref args_programs);
+		}
+		void setProgs(ref string [] programs){
+			this.programs = programs;
+
+			//Communicator.world.Receive<string>(certifier,dataCertifierTactical, ref programs);
+			Console.WriteLine ("recebi tudo :" + this.Rank);
+		}
+
+		public void verify_(){
+
+			if (num_threads > 1) {
+				num_programs_thread = new int[num_threads];
+				Thread[] threadv = new Thread[num_threads];
+				int offset = (int)Math.Ceiling ((double)num_programs / num_threads);
+				Console.WriteLine ("Rank ThreadOffset number_properties_unit " + this.Rank + " " + offset + " " + num_programs);
+				int num_programs_aux = num_programs;
+				for (int i = 0; i < num_threads; i++) {
+					if (num_programs_aux > offset) {
+						num_programs_thread [i] = offset;
+						num_programs_aux -= offset;
+					} else {
+						num_programs_thread [i] = num_programs_aux;
+						num_programs_aux = 0;
+					}
+					threadv [i] = new Thread ((ThreadStart)delegate() {
+						int my_number_thread;
+						int prog;
+						lock (this) {
+							my_number_thread = number_thread;
+							number_thread++;
+							prog = number_progs_consumed;
+							number_progs_consumed += num_programs_thread [my_number_thread];
+						}
+						Console.WriteLine ("TACTICAL ISP - CREATING THREAD: " + my_number_thread + " from " + this.Rank + " num programs " + num_programs + " num programs thread " + num_programs_thread [my_number_thread]);
+						for (int j = 0; j < num_programs_thread [my_number_thread]; j++) {
+
+							Console.WriteLine ("Thread " + my_number_thread + " from " + 
+								this.Rank + 
+								" dealing with program " + programs[prog + j] );
+
+							TacticalAdapterISP t = new TacticalAdapterISP (path, programs[prog + j], 
+								num_units_program[prog + j], args_programs[prog + j], 9900+2*this.Rank + my_number_thread);
+							int result = t.run ();
+							Console.WriteLine ("Thread" + my_number_thread + " de " + this.Rank + ":Result of verification of program " +programs[prog + j]+ ": " + result + " storing status for " + (prog + j));
+							if (result == -1){
+								verification_is_inconclusive = true;
+							}
+
+							programs_properties_status[prog + j]=t.get_property_results();
+
+
+						}
+
+					});
+
+					threadv [i].Start ();
+				}
+
+				for (int i = 0; i < num_threads; i++) {
+					Console.WriteLine ("TACTICAL ISP - waiting threads : " + i + "from " + this.Rank);
+					threadv [i].Join ();
+				}
+			} else {
+				for (int j = 0; j < num_programs; j++) {
+
+					Console.WriteLine ( this.Rank + " dealing with program " + programs[j]);
+					TacticalAdapterISP t = new TacticalAdapterISP (path, programs[j], num_units_program[j], args_programs[j], 9800+2*this.Rank+j);
+					int result = t.run ();
+					Console.WriteLine ( this.Rank + ":Result of verification of program " +programs[j]+ ": " + result + " storing status for " + j);
+					if (result == -1)
+						verification_is_inconclusive = true;
+					programs_properties_status[j]=t.get_property_results();
+
+				}
+
+			}
+
+
+
+
 		}
 	}
-	 class TacticalAdapterISP
+	class TacticalAdapterISP
 
 	{  
 		string mpi_file; int number_units_mpi_file; //int result;

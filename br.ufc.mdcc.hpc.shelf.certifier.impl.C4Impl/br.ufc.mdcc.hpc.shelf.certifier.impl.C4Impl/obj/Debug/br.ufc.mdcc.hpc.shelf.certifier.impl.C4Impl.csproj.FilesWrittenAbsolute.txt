@@ -32,3 +32,7 @@
 /home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/Debug/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl.dll.mdb
 /home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/Debug/MPI.dll
 /home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/Debug/MySql.Data.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/Debug/br.ufc.mdcc.hpc.shelf.tactical.Tactical.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/Debug/br.ufc.mdcc.hpc.shelf.tactical.Tactical.dll.mdb
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/Debug/Antlr3.Runtime.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/Debug/ExpressionEvaluator.dll

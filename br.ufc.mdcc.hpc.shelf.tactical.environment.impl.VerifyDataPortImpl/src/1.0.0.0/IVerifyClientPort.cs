@@ -29,6 +29,8 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 		
 		}
 
+		//SWC2
+
 		public void setMcrl2File(ref string mCRL2_file){
 			for (int s = 0; s < channel.RemoteSize; s++) {
 				channel.Send<string>(mCRL2_file, s, dataCertifierTactical);
@@ -56,6 +58,24 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 
 		}
 
+
+		//c4
+
+		void setNumProgs (int destination, int number){
+			channel.Send<int>(number, destination, dataCertifierTactical);
+
+		}
+		void setUnitsProgs (int destination, ref int[] num_units_program){
+			channel.Send<int>(num_units_program, destination, dataCertifierTactical);
+		}
+		void setArgsProgs (int destination, ref string[] args_programs){
+			channel.Send<string>(args_programs, destination, dataCertifierTactical);
+		
+		}
+		void setProgs (int destination, ref string[] programs){
+			channel.Send<string>(programs, destination, dataCertifierTactical);
+
+		}
 
 
 		public MPI.Intercommunicator channel 

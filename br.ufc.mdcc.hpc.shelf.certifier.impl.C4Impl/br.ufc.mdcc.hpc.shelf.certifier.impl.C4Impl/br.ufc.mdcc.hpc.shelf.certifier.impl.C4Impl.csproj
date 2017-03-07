@@ -34,14 +34,110 @@
     <Reference Include="DGAC">
       <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\DGAC.dll</HintPath>
     </Reference>
+    <Reference Include="MPI">
+      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\MPI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\src\1.0.0.0\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpressionEvaluator">
+      <HintPath>..\src\1.0.0.0\ExpressionEvaluator.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\src\1.0.0.0\C4Impl.cs">
       <Link>C4Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\BaseC4Impl.cs">
       <Link>BaseC4Impl.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\util\CertifierConsoleLogger.cs">
+      <Link>util\CertifierConsoleLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\util\CertifierConstants.cs">
+      <Link>util\CertifierConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\util\MultikeyConcurrentDictionary.cs">
+      <Link>util\MultikeyConcurrentDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicBreakOper.cs">
+      <Link>visitor.logic\LogicBreakOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicCancelOper.cs">
+      <Link>visitor.logic\LogicCancelOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicContinueOper.cs">
+      <Link>visitor.logic\LogicContinueOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicParallelOper.cs">
+      <Link>visitor.logic\LogicParallelOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicPerformOper.cs">
+      <Link>visitor.logic\LogicPerformOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicRepeatOper.cs">
+      <Link>visitor.logic\LogicRepeatOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSelectOper.cs">
+      <Link>visitor.logic\LogicSelectOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSequenceOper.cs">
+      <Link>visitor.logic\LogicSequenceOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSkipOper.cs">
+      <Link>visitor.logic\LogicSkipOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicStartOper.cs">
+      <Link>visitor.logic\LogicStartOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSwitchOper.cs">
+      <Link>visitor.logic\LogicSwitchOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicWaitOper.cs">
+      <Link>visitor.logic\LogicWaitOper.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor.logic\ParallelJob.cs">
+      <Link>visitor.logic\ParallelJob.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\action.logic\LogicAction.cs">
+      <Link>action.logic\LogicAction.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\action.logic\LogicActionCompute.cs">
+      <Link>action.logic\LogicActionCompute.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\action.logic\LogicActionInstantiate.cs">
+      <Link>action.logic\LogicActionInstantiate.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestration.cs">
+      <Link>grammar\CertifierOrchestration.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationElement.cs">
+      <Link>grammar\CertifierOrchestrationElement.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationOperation.cs">
+      <Link>grammar\CertifierOrchestrationOperation.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationParser.cs">
+      <Link>grammar\CertifierOrchestrationParser.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationValidator.cs">
+      <Link>grammar\CertifierOrchestrationValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\grammar\Certifier_Orchestration.cs">
+      <Link>grammar\Certifier_Orchestration.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\grammar\ObjectFactory.cs">
+      <Link>grammar\ObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor\AbstractCertifierElementLogic.cs">
+      <Link>visitor\AbstractCertifierElementLogic.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor\CertifierVisitorImpl.cs">
+      <Link>visitor\CertifierVisitorImpl.cs</Link>
+    </Compile>
+    <Compile Include="..\src\1.0.0.0\visitor\ICertifierVisitor.cs">
+      <Link>visitor\ICertifierVisitor.cs</Link>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -98,5 +194,31 @@
       <Project>{58E752B1-C03E-4331-A7AE-A7CF6F211614}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical.csproj">
+      <Project>{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.Tactical</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="util\" />
+    <Folder Include="visitor.logic\" />
+    <Folder Include="action.logic\" />
+    <Folder Include="xml\" />
+    <Folder Include="grammar\" />
+    <Folder Include="visitor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\1.0.0.0\xml\Certifier_Orchestration.xsd">
+      <Link>xml\Certifier_Orchestration.xsd</Link>
+    </None>
+    <None Include="..\src\1.0.0.0\xml\orchestration_sequence_parallel_start.xml">
+      <Link>xml\orchestration_sequence_parallel_start.xml</Link>
+    </None>
+    <None Include="..\src\1.0.0.0\xml\orchestration_sequence_parallel_switch.xml">
+      <Link>xml\orchestration_sequence_parallel_switch.xml</Link>
+    </None>
+    <None Include="..\src\1.0.0.0\xml\orchestration_swc2.xml">
+      <Link>xml\orchestration_swc2.xml</Link>
+    </None>
   </ItemGroup>
 </Project>

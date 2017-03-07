@@ -34,6 +34,9 @@
     <Reference Include="DGAC">
       <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\DGAC.dll</HintPath>
     </Reference>
+    <Reference Include="MPI">
+      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\MPI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +92,14 @@
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType\br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.csproj">
       <Project>{B785892B-10B1-43BA-897F-E6F02CC932D0}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.task.TaskPortType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType.csproj">
+      <Project>{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl.csproj">
+      <Project>{58E752B1-C03E-4331-A7AE-A7CF6F211614}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
