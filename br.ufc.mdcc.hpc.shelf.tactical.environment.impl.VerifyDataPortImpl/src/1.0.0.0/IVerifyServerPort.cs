@@ -14,13 +14,12 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl
 	IVerifyServerPort<IVerifyDataPortServerType>
 	{   
 		public int certifier = 0; 
-		public int operation, operation_tag = 1 ;
+		public int operation, operation_tag = 0 ;
 
 		public int dataCertifierTactical = 71; 
 
 		//swc2
 		public string mCRL2_file;
-
 		public string []property_files; 
 
 	//c4

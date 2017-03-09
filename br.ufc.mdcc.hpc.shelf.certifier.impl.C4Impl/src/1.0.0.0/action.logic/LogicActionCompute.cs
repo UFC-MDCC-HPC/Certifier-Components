@@ -58,7 +58,7 @@ public  class LogicActionCompute : LogicAction{
 			v.invoke (IVerify.VERIFY_INCONCLUSIVE, out future_inconclusive);
 			future_iteration.addAction (future_inconclusive);
 
-			IActionFuture action = future_iteration.waitAny ();
+		future_iteration.waitAny ();
 
 			
 			}
