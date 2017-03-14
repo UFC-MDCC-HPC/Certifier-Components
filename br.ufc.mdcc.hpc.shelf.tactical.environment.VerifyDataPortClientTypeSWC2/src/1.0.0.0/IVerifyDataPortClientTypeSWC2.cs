@@ -4,7 +4,7 @@ using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner
 
 namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2
 {
-	public interface IVerifyDataPortClientTypeSWC2 : BaseIVerifyDataPortClientTypeSWC2, IEnvironmentPortTypeSinglePartner
+	public interface IVerifyDataPortClientTypeSWC2 : IVerifyDataPortClientType, BaseIVerifyDataPortClientTypeSWC2
 	{
 		//SWC2
 		void setNumProperties(int numProperties);

@@ -1,9 +1,10 @@
 using br.ufc.pargo.hpe.kinds;
 using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner;
+using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;
 
 namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4
 {
-	public interface IVerifyDataPortClientTypeC4 : BaseIVerifyDataPortClientTypeC4, IEnvironmentPortTypeSinglePartner
+	public interface IVerifyDataPortClientTypeC4 : IVerifyDataPortClientType, BaseIVerifyDataPortClientTypeC4
 	{
 
 		//C4
