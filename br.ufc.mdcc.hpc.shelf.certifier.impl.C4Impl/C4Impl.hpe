@@ -9,63 +9,11 @@
         <visualDescription h="60" w="100" x="184" y="144">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <port localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-          <visualDescription h="80" w="95" x="24" y="261">
-            <color b="255" g="255" r="255"/>
-          </visualDescription>
-          <parameter formFieldId="server_port_type" varName="X###38587110"/>
-          <parameter formFieldId="client_port_type" varName="X###1511902546"/>
-          <unitBounds parallel="false" uRef="client">
-            <visualDescription h="19" w="19" x="14" y="13"/>
-          </unitBounds>
-          <unitBounds parallel="false" uRef="server">
-            <visualDescription h="20" w="20" x="37" y="12"/>
-          </unitBounds>
-        </port>
-        <port localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-          <visualDescription h="60" w="100" x="143" y="259">
-            <color b="255" g="255" r="255"/>
-          </visualDescription>
-          <parameter formFieldId="server_port_type" varName="X###866150435"/>
-          <parameter formFieldId="client_port_type" varName="X###1627964252"/>
-          <unitBounds parallel="false" uRef="client">
-            <visualDescription h="20" w="20" x="5" y="2"/>
-          </unitBounds>
-          <unitBounds parallel="false" uRef="server">
-            <visualDescription h="20" w="20" x="28" y="2"/>
-          </unitBounds>
-        </port>
-        <port localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-          <visualDescription h="60" w="100" x="257" y="249">
-            <color b="255" g="255" r="255"/>
-          </visualDescription>
-          <parameter formFieldId="server_port_type" varName="X###100085345"/>
-          <parameter formFieldId="client_port_type" varName="X###833885392"/>
-          <unitBounds parallel="false" uRef="client">
-            <visualDescription h="20" w="20" x="5" y="2"/>
-          </unitBounds>
-          <unitBounds parallel="false" uRef="server">
-            <visualDescription h="20" w="20" x="28" y="2"/>
-          </unitBounds>
-        </port>
-        <port localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-          <visualDescription h="60" w="100" x="372" y="254">
-            <color b="255" g="255" r="255"/>
-          </visualDescription>
-          <parameter formFieldId="server_port_type" varName="X###31822773"/>
-          <parameter formFieldId="client_port_type" varName="X###651207414"/>
-          <unitBounds parallel="false" uRef="client">
-            <visualDescription h="20" w="20" x="5" y="2"/>
-          </unitBounds>
-          <unitBounds parallel="false" uRef="server">
-            <visualDescription h="20" w="20" x="28" y="2"/>
-          </unitBounds>
-        </port>
         <port localRef="verify1" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
           <visualDescription h="60" w="100" x="39" y="378">
             <color b="255" g="255" r="255"/>
           </visualDescription>
-          <parameter formFieldId="task_port_type" varName="X###443024491"/>
+          <parameter formFieldId="task_port_type" varName="X###1767936882"/>
           <unitBounds parallel="true" uRef="peer">
             <visualDescription h="20" w="20" x="5" y="2"/>
           </unitBounds>
@@ -74,7 +22,7 @@
           <visualDescription h="60" w="100" x="161" y="388">
             <color b="255" g="255" r="255"/>
           </visualDescription>
-          <parameter formFieldId="task_port_type" varName="X###191594850"/>
+          <parameter formFieldId="task_port_type" varName="X###39793557"/>
           <unitBounds parallel="true" uRef="peer">
             <visualDescription h="20" w="20" x="5" y="2"/>
           </unitBounds>
@@ -83,7 +31,7 @@
           <visualDescription h="60" w="100" x="289" y="381">
             <color b="255" g="255" r="255"/>
           </visualDescription>
-          <parameter formFieldId="task_port_type" varName="X###641647489"/>
+          <parameter formFieldId="task_port_type" varName="X###536421137"/>
           <unitBounds parallel="true" uRef="peer">
             <visualDescription h="20" w="20" x="5" y="2"/>
           </unitBounds>
@@ -92,9 +40,53 @@
           <visualDescription h="60" w="100" x="412" y="387">
             <color b="255" g="255" r="255"/>
           </visualDescription>
-          <parameter formFieldId="task_port_type" varName="X###89789090"/>
+          <parameter formFieldId="task_port_type" varName="X###1106801114"/>
           <unitBounds parallel="true" uRef="peer">
             <visualDescription h="20" w="20" x="5" y="2"/>
+          </unitBounds>
+        </port>
+        <port localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+          <visualDescription h="80" w="95" x="24" y="261">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <unitBounds parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="5" y="2"/>
+          </unitBounds>
+          <unitBounds parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="28" y="2"/>
+          </unitBounds>
+        </port>
+        <port localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+          <visualDescription h="60" w="100" x="143" y="259">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <unitBounds parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="5" y="2"/>
+          </unitBounds>
+          <unitBounds parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="28" y="2"/>
+          </unitBounds>
+        </port>
+        <port localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+          <visualDescription h="60" w="100" x="257" y="249">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <unitBounds parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="5" y="2"/>
+          </unitBounds>
+          <unitBounds parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="28" y="2"/>
+          </unitBounds>
+        </port>
+        <port localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+          <visualDescription h="60" w="100" x="372" y="254">
+            <color b="255" g="255" r="255"/>
+          </visualDescription>
+          <unitBounds parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="5" y="2"/>
+          </unitBounds>
+          <unitBounds parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="28" y="2"/>
           </unitBounds>
         </port>
         <unitBounds parallel="true" uRef="C4">
@@ -110,20 +102,20 @@
   <componentInfo>
     <interface iRef="C4Impl" nArgs="0">
       <slice isRef="verify_data4">
-        <originRef cRef="verify_data4" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="35" y="21"/>
+        <originRef cRef="verify_data4" iRef="IVerifyClientPortC4"/>
+        <visualDescription h="10" w="10" x="37" y="20"/>
       </slice>
       <slice isRef="verify_data3">
-        <originRef cRef="verify_data3" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="34" y="24"/>
+        <originRef cRef="verify_data3" iRef="IVerifyClientPortC4"/>
+        <visualDescription h="10" w="10" x="28" y="34"/>
       </slice>
       <slice isRef="verify_data2">
-        <originRef cRef="verify_data2" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="20" y="27"/>
+        <originRef cRef="verify_data2" iRef="IVerifyClientPortC4"/>
+        <visualDescription h="10" w="10" x="15" y="24"/>
       </slice>
       <slice isRef="verify_data1">
-        <originRef cRef="verify_data1" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="12" y="21"/>
+        <originRef cRef="verify_data1" iRef="IVerifyClientPortC4"/>
+        <visualDescription h="10" w="10" x="0" y="21"/>
       </slice>
       <slice isRef="verify1">
         <originRef cRef="verify1" iRef="ITaskPort"/>
@@ -142,14 +134,14 @@
         <visualDescription h="10" w="10" x="59" y="20"/>
       </slice>
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.C4;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl &#xA;{&#xA;&#x9;public abstract class BaseC4Impl: Computation, BaseICertifier&#xA;&#x9;{&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data4 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data4&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data4 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data4 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data4&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data4;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data3 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data3&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data3 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data3 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data3&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data3;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data2 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data2&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data2 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data2 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data2&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data2;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data1 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data1&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data1 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data1 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data1&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data1;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify1 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify1&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify1 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify1 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify1&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify1;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify2 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify2&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify2 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify2 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify2&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify2;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify3 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify3&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify3 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify3 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify3&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify3;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify4 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify4&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify4 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify4 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify4&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify4;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}" name="BaseC4Impl.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/1.0.0.0/BaseC4Impl.dll" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.C4;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl &#xA;{&#xA;&#x9;public abstract class BaseC4Impl: Computation, BaseICertifier&#xA;&#x9;{&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data4 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data4&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data4 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data4 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data4&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data4;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data3 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data3&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data3 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data3 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data3&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data3;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data2 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data2&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data2 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data2 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data2&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data2;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private IVerifyClientPort&lt;IVerifyDataPortClientType> verify_data1 = null;&#xA;&#xA;&#x9;&#x9;public IVerifyClientPort&lt;IVerifyDataPortClientType> Verify_data1&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify_data1 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify_data1 = (IVerifyClientPort&lt;IVerifyDataPortClientType>) Services.getPort(&quot;verify_data1&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify_data1;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify1 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify1&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify1 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify1 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify1&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify1;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify2 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify2&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify2 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify2 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify2&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify2;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify3 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify3&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify3 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify3 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify3&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify3;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;private ITaskPort&lt;IVerifyPortType> verify4 = null;&#xA;&#xA;&#x9;&#x9;public ITaskPort&lt;IVerifyPortType> Verify4&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.verify4 == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.verify4 = (ITaskPort&lt;IVerifyPortType>) Services.getPort(&quot;verify4&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.verify4;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}" name="BaseC4Impl.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/1.0.0.0/BaseC4Impl.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyClientPort.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/1.0.0.0/ITaskPort.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/IVerifyPortType.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/BaseICertifier.dll</dependency>
         </file>
-        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.C4;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl&#xA;{&#xA;&#x9;public class C4Impl : BaseC4Impl, ICertifier&#xA;&#x9;{&#xA;&#x9;&#x9;public override void main()&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;" name="C4Impl.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/1.0.0.0/C4Impl.dll" versionId="1.0.0.0">
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.C4;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;using System.Diagnostics;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;&#xA;using System.Threading;&#xA;using System.Xml.Schema;&#xA;using System.Collections.Concurrent;&#xA;using System.Collections.Generic;&#xA;using ExpressionEvaluator;&#xA;using br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierImpl.action.logic;&#xA;using br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierImpl.util;&#xA;using br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierImpl.grammar;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl&#xA;{&#xA;&#x9;public class C4Impl : BaseC4Impl, ICertifier&#xA;&#x9;{&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;public static ConcurrentDictionary &lt;string, LogicActionInstantiate> InstantiateActions = new ConcurrentDictionary&lt;string, LogicActionInstantiate>();&#xA;&#x9;&#x9;public static ConcurrentDictionary &lt;string, LogicActionCompute> ComputeActions = new ConcurrentDictionary&lt;string, LogicActionCompute>();&#xA;&#x9;&#x9;public static TypeRegistry variables = new TypeRegistry();&#xA;&#x9;&#x9;public static MultiKeyConcurrentDictionary &lt;string,string, bool> formal_properties = new MultiKeyConcurrentDictionary &lt;string, string, bool>();&#xA;&#x9;&#x9;public static int number_tacticals=2;&#xA;&#x9;&#x9;public static string[] tactical_names;&#xA;&#x9;&#x9;public int num_programs=7;&#xA;&#x9;&#x9;public static string [][]programs; &#xA;&#x9;&#x9;public int []number_progs_per_tactical;&#xA;&#x9;&#x9;public string[][] args_programs;&#xA;&#x9;&#x9;public int [][]num_units_program;&#xA;&#x9;&#x9;public string[] arr_transfer_prop;&#xA;&#xA;&#x9;&#x9;public static Dictionary &lt;int, ITaskPort&lt;IVerifyPortType>> verify_actions;&#xA;&#xA;&#x9;&#x9;public override void main()&#xA;&#x9;&#x9;{&#xA;&#xA;&#x9;&#x9;&#x9;verify_actions.Add (1, Verify1);&#xA;&#x9;&#x9;&#x9;verify_actions.Add (2, Verify2);&#xA;&#xA;&#x9;&#x9;&#x9;Stopwatch sw = new Stopwatch();&#xA;&#x9;&#x9;&#x9;sw.Start();&#xA;&#x9;&#x9;&#x9;setData();&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;performOrchestration ();&#xA;&#xA;&#x9;&#x9;&#x9;finishCertifier ();&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;sw.Stop();&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;Console.WriteLine(&quot;Total time of verification={0}&quot;,sw.Elapsed);&#xA;&#xA;&#xA;&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;&#x9;}&#xA;&#xA;&#xA;&#x9;&#x9;public void setData(){&#xA;&#xA;&#x9;&#x9;&#x9;tactical_names = new string[number_tacticals];&#xA;&#x9;&#x9;&#x9;tactical_names [0] = &quot;ISP1&quot;; tactical_names [1] = &quot;ISP2&quot;;&#xA;&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;number_progs_per_tactical = new int[number_tacticals];&#xA;&#x9;&#x9;&#x9;number_progs_per_tactical [0] = 4;&#xA;&#x9;&#x9;&#x9;number_progs_per_tactical [1] = 3;&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;programs = new string[num_programs][];&#xA;&#xA;&#x9;&#x9;&#x9;programs [0] = new string[number_progs_per_tactical [0]];&#xA;&#x9;&#x9;&#x9;programs [1] = new string[number_progs_per_tactical [1]];&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;programs [0] [0] = &quot;mProjExecMPI1&quot;;&#xA;&#x9;&#x9;&#x9;programs [0][1] = &quot;mProjExecMPI2&quot;;&#xA;&#x9;&#x9;&#x9;programs [0][2] =&quot;mProjExecMPI3&quot;;&#xA;&#x9;&#x9;&#x9;programs [0][3] = &quot;mProjExecMPI4&quot;;&#xA;&#x9;&#x9;&#x9;programs [1][0] = &quot;mProjExecMPI5&quot;;&#xA;&#x9;&#x9;&#x9;programs [1][1] =&quot;mProjExecMPI6&quot;;&#xA;&#x9;&#x9;&#x9;programs [1] [2] = &quot;mProjExecMPI7&quot;;&#xA;&#x9;&#xA;&#x9;&#x9;&#x9;num_units_program=new int[num_programs][];&#xA;&#xA;&#x9;&#x9;&#x9;num_units_program [0] = new int[number_progs_per_tactical [0]];&#xA;&#x9;&#x9;&#x9;num_units_program [1] = new int[number_progs_per_tactical [1]];&#xA;&#xA;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;num_units_program [0] [0] = 4;&#xA;&#x9;&#x9;&#x9;num_units_program [0][1] = 4;&#xA;&#x9;&#x9;&#x9;num_units_program [0] [2] = 4;&#xA;&#x9;&#x9;&#x9;num_units_program [0][3] = 4;&#xA;&#x9;&#x9;&#x9;num_units_program [1] [0] = 4;&#xA;&#x9;&#x9;&#x9;num_units_program [1][1] = 4;&#xA;&#x9;&#x9;&#x9;num_units_program [1] [2] = 4;&#xA;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;args_programs = new string[num_programs][];&#xA;&#x9;&#x9;&#x9;args_programs[0]=new string[number_progs_per_tactical [0]];&#xA;&#x9;&#x9;&#x9;args_programs[1]=new string[number_progs_per_tactical [1]];&#xA;&#x9;&#x9;&#x9;args_programs[0][0] = &#x9; &quot;\&quot;-$ /home/allberson/Dropbox/m101/rawdir /home/allberson/Dropbox/m101/images-rawdir.tbl /home/allberson/Dropbox/m101/template.hdr /home/allberson/Dropbox/m101/projdir /home/allberson/Dropbox/m101/stats.tbl\&quot;&quot;;&#xA;&#xA;&#x9;&#x9;&#x9;args_programs[0][1] =  &quot;\&quot;-$ /home/allberson/Dropbox/m102/rawdir /home/allberson/Dropbox/m102/images-rawdir.tbl /home/allberson/Dropbox/m102/template.hdr /home/allberson/Dropbox/m102/projdir /home/allberson/Dropbox/m102/stats.tbl\&quot;&quot;;&#xA;&#xA;&#x9;&#x9;&#x9;args_programs[0][2] =  &quot;\&quot;-$ /home/allberson/Dropbox/m103/rawdir /home/allberson/Dropbox/m103/images-rawdir.tbl /home/allberson/Dropbox/m103/template.hdr /home/allberson/Dropbox/m103/projdir /home/allberson/Dropbox/m103/stats.tbl\&quot;&quot;;&#xA;&#xA;&#x9;&#x9;&#x9;args_programs[0][3] = &quot;\&quot;-$ /home/allberson/Dropbox/m104/rawdir /home/allberson/Dropbox/m104/images-rawdir.tbl /home/allberson/Dropbox/m104/template.hdr /home/allberson/Dropbox/m104/projdir /home/allberson/Dropbox/m104/stats.tbl\&quot;&quot;;&#xA;&#xA;&#x9;&#x9;&#x9;args_programs[1][0] = &#x9; &quot;\&quot;-$ /home/allberson/Dropbox/m105/rawdir /home/allberson/Dropbox/m105/images-rawdir.tbl /home/allberson/Dropbox/m105/template.hdr /home/allberson/Dropbox/m105/projdir /home/allberson/Dropbox/m105/stats.tbl\&quot;&quot;;&#xA;&#xA;&#x9;&#x9;&#x9;args_programs[1][1] = &quot;\&quot;-$ /home/allberson/Dropbox/m106/rawdir /home/allberson/Dropbox/m106/images-rawdir.tbl /home/allberson/Dropbox/m106/template.hdr /home/allberson/Dropbox/m106/projdir /home/allberson/Dropbox/m106/stats.tbl\&quot;&quot;;&#xA;&#xA;&#x9;&#x9;&#x9;args_programs[1][2] =  &quot;\&quot;-$ /home/allberson/Dropbox/m107/rawdir /home/allberson/Dropbox/m107/images-rawdir.tbl /home/allberson/Dropbox/m107/template.hdr /home/allberson/Dropbox/m107/projdir /home/allberson/Dropbox/m107/stats.tbl\&quot;&quot;;&#xA;&#xA;&#x9;&#x9;&#x9;Verify_data1.Client.setNumProgs (number_progs_per_tactical [0]);&#xA;&#x9;&#x9;&#x9;Verify_data2.Client.setNumProgs ( number_progs_per_tactical [1]);&#xA;&#xA;&#x9;&#x9;&#x9;Verify_data1.Client.setUnitsProgs (ref num_units_program[0]);&#xA;&#x9;&#x9;&#x9;Verify_data2.Client.setUnitsProgs (ref num_units_program[1]);&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;Verify_data1.Client.setArgsProgs (ref args_programs [0]);&#xA;&#x9;&#x9;&#x9;Verify_data2.Client.setArgsProgs (ref args_programs [1]);&#xA;&#xA;&#x9;&#x9;&#x9;Verify_data1.Client.setProgs (ref programs [0]);&#xA;&#xA;&#x9;&#x9;&#x9;Verify_data2.Client.setProgs (ref programs [1]);&#xA;&#xA;&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;&#x9;}&#xA;&#xA;&#xA;&#xA;&#x9;&#xA;&#x9;&#x9;public void performOrchestration(){&#xA;&#xA;&#x9;&#x9;&#x9;CertifierOrchestrationParser parser = new CertifierOrchestrationParser();&#xA;&#x9;&#x9;&#x9;parser.readOrchestrationXML(CertifierConstants.ORCHESTRATION_FILE_TEST);&#xA;&#x9;&#x9;&#x9;CertifierConsoleLogger.write(parser.getOrchestration().toString()); // get orchestration from the concrete certifier component&#xA;&#xA;&#x9;&#x9;&#x9;variables.Add (&quot;formal_properties&quot;, formal_properties);&#xA;&#xA;&#xA;&#x9;&#x9;&#x9;parser.getOrchestration().run(); // run orchestration to prove formal contracts&#xA;&#xA;&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;public void finishCertifier(){&#xA;&#x9;&#x9;&#x9;Console.WriteLine (&quot;iterating remaining start threads&quot;);&#xA;&#x9;&#x9;&#x9;foreach (KeyValuePair &lt;String, LogicActionInstantiate> entry in InstantiateActions)&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (entry.Value._thread != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;entry.Value._thread.Join ();&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;foreach (KeyValuePair &lt;String, LogicActionCompute> entry in ComputeActions)&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (entry.Value._thread != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;entry.Value._thread.Join();&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;" name="C4Impl.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/1.0.0.0/C4Impl.dll" versionId="1.0.0.0">
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl/bin/1.0.0.0/BaseC4Impl.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/ICertifier.dll</dependency>
         </file>

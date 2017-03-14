@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000d5ffcb77672012ae1bd7da47a8d57489499d85ba4d005e85a158b30a760f143934c7ae821d67f94ce669f16d9930337fa6f9ccdf0532b109b22e224047990640c4d75262132ba7f91dccbbc155fe5c2c44124eaa216f05bbfa9596a5569bfd572d4898c8e21f076bd8dc1dec98fbfebb8909d1fd22d614beb1c379d7d9cc71b3" isAbstract="true" kind="Qualifier" name="VerifyDataPortServerTypeC4" packagePath="br.ufc.mdcc.hpc.shelf.tactical.environment">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000e121856fdaf93c22c08e05401bfff2406be510817c1c469490879ae24615264b8163878ca160a2205a84b342881c9351bdca33e8d7c9e666e606d26124fcf350a969f1df38aaa574081234ea53463ef37a5ad8d007469f29943bf49c78e91a1d3534600c67d1be903b96f85fd5bb2d35ef44087614154bef866c5ee928342592" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/VerifyDataPortServerType.hpe" name="VerifyDataPortServerType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="261" y="202">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="true" uRef="environment_port_type">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="IVerifyDataPortServerTypeC4" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4&#xA;{&#xA;&#x9;public interface BaseIVerifyDataPortServerTypeC4 : BaseIEnvironmentPortTypeMultiplePartner, IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyDataPortServerTypeC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/BaseIVerifyDataPortServerTypeC4.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/BaseIVerifyDataPortServerType.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4&#xA;{&#xA;&#x9;public interface IVerifyDataPortServerTypeC4 : BaseIVerifyDataPortServerTypeC4, IEnvironmentPortTypeMultiplePartner&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IVerifyDataPortServerTypeC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/BaseIVerifyDataPortServerTypeC4.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="57" w="308" x="44" y="86">
+        <color b="77" g="77" r="77"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="IVerifyDataPortServerTypeC4" multiple="true" private="false" replica="0" uRef="environment_port_type" visibleInterface="true">
+      <super cRef="base" uRef="environment_port_type"/>
+      <visualDescription h="57" w="202" x="97" y="336"/>
+    </unit>
+  </componentInfo>
+</component:component>

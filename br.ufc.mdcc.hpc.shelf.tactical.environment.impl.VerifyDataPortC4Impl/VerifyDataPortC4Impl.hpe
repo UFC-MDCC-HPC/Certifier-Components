@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000ffe1dd5b9606762e6da5cac5c278e197e79398d5f396d8918ea707b5108a1bda4e5a978eb8d68e3143898e6902be70f5c4bafdcb8b5a0d1cd107b391338f2df5367ba1f6b2e8555b3a5bc6352c44f028b98063ccb6dff1e68c9c9e17852428268a48dfc2fe6a2c9cd2e1183684534952e363ae295ef3fe4c99de2fc8c4f5358b" isAbstract="false" kind="Synchronizer" name="VerifyDataPortC4Impl" packagePath="br.ufc.mdcc.hpc.shelf.tactical.environment.impl">
+    <baseType>
+      <extensionType>
+        <implements>true</implements>
+      </extensionType>
+      <component hash_component_UID="00240000048000009400000006020000002400005253413100040000110000001fe9fadb4c1025e72aff28872fb5fbd238acd27e3d59d16e734e425c608135074599beae81df8b2193cf66ac4a87453b65f16017f4c611002dade04d3f82bf6986d94bfa38d4b444c7d94c7719bc8a691694252f2420c876b05b018f3484646da636160dfbd9fde5e058a2cd7e21a6cd05ee431194528c8dd5536c7f41c9c7b5" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="190" y="69">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="server_port_type" varName="S"/>
+        <parameter formFieldId="client_port_type" varName="C"/>
+        <unitBounds parallel="false" uRef="client">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+        <unitBounds parallel="false" uRef="server">
+          <visualDescription h="20" w="20" x="28" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <innerComponent localRef="verify_data_port_client_type_c4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="72" y="347">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="verify_data_port_client_type_swc2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="219" y="333">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="verify_data_port_client_type_c4" direct="true" varName="C"/>
+    <supplyParameter cRef="verify_data_port_client_type_swc2" direct="true" varName="S"/>
+    <interface iRef="IVerifyClientPortC4" nArgs="1">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl &#xA;{&#xA;&#x9;public abstract class BaseIVerifyClientPortC4: Synchronizer, BaseIClientBase&lt;IVerifyDataPortClientTypeC4>&#xA;&#x9;{&#xA;&#x9;&#x9;private IEnvironmentPortType client_port_type = null;&#xA;&#xA;&#x9;&#x9;protected IEnvironmentPortType Client_port_type&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.client_port_type == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.client_port_type = (IEnvironmentPortType) Services.getPort(&quot;client_port_type&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.client_port_type;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}" name="BaseIVerifyClientPortC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl/bin/1.0.0.0/BaseIVerifyClientPortC4.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType/bin/1.0.0.0/IEnvironmentPortType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIClientBase.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl&#xA;{&#xA;&#x9;public class IVerifyClientPortC4 : BaseIVerifyClientPortC4, IClientBase&lt;IVerifyDataPortClientTypeC4>&#xA;&#x9;{&#xA;&#x9;&#x9;public override void main()&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;" name="IVerifyClientPortC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl/bin/1.0.0.0/IVerifyClientPortC4.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl/bin/1.0.0.0/BaseIVerifyClientPortC4.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IClientBase.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="136" x="30" y="66">
+        <color b="0" g="255" r="255"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <interface iRef="IVerifyServerPortC4" nArgs="1">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl &#xA;{&#xA;&#x9;public abstract class BaseIVerifyServerPortC4: Synchronizer, BaseIVerifyServerPort&lt;IVerifyDataPortServerTypeC4>&#xA;&#x9;{&#xA;&#x9;&#x9;private IEnvironmentPortType server_port_type = null;&#xA;&#xA;&#x9;&#x9;protected IEnvironmentPortType Server_port_type&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;get&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (this.server_port_type == null)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.server_port_type = (IEnvironmentPortType) Services.getPort(&quot;server_port_type&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;return this.server_port_type;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}" name="BaseIVerifyServerPortC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl/bin/1.0.0.0/BaseIVerifyServerPortC4.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType/bin/1.0.0.0/IEnvironmentPortType.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIVerifyServerPort.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl&#xA;{&#xA;&#x9;public class IVerifyServerPortC4 : BaseIVerifyServerPortC4, IVerifyServerPort&lt;IVerifyDataPortServerTypeC4>&#xA;&#x9;{&#xA;&#x9;&#x9;public override void main()&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;" name="IVerifyServerPortC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl/bin/1.0.0.0/IVerifyServerPortC4.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl/bin/1.0.0.0/BaseIVerifyServerPortC4.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="138" x="299" y="119">
+        <color b="0" g="165" r="255"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="IVerifyClientPortC4" multiple="false" private="false" replica="0" uRef="client" visibleInterface="true">
+      <super cRef="base" uRef="client"/>
+      <visualDescription h="40" w="80" x="53" y="280"/>
+    </unit>
+    <unit facet="0" iRef="IVerifyServerPortC4" multiple="false" private="false" replica="0" uRef="server" visibleInterface="true">
+      <super cRef="base" uRef="server"/>
+      <visualDescription h="40" w="80" x="362" y="303"/>
+    </unit>
+  </componentInfo>
+</component:component>

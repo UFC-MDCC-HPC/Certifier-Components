@@ -5,7 +5,7 @@ using br.ufc.pargo.hpe.backend.DGAC;
 using br.ufc.pargo.hpe.basic;
 using br.ufc.pargo.hpe.kinds;
 using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;
-using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;
+using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2;
 using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;
 using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
 using br.ufc.mdcc.hpc.shelf.certifier.SWC2;
@@ -15,47 +15,47 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl
 {
 	public abstract class BaseISWC2Impl: Computation, BaseICertifier
 	{
-		private IVerifyClientPort<IVerifyDataPortClientType> verify_data1 = null;
+		private IVerifyClientPort<IVerifyDataPortClientTypeSWC2> verify_data1 = null;
 
-		protected IVerifyClientPort<IVerifyDataPortClientType> Verify_data1
+		protected IVerifyClientPort<IVerifyDataPortClientTypeSWC2> Verify_data1
 		{
 			get
 			{
 				if (this.verify_data1 == null)
-					this.verify_data1 = (IVerifyClientPort<IVerifyDataPortClientType>) Services.getPort("verify_data1");
+					this.verify_data1 = (IVerifyClientPort<IVerifyDataPortClientTypeSWC2>) Services.getPort("verify_data1");
 				return this.verify_data1;
 			}
 		}
-		private IVerifyClientPort<IVerifyDataPortClientType> verify_data2 = null;
+		private IVerifyClientPort<IVerifyDataPortClientTypeSWC2> verify_data2 = null;
 
-		protected IVerifyClientPort<IVerifyDataPortClientType> Verify_data2
+		protected IVerifyClientPort<IVerifyDataPortClientTypeSWC2> Verify_data2
 		{
 			get
 			{
 				if (this.verify_data2 == null)
-					this.verify_data2 = (IVerifyClientPort<IVerifyDataPortClientType>) Services.getPort("verify_data2");
+					this.verify_data2 = (IVerifyClientPort<IVerifyDataPortClientTypeSWC2>) Services.getPort("verify_data2");
 				return this.verify_data2;
 			}
 		}
-		private IVerifyClientPort<IVerifyDataPortClientType> verify_data3 = null;
+		private IVerifyClientPort<IVerifyDataPortClientTypeSWC2> verify_data3 = null;
 
-		protected IVerifyClientPort<IVerifyDataPortClientType> Verify_data3
+		protected IVerifyClientPort<IVerifyDataPortClientTypeSWC2> Verify_data3
 		{
 			get
 			{
 				if (this.verify_data3 == null)
-					this.verify_data3 = (IVerifyClientPort<IVerifyDataPortClientType>) Services.getPort("verify_data3");
+					this.verify_data3 = (IVerifyClientPort<IVerifyDataPortClientTypeSWC2>) Services.getPort("verify_data3");
 				return this.verify_data3;
 			}
 		}
-		private IVerifyClientPort<IVerifyDataPortClientType> verify_data4 = null;
+		private IVerifyClientPort<IVerifyDataPortClientTypeSWC2> verify_data4 = null;
 
-		protected IVerifyClientPort<IVerifyDataPortClientType> Verify_data4
+		protected IVerifyClientPort<IVerifyDataPortClientTypeSWC2> Verify_data4
 		{
 			get
 			{
 				if (this.verify_data4 == null)
-					this.verify_data4 = (IVerifyClientPort<IVerifyDataPortClientType>) Services.getPort("verify_data4");
+					this.verify_data4 = (IVerifyClientPort<IVerifyDataPortClientTypeSWC2>) Services.getPort("verify_data4");
 				return this.verify_data4;
 			}
 		}

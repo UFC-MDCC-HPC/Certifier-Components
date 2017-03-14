@@ -110,10 +110,6 @@
       <Project>{F3AB9253-3F77-48B4-A3F3-D6AEA145607C}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl.csproj">
-      <Project>{58E752B1-C03E-4331-A7AE-A7CF6F211614}</Project>
-      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes\br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes.csproj">
       <Project>{4B74BEFC-F291-4844-806A-1AC8A081E087}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes</Name>

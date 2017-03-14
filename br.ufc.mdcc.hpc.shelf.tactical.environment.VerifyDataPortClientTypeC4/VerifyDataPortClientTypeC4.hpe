@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000c7476966a98eb8f42cb27e51e830c578965bbecfb21d44d458b3230b09e8d3b42b655ba8e8e6757011a2c4fdb24450ca301b17e7c388a730f9fcd4a49823bfabf25e466b32eb51e920d2fffcaef6b7a5b4b7e570fda48f939a39b0b096579641c3ed0141dff4349548e03cfb014c761b7a4210fba9bdaf93ae4039da855e5bad" isAbstract="true" kind="Qualifier" name="VerifyDataPortClientTypeC4" packagePath="br.ufc.mdcc.hpc.shelf.tactical.environment">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000ad85db335f18dccf9f18308992b6bdfbdafd7a9a7d0ca3b7c26a9679f7609e09e432e44839c784b6509779eb1165832824049d08f5ea50483cbe94ed572c7e77ab065c7ba2c94ac81451c76f489912a6f251d36e60f90046aa3fb370409fdf870314647a0bd79d6344a811852249426503f5d7da5051b72e774828bca0186099" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/VerifyDataPortClientType.hpe" name="VerifyDataPortClientType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="28" y="205">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="true" uRef="environment_port_type">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="IVerifyDataPortClientTypeC4" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4&#xA;{&#xA;&#x9;public interface BaseIVerifyDataPortClientTypeC4 : BaseIEnvironmentPortTypeSinglePartner, IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyDataPortClientTypeC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/1.0.0.0/BaseIVerifyDataPortClientTypeC4.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/BaseIVerifyDataPortClientType.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4&#xA;{&#xA;&#x9;public interface IVerifyDataPortClientTypeC4 : BaseIVerifyDataPortClientTypeC4, IEnvironmentPortTypeSinglePartner&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IVerifyDataPortClientTypeC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/1.0.0.0/IVerifyDataPortClientTypeC4.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/1.0.0.0/BaseIVerifyDataPortClientTypeC4.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="57" w="308" x="115" y="78">
+        <color b="144" g="238" r="144"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="IVerifyDataPortClientTypeC4" multiple="true" private="false" replica="0" uRef="environment_port_type" visibleInterface="true">
+      <super cRef="base" uRef="environment_port_type"/>
+      <visualDescription h="57" w="202" x="187" y="310"/>
+    </unit>
+  </componentInfo>
+</component:component>

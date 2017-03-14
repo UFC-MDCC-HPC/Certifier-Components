@@ -97,5 +97,13 @@
       <Project>{B785892B-10B1-43BA-897F-E6F02CC932D0}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.task.TaskPortType</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2.csproj">
+      <Project>{0D5F83D6-CC87-497C-B48C-236181341168}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2.csproj">
+      <Project>{0CB2BFFB-E977-4458-BC73-D1985DFEE43E}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -190,13 +190,17 @@
       <Project>{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl.csproj">
-      <Project>{58E752B1-C03E-4331-A7AE-A7CF6F211614}</Project>
-      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical\br.ufc.mdcc.hpc.shelf.tactical.Tactical.csproj">
       <Project>{9823CD3A-0967-46AC-9E9A-2AA43BA746E6}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.Tactical</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4.csproj">
+      <Project>{79B5D0E5-36B4-4F73-A508-E810B9DB3377}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl\br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl.csproj">
+      <Project>{FFFD5364-C049-4F30-B58E-5FD303689F1A}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

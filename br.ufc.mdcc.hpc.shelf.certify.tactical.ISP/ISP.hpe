@@ -23,7 +23,7 @@
           </unitBounds>
         </port>
         <port localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-          <visualDescription h="63" w="218" x="340" y="330">
+          <visualDescription h="63" w="218" x="116" y="376">
             <color b="255" g="255" r="255"/>
           </visualDescription>
           <parameter formFieldId="server_port_type" varName="S"/>
@@ -84,10 +84,10 @@
     <supplyParameter cRef="tactical_type" direct="true" varName="N"/>
     <interface iRef="IISP" nArgs="0">
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ISP&#xA;{&#xA;&#x9;public interface BaseIISP : BaseITactical, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIISP.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/BaseIISP.dll" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ISP&#xA;{&#xA;&#x9;public interface BaseIISP : BaseITactical&lt;IVerifyDataPortServerType,IVerifyPortType>, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIISP.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/BaseIISP.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ISP&#xA;{&#xA;&#x9;public interface IISP : BaseIISP, ITactical&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IISP.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/IISP.dll" versionId="1.0.0.0">
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ISP&#xA;{&#xA;&#x9;public interface IISP : BaseIISP, ITactical&lt;IVerifyDataPortServerType,IVerifyPortType>&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IISP.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/IISP.dll" versionId="1.0.0.0">
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/bin/1.0.0.0/BaseIISP.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/ITactical.dll</dependency>
         </file>

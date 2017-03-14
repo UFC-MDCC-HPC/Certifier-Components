@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b1effd444dfd90a3cf61794df3a9d4405cc1483e973ded183c7ee4498ecd8a1c5377fa9bd2629ce9cb1696864256d378a3b7a66887a8820235397ad9ddd002ec2c591915d81e98cbbd43a6af3b75c90ec953f13048c30bf9c97b3b1179a2d4cd3ac27a060d9a8a16bfcd309b3afd719b9b9ba26c73a40880a5b670957e3a36a1" isAbstract="true" kind="Qualifier" name="VerifyDataPortClientTypeSWC2" packagePath="br.ufc.mdcc.hpc.shelf.tactical.environment">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000ad85db335f18dccf9f18308992b6bdfbdafd7a9a7d0ca3b7c26a9679f7609e09e432e44839c784b6509779eb1165832824049d08f5ea50483cbe94ed572c7e77ab065c7ba2c94ac81451c76f489912a6f251d36e60f90046aa3fb370409fdf870314647a0bd79d6344a811852249426503f5d7da5051b72e774828bca0186099" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/VerifyDataPortClientType.hpe" name="VerifyDataPortClientType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="50" y="114">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds parallel="true" uRef="environment_port_type">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+  </header>
+  <componentInfo>
+    <interface iRef="IVerifyDataPortClientTypeSWC2" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2&#xA;{&#xA;&#x9;public interface BaseIVerifyDataPortClientTypeSWC2 : BaseIEnvironmentPortTypeSinglePartner, IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyDataPortClientTypeSWC2.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2/bin/1.0.0.0/BaseIVerifyDataPortClientTypeSWC2.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/BaseIEnvironmentPortTypeSinglePartner.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2&#xA;{&#xA;&#x9;public interface IVerifyDataPortClientTypeSWC2 : BaseIVerifyDataPortClientTypeSWC2, IEnvironmentPortTypeSinglePartner&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IVerifyDataPortClientTypeSWC2.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2/bin/1.0.0.0/IVerifyDataPortClientTypeSWC2.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2/bin/1.0.0.0/BaseIVerifyDataPortClientTypeSWC2.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IEnvironmentPortTypeSinglePartner.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="57" w="308" x="2" y="437">
+        <color b="144" g="238" r="144"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="IVerifyDataPortClientTypeSWC2" multiple="true" private="false" replica="0" uRef="environment_port_type" visibleInterface="true">
+      <super cRef="base" uRef="environment_port_type"/>
+      <visualDescription h="57" w="202" x="57" y="238"/>
+    </unit>
+  </componentInfo>
+</component:component>

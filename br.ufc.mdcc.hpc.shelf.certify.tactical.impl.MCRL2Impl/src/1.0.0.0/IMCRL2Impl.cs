@@ -9,7 +9,7 @@ using System.IO;
 using System.Threading;
 using System.Collections.Concurrent;
 using  br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
-using br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortImpl;
+using br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortSWC2Impl;
 using MPI;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
