@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemSWC2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl 
 {
-	public abstract class BaseIRoot: Application, BaseIRoot
+	public abstract class BaseIRootImpl: Application, BaseIRoot
 	{
 		private IVerifyClientPort<IVerifyDataPortClientType> verify_data2 = null;
 
@@ -105,7 +105,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl
 		}
 		private ISWC2 SWC2 = null;
 
-		protected ISWC2 SWC2
+		protected ISWC2 sWC2
 		{
 			get
 			{

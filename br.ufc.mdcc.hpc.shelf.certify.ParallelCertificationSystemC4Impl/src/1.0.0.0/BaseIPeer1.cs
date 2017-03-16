@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl 
 {
-	public abstract class BaseIPeer1: Application, BaseIPeer1
+	public abstract class BaseIPeer1Impl: Application, BaseIPeer1
 	{
 		private ITaskPort<IVerifyPortType> verify1 = null;
 
@@ -39,7 +39,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl
 		}
 		private IParTypes ParTypes1 = null;
 
-		protected IParTypes ParTypes1
+		protected IParTypes parTypes1
 		{
 			get
 			{

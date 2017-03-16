@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemSWC2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl 
 {
-	public abstract class BaseIPeer2: Application, BaseIPeer2
+	public abstract class BaseIPeer2Impl: Application, BaseIPeer2
 	{
 		private ITaskPort<IVerifyPortType> verify2 = null;
 
@@ -28,7 +28,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl
 		}
 		private IMCRL2 MCRL22 = null;
 
-		protected IMCRL2 MCRL22
+		protected IMCRL2 mCRL22
 		{
 			get
 			{

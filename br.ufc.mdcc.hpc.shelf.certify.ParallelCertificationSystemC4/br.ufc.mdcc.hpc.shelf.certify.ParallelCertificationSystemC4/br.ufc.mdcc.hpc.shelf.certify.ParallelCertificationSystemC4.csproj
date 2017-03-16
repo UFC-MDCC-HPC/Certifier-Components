@@ -142,9 +142,5 @@
       <Project>{EA07A9D5-8247-4836-AD5B-A699CE743796}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemSWC2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl\br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl\br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl.csproj">
-      <Project>{19945C60-4E24-4D1F-ADDC-58DAB515880D}</Project>
-      <Name>br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>

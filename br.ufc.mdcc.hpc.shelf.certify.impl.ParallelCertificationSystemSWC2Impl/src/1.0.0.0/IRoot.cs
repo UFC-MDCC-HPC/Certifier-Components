@@ -6,7 +6,7 @@ using br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemSWC2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl
 {
-	public class IRoot : BaseIRoot, IRoot
+	public class IRootImpl : BaseIRoot, IRoot
 	{
 		public override void main()
 		{

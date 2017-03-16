@@ -138,5 +138,13 @@
       <Project>{E5EAEEA1-B1C9-45E7-97F2-F0825E8F358C}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.certify.tactical.ISP</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort.csproj">
+      <Project>{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4\br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4\br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4.csproj">
+      <Project>{A7814204-CB80-4734-B384-AFD1EFDA36B2}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

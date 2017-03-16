@@ -6,7 +6,7 @@ using br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemSWC2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl
 {
-	public class IPeer1 : BaseIPeer1, IPeer1
+	public class IPeer1Impl : BaseIPeer1, IPeer1
 	{
 		public override void main()
 		{

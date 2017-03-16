@@ -76,9 +76,11 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl
 			service.setProgs (ref programs);
 		}
 	
+
+
 		private IVerifyDataPortServerTypeC4 service;
 
-		public IVerifyDataPortServerTypeC4 Server {
+		public IVerifyDataPortServerTypeC4 Service {
 			set {
 				this.service = value;
 			}

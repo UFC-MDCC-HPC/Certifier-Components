@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl 
 {
-	public abstract class BaseIRoot: Application, BaseIRoot
+	public abstract class BaseIRootImpl: Application, BaseIRoot
 	{
 		private IVerifyClientPort<IVerifyDataPortClientType> verify_data4 = null;
 
@@ -105,7 +105,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl
 		}
 		private IC4 C4 = null;
 
-		protected IC4 C4
+		protected IC4 c4
 		{
 			get
 			{
