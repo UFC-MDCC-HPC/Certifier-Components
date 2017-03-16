@@ -6,7 +6,7 @@ using br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl
 {
-	public class IRootImpl : BaseIRoot, IRoot
+	public class IRootImpl : BaseIRootImpl, IRoot
 	{
 		public override void main()
 		{

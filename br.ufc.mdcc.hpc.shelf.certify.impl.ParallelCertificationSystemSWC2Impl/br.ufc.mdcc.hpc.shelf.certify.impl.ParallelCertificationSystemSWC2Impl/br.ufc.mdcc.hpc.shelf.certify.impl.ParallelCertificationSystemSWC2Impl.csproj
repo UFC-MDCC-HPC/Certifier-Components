@@ -38,34 +38,34 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\src\1.0.0.0\IPeer4.cs">
-      <Link>IPeer4.cs</Link>
+      <Link>IPeer4Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\BaseIPeer4.cs">
-      <Link>BaseIPeer4.cs</Link>
+      <Link>BaseIPeer4Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\IPeer3.cs">
-      <Link>IPeer3.cs</Link>
+      <Link>IPeer3Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\BaseIPeer3.cs">
-      <Link>BaseIPeer3.cs</Link>
+      <Link>BaseIPeer3Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\IPeer2.cs">
-      <Link>IPeer2.cs</Link>
+      <Link>IPeer2Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\BaseIPeer2.cs">
-      <Link>BaseIPeer2.cs</Link>
+      <Link>BaseIPeer2Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\IPeer1.cs">
-      <Link>IPeer1.cs</Link>
+      <Link>IPeer1Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\BaseIPeer1.cs">
-      <Link>BaseIPeer1.cs</Link>
+      <Link>BaseIPeer1Impl.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\IRoot.cs">
       <Link>IRoot.cs</Link>
     </Compile>
     <Compile Include="..\src\1.0.0.0\BaseIRoot.cs">
-      <Link>BaseIRoot.cs</Link>
+      <Link>BaseIRootImpl.cs</Link>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
