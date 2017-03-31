@@ -5,16 +5,16 @@
       <extensionType>
         <extends>true</extends>
       </extensionType>
-      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000f12be4dbb127734abad30970f752dfc7e8ef1e07c6976b3405e50b0ae572b15ea5a010811ad1b96d05a7c4897e4f0574262fb25c25c70567416770a8fc070dc31a5ed91c36477ce03d0ce3ab91e55a9c6eb7537b7a8a29b657d48294f202fae0f1ebe0b07a32d16e5d98e43198d341b679f884ef426244521586153fa9b7a6e4" localRef="base" location="br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/EnvironmentBindingBase.hpe" name="EnvironmentBindingBase" package="br.ufc.mdcc.hpc.storm.binding.environment" version="1.0.0.0">
+      <component hash_component_UID="00240000048000009400000006020000002400005253413100040000110000004566e1f4010df437945801aa11689f1e2ace0f7d77aba2a55b5fcd9d75548b28233921a1630fcf1309595a48903294b6c7b928ae6acc55e296124d0d97de22901d4050846ac381ab74381e993efbf954966193a25a4d7978a1d4fd9ed2ae0577a76cd61e239d96345316db2a0043ca12a2839c3505f90b329080c7044384bfa0" localRef="base" location="br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingMulticastInter/EnvironmentBindingMulticastInter.hpe" name="EnvironmentBindingMulticastInter" package="br.ufc.mdcc.hpc.storm.binding.environment" version="1.0.0.0">
         <visualDescription h="60" w="100" x="151" y="140">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="server_port_type" varName="S"/>
         <parameter formFieldId="client_port_type" varName="C"/>
-        <unitBounds parallel="false" uRef="client">
+        <parameter formFieldId="server_port_type" varName="S"/>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
-        <unitBounds parallel="false" uRef="server">
+        <unitBounds facet="1" facet_instance="0" facet_instance_enclosing="1" parallel="false" uRef="server">
           <visualDescription h="20" w="20" x="28" y="2"/>
         </unitBounds>
       </component>
@@ -23,6 +23,7 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <parameter componentRef="client_port_type" formFieldId="client_port_type" order="1" variance="invariant" varName="C"/>
@@ -31,7 +32,7 @@
       <visualDescription h="60" w="100" x="20" y="369">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -39,7 +40,7 @@
       <visualDescription h="60" w="100" x="354" y="428">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -69,7 +70,7 @@
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/1.0.0.0/BaseIServerBase.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort&#xA;{&#xA;&#x9;public interface IVerifyServerPort&lt;S> : BaseIVerifyServerPort&lt;S>, IServerBase&lt;S>&#xA;&#x9;&#x9;where S:IVerifyDataPortServerType&#xA;&#x9;{&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#x9;public class &#xA;}" name="IVerifyServerPort.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll" versionId="1.0.0.0">
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort&#xA;{&#xA;&#x9;public interface IVerifyServerPort&lt;S> : BaseIVerifyServerPort&lt;S>, IServerBase&lt;S>&#xA;&#x9;&#x9;where S:IVerifyDataPortServerType&#xA;&#x9;{&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;}" name="IVerifyServerPort.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IVerifyServerPort.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll</dependency>
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIVerifyServerPort.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/1.0.0.0/IServerBase.dll</dependency>
@@ -87,7 +88,7 @@
       <super cRef="base" uRef="client"/>
       <visualDescription h="40" w="80" x="53" y="280"/>
     </unit>
-    <unit facet="0" iRef="IVerifyServerPort" multiple="false" private="false" replica="0" uRef="server" visibleInterface="true">
+    <unit facet="1" iRef="IVerifyServerPort" multiple="false" private="false" replica="0" uRef="server" visibleInterface="true">
       <super cRef="base" uRef="server"/>
       <visualDescription h="40" w="80" x="362" y="303"/>
     </unit>

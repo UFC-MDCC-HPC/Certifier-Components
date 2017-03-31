@@ -9,7 +9,7 @@
         <visualDescription h="60" w="100" x="113" y="170">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <unitBounds parallel="true" uRef="environment_port_type">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="environment_port_type">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
       </component>
@@ -18,14 +18,15 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <interface iRef="IVerifyDataPortClientType" nArgs="0">
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType&#xA;{&#xA;&#x9;public interface BaseIVerifyDataPortClientType : BaseIEnvironmentPortType, IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyDataPortClientType.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/BaseIVerifyDataPortClientType.dll" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType&#xA;{&#xA;&#x9;public interface BaseIVerifyDataPortClientType : BaseIEnvironmentPortType, IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyDataPortClientType.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/BaseIVerifyDataPortClientType.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner/bin/1.0.0.0/BaseIEnvironmentPortType.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType&#xA;{&#xA;&#x9;public interface IVerifyDataPortClientType : BaseIVerifyDataPortClientType, IEnvironmentPortType&#xA;&#x9;{&#xA;&#x9;   //metdos da porta&#xA;&#x9;}&#xA;}" name="IVerifyDataPortClientType.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll" versionId="1.0.0.0">
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType&#xA;{&#xA;&#x9;public interface IVerifyDataPortClientType : BaseIVerifyDataPortClientType, &#xA;&#x9;IEnvironmentPortType&#xA;&#x9;{  &#xA;&#x9;&#x9;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;}" name="IVerifyDataPortClientType.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/IVerifyDataPortClientType.dll" versionId="1.0.0.0">
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/bin/1.0.0.0/BaseIVerifyDataPortClientType.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeSinglePartner/bin/1.0.0.0/IEnvironmentPortType.dll</dependency>
         </file>

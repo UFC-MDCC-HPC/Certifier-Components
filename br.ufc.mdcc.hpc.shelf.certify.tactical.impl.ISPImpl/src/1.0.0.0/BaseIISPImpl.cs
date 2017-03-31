@@ -9,19 +9,21 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType;
 using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;
 using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
 using br.ufc.mdcc.hpc.shelf.certify.tactical.ISP;
+using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl 
 {
-	public abstract class BaseIISPImpl: Computation, BaseIISP
+	public abstract class BaseIISPImpl<S>: Computation, BaseIISP<S>
+	where S:IVerifyDataPortServerTypeC4
 	{
-		private IVerifyServerPort<IVerifyDataPortServerType> verify_data = null;
+		private IVerifyServerPort<S> verify_data = null;
 
-		public IVerifyServerPort<IVerifyDataPortServerType> Verify_data
+		public IVerifyServerPort<S> Verify_data
 		{
 			get
 			{
 				if (this.verify_data == null)
-					this.verify_data = (IVerifyServerPort<IVerifyDataPortServerType>) Services.getPort("verify_data");
+					this.verify_data = (IVerifyServerPort<S>) Services.getPort("verify_data");
 				return this.verify_data;
 			}
 		}

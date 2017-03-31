@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{40488558-F21F-4863-A466-15F96A6CD131}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>br.ufc.mdcc.hpc.storm.binding.channel.Binding</RootNamespace>

@@ -9,7 +9,7 @@
         <visualDescription h="60" w="100" x="354" y="212">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <unitBounds parallel="true" uRef="environment_port_type">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="environment_port_type">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
       </component>
@@ -18,6 +18,7 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <interface iRef="IVerifyDataPortServerType" nArgs="0">
@@ -25,7 +26,7 @@
         <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType&#xA;{&#xA;&#x9;public interface BaseIVerifyDataPortServerType : BaseIEnvironmentPortTypeMultiplePartner, IQualifierKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyDataPortServerType.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/BaseIVerifyDataPortServerType.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner/bin/1.0.0.0/BaseIEnvironmentPortTypeMultiplePartner.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType&#xA;{&#xA;&#x9;public interface IVerifyDataPortServerType : BaseIVerifyDataPortServerType,&#xA;&#x9;IEnvironmentPortTypeMultiplePartner&#xA;&#xA;&#xA;&#x9;{  //SWC2&#xA;&#x9;&#x9;void setMcrl2File(ref string filename);&#xA;&#x9;&#x9;void setNumProperties(int number);&#xA;&#x9;&#x9;void setIndexMyFirstProp (int index);&#xA;&#x9;&#x9;void setPropertyFiles(ref string [] files);&#xA;&#x9;&#x9;//C4&#xA;&#x9;&#x9;void setNumProgs (int number);&#xA;&#x9;&#x9;void setUnitsProgs (ref int[] num_units_program);&#xA;&#x9;&#x9;void setArgsProgs (ref string[] args_programs);&#xA;&#x9;&#x9;void setProgs (ref string[] programs);&#xA;&#x9;}&#xA;}" name="IVerifyDataPortServerType.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll" versionId="1.0.0.0">
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType&#xA;{&#xA;&#x9;public interface IVerifyDataPortServerType : BaseIVerifyDataPortServerType,&#xA;&#x9;IEnvironmentPortTypeMultiplePartner&#xA;&#xA;&#xA;&#x9;{ &#xA;&#x9;&#x9;&#xA;&#x9;}&#xA;}" name="IVerifyDataPortServerType.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/IVerifyDataPortServerType.dll" versionId="1.0.0.0">
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/1.0.0.0/BaseIVerifyDataPortServerType.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner/bin/1.0.0.0/IEnvironmentPortTypeMultiplePartner.dll</dependency>
         </file>

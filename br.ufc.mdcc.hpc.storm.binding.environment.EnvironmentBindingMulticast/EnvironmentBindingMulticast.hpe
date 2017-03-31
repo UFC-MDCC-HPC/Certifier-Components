@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="00240000048000009400000006020000002400005253413100040000110000001b47dac9dc6da417828dbe8e3f866391a9671859e05e28b83f6fdb16a46fad096d935976b9bf7082028efeb459731e7a63193327f0101c2c4b27cd79e4ff4f04dfc3654c06c4d7de871f092a873f4ba761ddd643569ab07272922eb2cefd362b5d0c07849d0b9174e9ca7ac0a0f4409ea1aa3ca0fb242668a6a9aa27787526ac" isAbstract="true" kind="Synchronizer" name="EnvironmentBindingMulticast" packagePath="br.ufc.mdcc.hpc.storm.binding.environment">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000fbcce1eb930242d7f6b7c1dbb953bc1a644dc2f6d1dc52a23f1f0cb4b7705836ffa7ca9a9c02fafefe0355174d08d92ba8e41a231b8f8614f45a405199d360ef2e57349d2244d688e63c46c3577a2c4f2ff6160a5c0ec9bbb3503347551ebf545c8d45f9a7f4cbbd776521401b197631364ebdad21cab055bbeddde1e21ecb90" isAbstract="true" kind="Synchronizer" name="EnvironmentBindingMulticast" packagePath="br.ufc.mdcc.hpc.storm.binding.environment">
     <baseType>
       <extensionType>
         <extends>true</extends>
       </extensionType>
-      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000e9a9cde23c7b6581a1c76aec7e0f64bd0761b150ad406b58c5129cac594b1b610c36068f944b6b1a1a86c35e4035629969b3870a9754fb3abae05c0dfe423bb78f884bf71b50f32284b3d6057f6062ed5dbad626da4dc99346e69a376dbf29c9ecce35c1643befde9c6ec876afd929fdd82f97d78cf4cafb48dcf6a839f59197" localRef="base" location="br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/EnvironmentBindingBase.hpe" name="EnvironmentBindingBase" package="br.ufc.mdcc.hpc.storm.binding.environment" version="1.0.0.0">
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000f12be4dbb127734abad30970f752dfc7e8ef1e07c6976b3405e50b0ae572b15ea5a010811ad1b96d05a7c4897e4f0574262fb25c25c70567416770a8fc070dc31a5ed91c36477ce03d0ce3ab91e55a9c6eb7537b7a8a29b657d48294f202fae0f1ebe0b07a32d16e5d98e43198d341b679f884ef426244521586153fa9b7a6e4" localRef="base" location="br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/EnvironmentBindingBase.hpe" name="EnvironmentBindingBase" package="br.ufc.mdcc.hpc.storm.binding.environment" version="1.0.0.0">
         <visualDescription h="60" w="253" x="84" y="266">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="server_port_type" varName="S"/>
         <parameter formFieldId="client_port_type" varName="C"/>
-        <unitBounds parallel="false" uRef="client">
+        <parameter formFieldId="server_port_type" varName="S"/>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
           <visualDescription h="20" w="20" x="32" y="27"/>
         </unitBounds>
-        <unitBounds parallel="true" uRef="server">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="server">
           <visualDescription h="20" w="20" x="185" y="21"/>
         </unitBounds>
       </component>
@@ -23,6 +23,7 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <parameter componentRef="client_port_type" formFieldId="client_port_type" order="0" variance="invariant" varName="C"/>
@@ -31,7 +32,7 @@
       <visualDescription h="60" w="100" x="125" y="327">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -39,7 +40,7 @@
       <visualDescription h="60" w="100" x="243" y="466">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>

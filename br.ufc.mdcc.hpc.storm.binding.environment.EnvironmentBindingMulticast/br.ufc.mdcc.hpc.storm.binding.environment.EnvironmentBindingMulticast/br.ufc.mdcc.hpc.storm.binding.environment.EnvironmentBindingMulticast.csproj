@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{2FA42E26-4D46-4E4A-A038-4C382D2EB845}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingMulticast</RootNamespace>

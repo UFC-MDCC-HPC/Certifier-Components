@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.certifier.Certifier;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl 
 {
-	public abstract class BaseISWC2Impl: Computation, BaseICertifier
+	public abstract class BaseISWC2Impl: Computation, BaseICertify
 	{
 		private IVerifyClientPort<IVerifyDataPortClientTypeSWC2> verify_data1 = null;
 

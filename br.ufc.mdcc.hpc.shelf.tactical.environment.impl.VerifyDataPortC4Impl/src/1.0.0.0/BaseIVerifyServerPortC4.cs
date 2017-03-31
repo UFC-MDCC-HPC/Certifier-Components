@@ -7,26 +7,30 @@ using br.ufc.pargo.hpe.kinds;
 using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType;
 using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;
 using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
+using br.ufc.mdcc.hpc.storm.binding.channel.Binding;
 
 namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl 
 {
-	public abstract class BaseIVerifyServerPortC4: Synchronizer, BaseIVerifyServerPort<IVerifyDataPortServerTypeC4>
+	public abstract class BaseIVerifyServerPortC4<S>: Synchronizer, BaseIVerifyServerPort<S>
+		where S:IVerifyDataPortServerTypeC4
 	{
-		/*private IEnvironmentPortType server_port_type = null;
+		protected const int FACET_CLIENT = 0;
+		protected const int FACET_SERVER = 1;
 
-		protected IEnvironmentPortType Server_port_type
+		private S server = default(S);
+		public S Server { set {	server = value; } get {if (this.server == null)
+				this.server = (S) Services.getPort("server_port_type");
+				return this.server;}}
+		
+		private IChannel channel = null;
+		protected IChannel Channel
 		{
 			get
 			{
-				if (this.server_port_type == null)
-					this.server_port_type = (IEnvironmentPortType) Services.getPort("server_port_type");
-				return this.server_port_type;
+				if (this.channel == null)
+					this.channel = (IChannel) Services.getPort("channel");
+				return this.channel;
 			}
-		}*/
-
-		private IVerifyDataPortServerTypeC4 server = default(IVerifyDataPortServerTypeC4);
-		public IVerifyDataPortServerTypeC4 Server { set {	server = value; } get {if (this.server == null)
-				this.server = (IVerifyDataPortServerTypeC4) Services.getPort("server_port_type");
-				return this.server;}}
+		}
 	}
 }

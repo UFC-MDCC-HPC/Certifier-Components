@@ -5,15 +5,10 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC
 {
 	public interface IVerifyDataPortServerTypeSWC2 : BaseIVerifyDataPortServerTypeSWC2, IVerifyDataPortServerType
 	{
-
-
-
 		//SWC2
 		void setMcrl2File(ref string filename);
 		void setNumProperties(int number);
 		void setIndexMyFirstProp (int index);
-		void setPropertyFiles(ref string [] files);
-
-	
+		void setPropertyFiles(ref string [] files);	
 	}
 }

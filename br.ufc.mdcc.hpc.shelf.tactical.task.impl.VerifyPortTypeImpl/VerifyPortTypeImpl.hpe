@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000017aabd4bd1af795880331bfa0f6f6295d1125e73d7ef8957438a9c446447dc26a43bfda4e8da9e7a5a79f4de9600fbc8e2d09ed5559684d28deab52d9470000c23227bc1e8e54f4540f5151703bc9b07e12aaca5b3919206c188f633e09dff26a830263ef0c99e33dadc4fbe95c77c367018d1a8f7d2330749b0220783367280" isAbstract="false" kind="Environment" name="VerifyPortTypeImpl" packagePath="br.ufc.mdcc.hpc.shelf.tactical.task.impl">
+    <baseType>
+      <extensionType>
+        <implements>true</implements>
+      </extensionType>
+      <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000bf87f17b918a0a4f67cfa74481e1758c1336b7b4641028e660cb0408e4fcd368717546f24a2bb1ecf8f3cf6f8d4d13bd1f10dff90bc853ab36cfbaf0210655ac9d83ffa111e817d4b7407a989a70728fe8b5e7c1ee5feb91e7cb2cd45aca9927c443f3205366e9d16a1f8b20a98811534f429b1510d8f7e6fa9c0e699dcf2fc7" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="136" y="204">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="task_port_type">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
+  </header>
+  <componentInfo>
+    <interface iRef="IVerifyPortTypeImpl" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* Automatically Generated Code */&#xA;&#xA;using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.task.impl.VerifyPortTypeImpl &#xA;{&#xA;&#x9;public abstract class BaseIVerifyPortTypeImpl: br.ufc.pargo.hpe.kinds.Environment, BaseIVerifyPortType&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyPortTypeImpl.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.task.impl.VerifyPortTypeImpl/bin/1.0.0.0/BaseIVerifyPortTypeImpl.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/BaseITaskPortType.dll</dependency>
+        </file>
+        <file contents="using System;&#xA;using br.ufc.pargo.hpe.backend.DGAC;&#xA;using br.ufc.pargo.hpe.basic;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.storm.binding.task.TaskPortType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.task.impl.VerifyPortTypeImpl&#xA;{&#xA;&#x9;public class IVerifyPortTypeImpl : BaseIVerifyPortTypeImpl, IVerifyPortType&#xA;&#x9;{&#xA;&#x9;&#x9;public override void on_initialize ()&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;Console.WriteLine (&quot;SETTING ADVANCE ACTIONS --- on_initialize of ITaskPortTypeAdvanceImpl&quot;);&#xA;&#xA;&#x9;&#x9;&#x9;ActionDef.action_ids[IVerify.VERIFY_CONCLUSIVE] = IVerify.VERIFY_CONCLUSIVE.GetHashCode();&#xA;&#x9;&#x9;&#x9;ActionDef.action_ids[IVerify.VERIFY_INCONCLUSIVE] = IVerify.VERIFY_INCONCLUSIVE.GetHashCode();&#xA;&#x9;&#x9;&#x9;ActionDef.action_ids[IVerify.VERIFY_PERFORM] = IVerify.VERIFY_PERFORM.GetHashCode();&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;" name="IVerifyPortTypeImpl.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.task.impl.VerifyPortTypeImpl/bin/1.0.0.0/IVerifyPortTypeImpl.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.task.impl.VerifyPortTypeImpl/bin/1.0.0.0/BaseIVerifyPortTypeImpl.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/1.0.0.0/ITaskPortType.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="189" x="155" y="376">
+        <color b="230" g="216" r="173"/>
+      </visualDescription>
+    </interface>
+    <unit facet="0" iRef="IVerifyPortTypeImpl" multiple="true" private="false" replica="0" uRef="task_port_type" visibleInterface="true">
+      <super cRef="base" uRef="task_port_type"/>
+      <visualDescription h="40" w="189" x="126" y="131"/>
+    </unit>
+  </componentInfo>
+</component:component>

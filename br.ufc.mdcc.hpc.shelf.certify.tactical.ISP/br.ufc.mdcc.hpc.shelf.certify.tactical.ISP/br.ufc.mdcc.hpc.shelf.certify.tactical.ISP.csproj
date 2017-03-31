@@ -74,5 +74,17 @@
       <Project>{B785892B-10B1-43BA-897F-E6F02CC932D0}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.task.TaskPortType</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4.csproj">
+      <Project>{B61C6067-396A-4A19-A5D6-7AB7E5C05455}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.csproj">
+      <Project>{CCDE05E2-450F-49DA-A5BF-54B37BDF01CE}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ISPType\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ISPType\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ISPType.csproj">
+      <Project>{E1F6B2AB-6572-426A-89DE-171F23919F24}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ISPType</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -9,9 +9,13 @@ using  br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
 using System.Threading;
 
 using MPI;
+using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
+
+
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl
 {
-	public class IISPImpl : BaseIISPImpl, IISP
+	public class IISPImpl<S> : BaseIISPImpl<S>, IISP<S>
+		where S:IVerifyDataPortServerTypeC4
 	{
 		public string []programs; 
 		public int num_programs; 
@@ -177,7 +181,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl
 		string []property_results;
 
 		public static void _Main(){
-			Console.WriteLine ("Teste Adaptador Tático ISP\n");
+			Console.WriteLine ("Teste Adaptador Tático ISP");
 
 			TacticalAdapterISP t = new TacticalAdapterISP 
 				("/home/allberson/Dropbox/HPC-Shelf-MapReduce/br.ufc.mdcc.hpcshelf.certifier.impl.computation.TacticalISPImpl/br.ufc.mdcc.hpcshelf.certifier.impl.computation.TacticalISPImpl/bin/Debug", 

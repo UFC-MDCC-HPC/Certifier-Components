@@ -91,10 +91,6 @@
       <Project>{0CB2BFFB-E977-4458-BC73-D1985DFEE43E}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4.csproj">
-      <Project>{B61C6067-396A-4A19-A5D6-7AB7E5C05455}</Project>
-      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2.csproj">
       <Project>{0D5F83D6-CC87-497C-B48C-236181341168}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC2</Name>
@@ -114,6 +110,18 @@
     <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort.csproj">
       <Project>{AC432275-832D-41D1-B9AB-4E7C4D1BF89C}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4.csproj">
+      <Project>{B61C6067-396A-4A19-A5D6-7AB7E5C05455}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.binding.channel.Binding\br.ufc.mdcc.hpc.storm.binding.channel.Binding\br.ufc.mdcc.hpc.storm.binding.channel.Binding.csproj">
+      <Project>{40488558-F21F-4863-A466-15F96A6CD131}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.binding.channel.Binding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.storm.kind.Binding\br.ufc.mdcc.hpc.storm.kind.Binding\br.ufc.mdcc.hpc.storm.kind.Binding.csproj">
+      <Project>{75954E48-9C52-4F6D-8947-13E9D574FBEA}</Project>
+      <Name>br.ufc.mdcc.hpc.storm.kind.Binding</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

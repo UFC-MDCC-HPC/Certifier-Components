@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="ASCII"?>
-<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/allberson/hpe/root/cache" default="all" name="ParTypes">
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/heron/hpe/heron/cache" default="all" name="ParTypes">
   <property name="nant.settings.currentframework" value="mono-2.0"/>
   <property name="build" value="bin"/>
   <property name="src" value="src"/>
   <target name="ParTypes-1.0.0.0">
-    <ifnot targetexists="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0">
-      <mkdir dir="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0"/>
+    <ifnot targetexists="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0">
+      <mkdir dir="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0"/>
     </ifnot>
-    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/ParTypes.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll" target="library" unsafe="false">
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/ParTypes.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll" target="library" unsafe="false">
       <sources>
-        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/src/1.0.0.0/BaseIParTypes.cs"/>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/src/1.0.0.0/BaseIParTypes.cs"/>
       </sources>
       <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll"/>
         <include name="br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll"/>
         <include/>
       </references>
     </csc>
-    <csc debug="true" keyfile="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/ParTypes.snk" optimize="true" output="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/IParTypes.dll" target="library" unsafe="false">
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/ParTypes.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/IParTypes.dll" target="library" unsafe="false">
       <sources>
-        <include name="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/src/1.0.0.0/IParTypes.cs"/>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/src/1.0.0.0/IParTypes.cs"/>
       </sources>
       <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll"/>
         <include name="/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll"/>
         <include name="br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/ITactical.dll"/>
         <include/>

@@ -8,10 +8,12 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl;
 using  br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
 using System.Threading;
 using MPI;
+using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 {
-	public class IParTypesImpl : BaseIParTypesImpl, IParTypes
+	public class IParTypesImpl<S> : BaseIParTypesImpl<S>, IParTypes<S>
+		where S: IVerifyDataPortServerTypeC4
 	{
 		public string []programs; 
 		public int num_programs; 
@@ -176,7 +178,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 		string []property_results;
 
 		public static void _Main(){
-			Console.WriteLine ("Teste Adaptador Tático ISP\n");
+			Console.WriteLine ("Teste Adaptador Tático ISP");
 
 			TacticalAdapterISP t = new TacticalAdapterISP 
 				("/home/allberson/Dropbox/HPC-Shelf-MapReduce/br.ufc.mdcc.hpcshelf.certifier.impl.computation.TacticalISPImpl/br.ufc.mdcc.hpcshelf.certifier.impl.computation.TacticalISPImpl/bin/Debug", 

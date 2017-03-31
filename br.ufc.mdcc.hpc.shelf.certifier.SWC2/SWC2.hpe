@@ -9,7 +9,7 @@
         <visualDescription h="60" w="100" x="13" y="112">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <unitBounds parallel="true" uRef="Certifier">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="certify">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
       </component>
@@ -18,18 +18,19 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <innerComponent localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="188" y="255">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="server_port_type" varName="S"/>
       <parameter formFieldId="client_port_type" varName="C"/>
-      <unitBounds parallel="false" uRef="client">
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
-      <unitBounds parallel="false" uRef="server">
+      <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -37,12 +38,12 @@
       <visualDescription h="60" w="100" x="306" y="277">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="server_port_type" varName="S"/>
       <parameter formFieldId="client_port_type" varName="C"/>
-      <unitBounds parallel="false" uRef="client">
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
-      <unitBounds parallel="false" uRef="server">
+      <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -50,12 +51,12 @@
       <visualDescription h="60" w="100" x="68" y="199">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="server_port_type" varName="S"/>
       <parameter formFieldId="client_port_type" varName="C"/>
-      <unitBounds parallel="false" uRef="client">
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
-      <unitBounds parallel="false" uRef="server">
+      <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -63,12 +64,12 @@
       <visualDescription h="60" w="100" x="409" y="229">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="server_port_type" varName="S"/>
       <parameter formFieldId="client_port_type" varName="C"/>
-      <unitBounds parallel="false" uRef="client">
+      <parameter formFieldId="server_port_type" varName="S"/>
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
-      <unitBounds parallel="false" uRef="server">
+      <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -77,7 +78,7 @@
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="task_port_type" varName="T"/>
-      <unitBounds parallel="true" uRef="peer">
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -86,7 +87,7 @@
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="task_port_type" varName="T"/>
-      <unitBounds parallel="true" uRef="peer">
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -95,7 +96,7 @@
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="task_port_type" varName="T"/>
-      <unitBounds parallel="true" uRef="peer">
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -104,7 +105,7 @@
         <color b="255" g="255" r="255"/>
       </visualDescription>
       <parameter formFieldId="task_port_type" varName="T"/>
-      <unitBounds parallel="true" uRef="peer">
+      <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -112,7 +113,7 @@
       <visualDescription h="60" w="100" x="18" y="451">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="task_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="task_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -120,7 +121,7 @@
       <visualDescription h="60" w="100" x="31" y="285">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -128,7 +129,7 @@
       <visualDescription h="60" w="100" x="160" y="345">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -136,43 +137,43 @@
     <supplyParameter cRef="client" direct="true" varName="C"/>
     <supplyParameter cRef="server" direct="true" varName="S"/>
     <interface iRef="ISWC2" nArgs="0">
-      <slice isRef="verify_data4">
-        <originRef cRef="verify_data4" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="17" y="10"/>
+      <slice isRef="verify_data2">
+        <originRef cRef="verify_data2" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="44" y="21"/>
       </slice>
       <slice isRef="verify_data3">
         <originRef cRef="verify_data3" iRef="IVerifyClientPort"/>
         <visualDescription h="10" w="10" x="33" y="21"/>
       </slice>
-      <slice isRef="verify_data2">
-        <originRef cRef="verify_data2" iRef="IVerifyClientPort"/>
-        <visualDescription h="10" w="10" x="44" y="21"/>
-      </slice>
       <slice isRef="verify_data1">
         <originRef cRef="verify_data1" iRef="IVerifyClientPort"/>
         <visualDescription h="10" w="10" x="27" y="18"/>
-      </slice>
-      <slice isRef="verify1">
-        <originRef cRef="verify1" iRef="ITaskPort"/>
-        <visualDescription h="10" w="10" x="9" y="27"/>
-      </slice>
-      <slice isRef="verify2">
-        <originRef cRef="verify2" iRef="ITaskPort"/>
-        <visualDescription h="10" w="10" x="29" y="17"/>
-      </slice>
-      <slice isRef="verify3">
-        <originRef cRef="verify3" iRef="ITaskPort"/>
-        <visualDescription h="10" w="10" x="45" y="20"/>
       </slice>
       <slice isRef="verify4">
         <originRef cRef="verify4" iRef="ITaskPort"/>
         <visualDescription h="10" w="10" x="49" y="23"/>
       </slice>
+      <slice isRef="verify3">
+        <originRef cRef="verify3" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="45" y="20"/>
+      </slice>
+      <slice isRef="verify_data4">
+        <originRef cRef="verify_data4" iRef="IVerifyClientPort"/>
+        <visualDescription h="10" w="10" x="17" y="10"/>
+      </slice>
+      <slice isRef="verify2">
+        <originRef cRef="verify2" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="29" y="17"/>
+      </slice>
+      <slice isRef="verify1">
+        <originRef cRef="verify1" iRef="ITaskPort"/>
+        <visualDescription h="10" w="10" x="9" y="27"/>
+      </slice>
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.SWC2&#xA;{&#xA;&#x9;public interface BaseISWC2 : BaseICertifier, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseISWC2.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.SWC2/bin/1.0.0.0/BaseISWC2.dll" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.SWC2&#xA;{&#xA;&#x9;public interface BaseISWC2 : BaseICertify, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseISWC2.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.SWC2/bin/1.0.0.0/BaseISWC2.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/BaseICertifier.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.SWC2&#xA;{&#xA;&#x9;public interface ISWC2 : BaseISWC2, ICertifier&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="ISWC2.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.SWC2/bin/1.0.0.0/ISWC2.dll" versionId="1.0.0.0">
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.SWC2&#xA;{&#xA;&#x9;public interface ISWC2 : BaseISWC2, ICertify&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="ISWC2.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.SWC2/bin/1.0.0.0/ISWC2.dll" versionId="1.0.0.0">
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certifier.SWC2/bin/1.0.0.0/BaseISWC2.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/ICertifier.dll</dependency>
         </file>
@@ -180,67 +181,67 @@
       <visualDescription h="40" w="80" x="251" y="53">
         <color b="255" g="0" r="0"/>
       </visualDescription>
-      <port name="verify_data4">
+      <port name="verify_data2">
         <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify_data4" sRef="verify_data4"/>
+        <slice pRef="verify_data2" sRef="verify_data2"/>
       </port>
       <port name="verify_data3">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify_data3" sRef="verify_data3"/>
       </port>
-      <port name="verify_data2">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify_data2" sRef="verify_data2"/>
-      </port>
       <port name="verify_data1">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify_data1" sRef="verify_data1"/>
-      </port>
-      <port name="verify1">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify1" sRef="verify1"/>
-      </port>
-      <port name="verify2">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify2" sRef="verify2"/>
-      </port>
-      <port name="verify3">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify3" sRef="verify3"/>
       </port>
       <port name="verify4">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify4" sRef="verify4"/>
       </port>
+      <port name="verify3">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify3" sRef="verify3"/>
+      </port>
+      <port name="verify_data4">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data4" sRef="verify_data4"/>
+      </port>
+      <port name="verify2">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify2" sRef="verify2"/>
+      </port>
+      <port name="verify1">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify1" sRef="verify1"/>
+      </port>
       <action id="main">
         <protocol/>
       </action>
     </interface>
-    <unit facet="0" iRef="ISWC2" multiple="true" private="false" replica="0" uRef="SWC2" visibleInterface="true">
-      <super cRef="base" uRef="Certifier"/>
-      <slices cRef="verify_data4" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data4" transitive="false">
-        <visualDescription h="10" w="10" x="17" y="10"/>
+    <unit facet="0" iRef="ISWC2" multiple="true" private="false" replica="0" uRef="certify" visibleInterface="true">
+      <super cRef="base" uRef="certify"/>
+      <slices cRef="verify_data2" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data2" transitive="false">
+        <visualDescription h="10" w="10" x="44" y="21"/>
       </slices>
       <slices cRef="verify_data3" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data3" transitive="false">
         <visualDescription h="10" w="10" x="33" y="21"/>
       </slices>
-      <slices cRef="verify_data2" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data2" transitive="false">
-        <visualDescription h="10" w="10" x="44" y="21"/>
-      </slices>
       <slices cRef="verify_data1" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data1" transitive="false">
         <visualDescription h="10" w="10" x="27" y="18"/>
       </slices>
-      <slices cRef="verify1" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify1" transitive="false">
-        <visualDescription h="10" w="10" x="9" y="27"/>
-      </slices>
-      <slices cRef="verify2" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify2" transitive="false">
-        <visualDescription h="10" w="10" x="29" y="17"/>
+      <slices cRef="verify4" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify4" transitive="false">
+        <visualDescription h="10" w="10" x="49" y="23"/>
       </slices>
       <slices cRef="verify3" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify3" transitive="false">
         <visualDescription h="10" w="10" x="45" y="20"/>
       </slices>
-      <slices cRef="verify4" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify4" transitive="false">
-        <visualDescription h="10" w="10" x="49" y="23"/>
+      <slices cRef="verify2" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify2" transitive="false">
+        <visualDescription h="10" w="10" x="29" y="17"/>
+      </slices>
+      <slices cRef="verify_data4" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data4" transitive="false">
+        <visualDescription h="10" w="10" x="17" y="10"/>
+      </slices>
+      <slices cRef="verify1" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify1" transitive="false">
+        <visualDescription h="10" w="10" x="9" y="27"/>
       </slices>
       <visualDescription h="40" w="80" x="288" y="102"/>
     </unit>

@@ -7,8 +7,10 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase;
 namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl
 {
-	public class IVerifyServerPortC4 : BaseIVerifyServerPortC4, IVerifyServerPort<IVerifyDataPortServerTypeC4>
-	{public int certifier = 0; 
+	public class IVerifyServerPortC4<S> : BaseIVerifyServerPortC4<S>, IVerifyServerPort<S>
+		where S:IVerifyDataPortServerTypeC4
+	{
+		public Tuple<int,int> certifier = new Tuple<int,int> (FACET_CLIENT, 0);
 		public int operation, operation_tag = 0 ;
 
 		public int dataCertifierTactical = 71; 
@@ -19,82 +21,61 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl
 		public string[] programs;
 		public override void main()
 		{  
-			while (true) {
-
-
-				operation = channel.Receive<int> (certifier, operation_tag);
-				switch(operation){
-			
-
-
+			while (true) 
+			{
+				operation = Channel.Receive<int> (certifier, operation_tag);
+				switch(operation)
+				{
 					//C4
-				case 0: setNumProgs();
-					break;
+					case 0: setNumProgs();
+						break;
 
-				case 1: setUnitsProgs();
-					break;
+					case 1: setUnitsProgs();
+						break;
 
-				case 2: setArgsProgs();
-					break;
+					case 2: setArgsProgs();
+						break;
 
-				case 3: setProgs();
-					break;
-
-
+					case 3: setProgs();
+						break;
 				}
-
-
-
-
-
 			}
-
-
 		}
 
 		//c4
-
-
-		void setNumProgs (){
-
-			service.setNumProgs(channel.Receive<int>(certifier,dataCertifierTactical));
+		void setNumProgs ()
+		{
+			service.setNumProgs(Channel.Receive<int>(certifier,dataCertifierTactical));
 		}
-		void setUnitsProgs (){
-			channel.Receive<int>(certifier,dataCertifierTactical, ref num_units_program);
+
+		void setUnitsProgs ()
+		{
+			Channel.Receive<int>(certifier,dataCertifierTactical, ref num_units_program);
 			service.setUnitsProgs (ref num_units_program);
-
-
 		}
-		void setArgsProgs (){
 
-			channel.Receive<string>(certifier,dataCertifierTactical, ref args_programs);
+		void setArgsProgs ()
+		{
+			Channel.Receive<string>(certifier,dataCertifierTactical, ref args_programs);
 			service.setArgsProgs (ref args_programs);
-
 		}
-		void setProgs (){	
-			channel.Receive<string>(certifier,dataCertifierTactical, ref programs);
+
+		void setProgs ()
+		{
+			Channel.Receive<string>(certifier,dataCertifierTactical, ref programs);
 			service.setProgs (ref programs);
 		}
-	
-
 
 		private IVerifyDataPortServerTypeC4 service;
 
-		public IVerifyDataPortServerTypeC4 Service {
-			set {
-				this.service = value;
-			}
-			get { return service; }
-		}
-
-
-		public MPI.Intercommunicator channel 
-		{set { channel = value;} get {return channel;}}
+		public IVerifyDataPortServerTypeC4 Service { set { this.service = value; } get { return service; } }
+	
+	///public MPI.Intercommunicator channel {set { channel = value;} get {return channel;}}
 
 		public override void after_initialize ()
 		{
-			int remote_leader = this.UnitRanks ["client"] [0];
-			channel = new MPI.Intercommunicator(this.PeerComm, 0, this.Communicator, remote_leader, 0);
+		//	int remote_leader = this.UnitRanks ["client"] [0];
+		//	channel = new MPI.Intercommunicator(this.PeerComm, 0, this.Communicator, remote_leader, 0);
 		}
 	
 	}

@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.certifier.Certifier;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl 
 {
-	public abstract class BaseC4Impl: Computation, BaseICertifier
+	public abstract class BaseC4Impl: Computation, BaseICertify
 	{
 		private IVerifyClientPort<IVerifyDataPortClientTypeC4> verify_data4 = null;
 

@@ -9,10 +9,10 @@
         <visualDescription h="60" w="173" x="226" y="237">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <unitBounds parallel="false" uRef="root">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="root">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
-        <unitBounds parallel="true" uRef="peer">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
           <visualDescription h="20" w="20" x="28" y="2"/>
         </unitBounds>
       </component>
@@ -21,6 +21,7 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <interface iRef="IChannelRootImpl" nArgs="0">

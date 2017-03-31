@@ -19,7 +19,7 @@ using br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierImpl.grammar;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl
 {
-	public class C4Impl : BaseC4Impl, ICertifier
+	public class C4Impl : BaseC4Impl, ICertify
 	{
 		
 

@@ -97,5 +97,9 @@
       <Project>{FFFD5364-C049-4F30-B58E-5FD303689F1A}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4.csproj">
+      <Project>{B61C6067-396A-4A19-A5D6-7AB7E5C05455}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

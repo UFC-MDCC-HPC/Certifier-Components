@@ -11,10 +11,10 @@
         </visualDescription>
         <parameter formFieldId="client_port_type" varName="C"/>
         <parameter formFieldId="server_port_type" varName="S"/>
-        <unitBounds parallel="false" uRef="client">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
-        <unitBounds parallel="false" uRef="server">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="server">
           <visualDescription h="20" w="20" x="28" y="2"/>
         </unitBounds>
       </component>
@@ -23,6 +23,7 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <parameter componentRef="client_port_type" formFieldId="client_port_type" order="0" variance="invariant" varName="C"/>
@@ -31,7 +32,7 @@
       <visualDescription h="60" w="100" x="134" y="335">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -39,7 +40,7 @@
       <visualDescription h="60" w="100" x="180" y="368">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>

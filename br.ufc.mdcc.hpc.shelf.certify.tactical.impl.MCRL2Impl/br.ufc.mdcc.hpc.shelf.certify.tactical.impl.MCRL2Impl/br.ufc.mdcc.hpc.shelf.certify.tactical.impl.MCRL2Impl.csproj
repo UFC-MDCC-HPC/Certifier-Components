@@ -101,5 +101,13 @@
       <Project>{F45FF7F6-6845-4243-A6F5-1E21997F0D4F}</Project>
       <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortSWC2Impl</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4.csproj">
+      <Project>{B61C6067-396A-4A19-A5D6-7AB7E5C05455}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2\br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2.csproj">
+      <Project>{0CB2BFFB-E977-4458-BC73-D1985DFEE43E}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

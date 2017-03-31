@@ -6,36 +6,36 @@
         <extends>true</extends>
       </extensionType>
       <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b720f4ad17128d7a94e4729e9697900867dd48c0778de422a3e5f547eca507cdbc871587b0c1d1bff8b4fccaf7306e4f76a24c7f85ba64bc49462cf465b0b033995717ede557b9b6ac589e0b1436a9fc417d8b4d26fd361530be6a388c9dee677127e1859b7ce552f95c4aa513d1770ac0dd2f337ddf40048e092792bc3cfba4" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.hpe" name="Tactical" package="br.ufc.mdcc.hpc.shelf.tactical" version="1.0.0.0">
-        <visualDescription h="60" w="100" x="137" y="90">
+        <visualDescription h="60" w="100" x="166" y="123">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="verify_data_port_client_type" varName="C"/>
-        <parameter formFieldId="tactical_name" varName="N"/>
-        <parameter formFieldId="verify_task_port_type" varName="T"/>
         <parameter formFieldId="verify_data_port_server_type" varName="S"/>
-        <port localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
+        <parameter formFieldId="tactical_name" varName="N"/>
+        <parameter formFieldId="verify_data_port_client_type" varName="C"/>
+        <parameter formFieldId="verify_task_port_type" varName="T"/>
+        <port index_replica="0" localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="true">
           <visualDescription h="60" w="146" x="381" y="86">
             <color b="255" g="255" r="255"/>
           </visualDescription>
           <parameter formFieldId="task_port_type" varName="T"/>
-          <unitBounds parallel="true" uRef="peer">
+          <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
             <visualDescription h="20" w="20" x="14" y="19"/>
           </unitBounds>
         </port>
-        <port localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
+        <port index_replica="0" localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
           <visualDescription h="63" w="218" x="223" y="330">
             <color b="255" g="255" r="255"/>
           </visualDescription>
-          <parameter formFieldId="server_port_type" varName="S"/>
           <parameter formFieldId="client_port_type" varName="C"/>
-          <unitBounds parallel="false" uRef="client">
-            <visualDescription h="20" w="20" x="178" y="21"/>
+          <parameter formFieldId="server_port_type" varName="S"/>
+          <unitBounds facet="0" facet_instance="0" parallel="false" uRef="client">
+            <visualDescription h="20" w="20" x="5" y="2"/>
           </unitBounds>
-          <unitBounds parallel="false" uRef="server">
-            <visualDescription h="20" w="20" x="23" y="21"/>
+          <unitBounds facet="1" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="server">
+            <visualDescription h="20" w="20" x="28" y="2"/>
           </unitBounds>
         </port>
-        <unitBounds parallel="true" uRef="Tactical">
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="tactical">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
       </component>
@@ -44,29 +44,32 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
+    <parameter componentRef="verify_data_port_client_type" formFieldId="verify_data_port_client_type" order="0" variance="contravariant" varName="C"/>
+    <parameter componentRef="verify_data_port_server_type" formFieldId="verify_data_port_server_type" order="1" variance="contravariant" varName="S"/>
     <innerComponent localRef="partypes_type" location="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ParTypesType/ParTypesType.hpe" multiple="false" name="ParTypesType" package="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier" exposed="false">
-      <visualDescription h="60" w="100" x="45" y="245">
+      <visualDescription h="60" w="100" x="89" y="262">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="tactical_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="tactical_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data_port_client_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType/VerifyDataPortClientType.hpe" multiple="false" name="VerifyDataPortClientType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data_port_client_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" parameter_id="verify_data_port_client_type" exposed="false">
       <visualDescription h="60" w="100" x="74" y="345">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data_port_server_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/VerifyDataPortServerType.hpe" multiple="false" name="VerifyDataPortServerType" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data_port_server_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" parameter_id="verify_data_port_server_type" exposed="false">
       <visualDescription h="60" w="100" x="163" y="410">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="environment_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
@@ -74,33 +77,34 @@
       <visualDescription h="60" w="100" x="189" y="202">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <unitBounds parallel="true" uRef="task_port_type">
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="task_port_type">
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <supplyParameter cRef="partypes_type" direct="true" varName="N"/>
-    <supplyParameter cRef="verify_data_port_client_type" direct="true" varName="C"/>
-    <supplyParameter cRef="verify_data_port_server_type" direct="true" varName="S"/>
     <supplyParameter cRef="verify_port_type" direct="true" varName="T"/>
-    <interface iRef="IParTypes" nArgs="0">
+    <supplyParameter cRef="partypes_type" direct="true" varName="N"/>
+    <interface iRef="IParTypes" nArgs="1">
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes&#xA;{&#xA;&#x9;public interface BaseIParTypes : BaseITactical, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIParTypes.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ParTypesType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes&#xA;{&#xA;&#x9;public interface BaseIParTypes&lt;S> : BaseITactical&lt;S,IParTypesType,IVerifyPortType>, IComputationKind &#xA;&#x9;&#x9;where S:IVerifyDataPortServerTypeC4&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIParTypes.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/BaseITactical.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes&#xA;{&#xA;&#x9;public interface IParTypes : BaseIParTypes, ITactical&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IParTypes.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/IParTypes.dll" versionId="1.0.0.0">
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ISPType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes&#xA;{&#xA;&#x9;public interface IParTypes&lt;S> : BaseIParTypes&lt;S>, ITactical&lt;S,IISPType,IVerifyPortType>&#xA;&#x9;&#x9;where S:IVerifyDataPortServerTypeC4&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IParTypes.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/IParTypes.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll</dependency>
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/1.0.0.0/ITactical.dll</dependency>
         </file>
       </sources>
-      <visualDescription h="40" w="80" x="62" y="58">
+      <visualDescription h="40" w="80" x="83" y="62">
         <color b="0" g="255" r="255"/>
       </visualDescription>
+      <parameter iname="IVerifyDataPortServerTypeC4" order="0" parid="verify_data_port_server_type" uname="environment_port_type" varid="S"/>
       <action id="main">
         <protocol/>
       </action>
     </interface>
-    <unit facet="0" iRef="IParTypes" multiple="true" private="false" replica="0" uRef="Tactical" visibleInterface="true">
-      <super cRef="base" uRef="Tactical"/>
+    <unit facet="0" iRef="IParTypes" multiple="true" private="false" replica="0" uRef="tactical" visibleInterface="true">
+      <super cRef="base" uRef="tactical"/>
       <visualDescription h="40" w="80" x="15" y="243"/>
     </unit>
   </componentInfo>

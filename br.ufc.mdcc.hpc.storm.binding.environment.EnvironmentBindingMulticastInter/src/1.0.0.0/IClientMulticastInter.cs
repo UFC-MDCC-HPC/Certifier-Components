@@ -1,8 +1,8 @@
 using br.ufc.pargo.hpe.kinds;
 using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType;
 using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingMulticast;
-using br.ufc.mdcc.hpc.storm.binding.channel.Binding;
 using br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortTypeMultiplePartner;
+using br.ufc.mdcc.hpc.storm.binding.channel.Binding;
 
 namespace br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingMulticastInter
 {

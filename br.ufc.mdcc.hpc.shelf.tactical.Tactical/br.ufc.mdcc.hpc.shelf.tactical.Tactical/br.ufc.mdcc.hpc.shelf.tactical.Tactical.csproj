@@ -82,5 +82,9 @@
       <Project>{226E5496-FDF2-4765-9C43-D2A2770EE760}</Project>
       <Name>br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType\br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.csproj">
+      <Project>{CCDE05E2-450F-49DA-A5BF-54B37BDF01CE}</Project>
+      <Name>br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

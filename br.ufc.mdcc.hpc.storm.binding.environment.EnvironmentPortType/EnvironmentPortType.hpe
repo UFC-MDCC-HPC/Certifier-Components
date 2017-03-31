@@ -5,6 +5,7 @@
     <visualAttributes>
       <color b="255" g="255" r="255"/>
     </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
     <interface iRef="IEnvironmentPortType" nArgs="0">
