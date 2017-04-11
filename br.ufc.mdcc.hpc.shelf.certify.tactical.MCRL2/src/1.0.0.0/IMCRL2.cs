@@ -7,8 +7,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2
 {
-	public interface IMCRL2<S> : BaseIMCRL2<S>, ITactical<S,IMCRL2Type,IVerifyPortType>
-		where S:IVerifyDataPortServerTypeSWC2
+	public interface IMCRL2 : BaseIMCRL2, ITactical<IVerifyDataPortServerTypeSWC2,IMCRL2Type,IVerifyPortType>
 	{
 	}
 }

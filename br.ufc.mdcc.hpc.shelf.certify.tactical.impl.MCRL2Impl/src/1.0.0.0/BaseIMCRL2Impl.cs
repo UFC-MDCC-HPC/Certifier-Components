@@ -13,8 +13,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl 
 {
-	public abstract class BaseIMCRL2Impl<S>: Computation, BaseIMCRL2<S>
-	where S: IVerifyDataPortServerTypeSWC2
+	public abstract class BaseIMCRL2Impl: Computation, BaseIMCRL2
 	{
 		private ITaskPort<IVerifyPortType> verify = null;
 
@@ -27,14 +26,14 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl
 				return this.verify;
 			}
 		}
-		private IVerifyServerPort<S> verify_data = null;
+		private IVerifyServerPort<IVerifyDataPortServerTypeSWC2> verify_data = null;
 
-		public IVerifyServerPort<S> Verify_data
+		public IVerifyServerPort<IVerifyDataPortServerTypeSWC2> Verify_data
 		{
 			get
 			{
 				if (this.verify_data == null)
-					this.verify_data = (IVerifyServerPort<S>) Services.getPort("verify_data");
+					this.verify_data = (IVerifyServerPort<IVerifyDataPortServerTypeSWC2>) Services.getPort("verify_data");
 				return this.verify_data;
 			}
 		}

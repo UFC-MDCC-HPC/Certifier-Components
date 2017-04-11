@@ -8,11 +8,10 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType
 	{
 	   
 	}
-	public class IVerify{
-	
-		public static object VERIFY_PERFORM = "VERIFY_PERFORM".GetHashCode();
-		public static object VERIFY_CONCLUSIVE = "VERIFY_CONCLUSIVE".GetHashCode();
-		public static object VERIFY_INCONCLUSIVE = "VERIFY_INCONCLUSIVE".GetHashCode();
-	
+	public class IVerify
+	{	
+		public static object VERIFY_PERFORM = new object();
+		public static object VERIFY_CONCLUSIVE = new object();
+		public static object VERIFY_INCONCLUSIVE = new object();
 	}
 }

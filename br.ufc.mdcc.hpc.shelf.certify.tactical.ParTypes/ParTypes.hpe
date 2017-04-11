@@ -6,7 +6,7 @@
         <extends>true</extends>
       </extensionType>
       <component hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b720f4ad17128d7a94e4729e9697900867dd48c0778de422a3e5f547eca507cdbc871587b0c1d1bff8b4fccaf7306e4f76a24c7f85ba64bc49462cf465b0b033995717ede557b9b6ac589e0b1436a9fc417d8b4d26fd361530be6a388c9dee677127e1859b7ce552f95c4aa513d1770ac0dd2f337ddf40048e092792bc3cfba4" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.Tactical/Tactical.hpe" name="Tactical" package="br.ufc.mdcc.hpc.shelf.tactical" version="1.0.0.0">
-        <visualDescription h="60" w="100" x="166" y="123">
+        <visualDescription h="60" w="100" x="172" y="123">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <parameter formFieldId="verify_data_port_server_type" varName="S"/>
@@ -23,7 +23,7 @@
           </unitBounds>
         </port>
         <port index_replica="0" localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
-          <visualDescription h="63" w="218" x="223" y="330">
+          <visualDescription h="63" w="218" x="214" y="348">
             <color b="255" g="255" r="255"/>
           </visualDescription>
           <parameter formFieldId="client_port_type" varName="C"/>
@@ -47,8 +47,6 @@
     <facet_configuration facet="0" multiple="false"/>
   </header>
   <componentInfo>
-    <parameter componentRef="verify_data_port_client_type" formFieldId="verify_data_port_client_type" order="0" variance="contravariant" varName="C"/>
-    <parameter componentRef="verify_data_port_server_type" formFieldId="verify_data_port_server_type" order="1" variance="contravariant" varName="S"/>
     <innerComponent localRef="partypes_type" location="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ParTypesType/ParTypesType.hpe" multiple="false" name="ParTypesType" package="br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier" exposed="false">
       <visualDescription h="60" w="100" x="89" y="262">
         <color b="255" g="255" r="255"/>
@@ -57,7 +55,7 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data_port_client_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" parameter_id="verify_data_port_client_type" exposed="false">
+    <innerComponent localRef="verify_data_port_client_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
       <visualDescription h="60" w="100" x="74" y="345">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -65,7 +63,7 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data_port_server_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" parameter_id="verify_data_port_server_type" exposed="false">
+    <innerComponent localRef="verify_data_port_server_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
       <visualDescription h="60" w="100" x="163" y="410">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -83,7 +81,9 @@
     </innerComponent>
     <supplyParameter cRef="verify_port_type" direct="true" varName="T"/>
     <supplyParameter cRef="partypes_type" direct="true" varName="N"/>
-    <interface iRef="IParTypes" nArgs="1">
+    <supplyParameter cRef="verify_data_port_client_type" direct="true" varName="C"/>
+    <supplyParameter cRef="verify_data_port_server_type" direct="true" varName="S"/>
+    <interface iRef="IParTypes" nArgs="0">
       <sources sourceType="C# Language" versionId="1.0.0.0">
         <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.Tactical;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;&#xA;using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ParTypesType;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes&#xA;{&#xA;&#x9;public interface BaseIParTypes&lt;S> : BaseITactical&lt;S,IParTypesType,IVerifyPortType>, IComputationKind &#xA;&#x9;&#x9;where S:IVerifyDataPortServerTypeC4&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIParTypes.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes/bin/1.0.0.0/BaseIParTypes.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll</dependency>
@@ -98,7 +98,6 @@
       <visualDescription h="40" w="80" x="83" y="62">
         <color b="0" g="255" r="255"/>
       </visualDescription>
-      <parameter iname="IVerifyDataPortServerTypeC4" order="0" parid="verify_data_port_server_type" uname="environment_port_type" varid="S"/>
       <action id="main">
         <protocol/>
       </action>

@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{72DA50AF-C0DF-4319-8A45-E99E1D85CDB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingBaseImpl</RootNamespace>

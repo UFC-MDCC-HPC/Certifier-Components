@@ -12,8 +12,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 {
-	public class IParTypesImpl<S> : BaseIParTypesImpl<S>, IParTypes<S>
-		where S: IVerifyDataPortServerTypeC4
+	public class IParTypesImpl : BaseIParTypesImpl, IParTypes
 	{
 		public string []programs; 
 		public int num_programs; 

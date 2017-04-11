@@ -14,8 +14,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl
 {
-	public class IISPImpl<S> : BaseIISPImpl<S>, IISP<S>
-		where S:IVerifyDataPortServerTypeC4
+	public class IISPImpl : BaseIISPImpl, IISP
 	{
 		public string []programs; 
 		public int num_programs; 

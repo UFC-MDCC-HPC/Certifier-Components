@@ -65,11 +65,10 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="143" y="188">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="client_port_type" varName="C"/>
       <parameter formFieldId="server_port_type" varName="S"/>
       <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
@@ -78,11 +77,10 @@
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="235" y="217">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="client_port_type" varName="C"/>
       <parameter formFieldId="server_port_type" varName="S"/>
       <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
@@ -91,11 +89,10 @@
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="382" y="254">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="client_port_type" varName="C"/>
       <parameter formFieldId="server_port_type" varName="S"/>
       <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
@@ -104,11 +101,10 @@
         <visualDescription h="20" w="20" x="28" y="2"/>
       </unitBounds>
     </innerComponent>
-    <innerComponent localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+    <innerComponent localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="true">
       <visualDescription h="60" w="100" x="501" y="194">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="client_port_type" varName="C"/>
       <parameter formFieldId="server_port_type" varName="S"/>
       <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
         <visualDescription h="20" w="20" x="5" y="2"/>
@@ -154,26 +150,26 @@
         <visualDescription h="10" w="10" x="20" y="11"/>
       </slice>
       <slice isRef="verify_data1">
-        <originRef cRef="verify_data1" iRef="IVerifyClientPort"/>
+        <originRef cRef="verify_data1" iRef="IVerifyClientPortC4"/>
         <visualDescription h="10" w="10" x="7" y="17"/>
       </slice>
       <slice isRef="verify_data2">
-        <originRef cRef="verify_data2" iRef="IVerifyClientPort"/>
+        <originRef cRef="verify_data2" iRef="IVerifyClientPortC4"/>
         <visualDescription h="10" w="10" x="18" y="25"/>
       </slice>
       <slice isRef="verify_data3">
-        <originRef cRef="verify_data3" iRef="IVerifyClientPort"/>
+        <originRef cRef="verify_data3" iRef="IVerifyClientPortC4"/>
         <visualDescription h="10" w="10" x="0" y="14"/>
       </slice>
       <slice isRef="verify_data4">
-        <originRef cRef="verify_data4" iRef="IVerifyClientPort"/>
+        <originRef cRef="verify_data4" iRef="IVerifyClientPortC4"/>
         <visualDescription h="10" w="10" x="0" y="18"/>
       </slice>
       <sources sourceType="C# Language" versionId="1.0.0.0">
-        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.C4&#xA;{&#xA;&#x9;public interface BaseIC4 : BaseICertifier, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/BaseIC4.dll" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.C4&#xA;{&#xA;&#x9;public interface BaseIC4 : BaseICertify, IComputationKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/BaseIC4.dll" versionId="1.0.0.0">
           <dependency>br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/BaseICertifier.dll</dependency>
         </file>
-        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.C4&#xA;{&#xA;&#x9;public interface IC4 : BaseIC4, ICertifier&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/IC4.dll" versionId="1.0.0.0">
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.certifier.Certifier;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.certifier.C4&#xA;{&#xA;&#x9;public interface IC4 : BaseIC4, ICertify&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/IC4.dll" versionId="1.0.0.0">
           <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.certifier.C4/bin/1.0.0.0/BaseIC4.dll</dependency>
           <dependency>br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/1.0.0.0/ICertifier.dll</dependency>
         </file>
@@ -197,35 +193,51 @@
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify1" sRef="verify1"/>
       </port>
+      <port name="verify_data1">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data1" sRef="verify_data1"/>
+      </port>
+      <port name="verify_data2">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data2" sRef="verify_data2"/>
+      </port>
+      <port name="verify_data3">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data3" sRef="verify_data3"/>
+      </port>
+      <port name="verify_data4">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data4" sRef="verify_data4"/>
+      </port>
       <action id="main">
         <protocol/>
       </action>
     </interface>
     <unit facet="0" iRef="IC4" multiple="true" private="false" replica="0" uRef="certify" visibleInterface="true">
       <super cRef="base" uRef="certify"/>
-      <slices cRef="verify4" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify4" transitive="false">
-        <visualDescription h="10" w="10" x="59" y="20"/>
-      </slices>
-      <slices cRef="verify3" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify3" transitive="false">
-        <visualDescription h="10" w="10" x="54" y="21"/>
-      </slices>
-      <slices cRef="verify2" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify2" transitive="false">
-        <visualDescription h="11" w="10" x="58" y="10"/>
-      </slices>
-      <slices cRef="verify1" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify1" transitive="false">
-        <visualDescription h="10" w="10" x="20" y="11"/>
-      </slices>
-      <slices cRef="verify_data1" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data1" transitive="false">
-        <visualDescription h="10" w="10" x="7" y="17"/>
-      </slices>
       <slices cRef="verify_data2" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data2" transitive="false">
         <visualDescription h="10" w="10" x="18" y="25"/>
       </slices>
       <slices cRef="verify_data3" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data3" transitive="false">
         <visualDescription h="10" w="10" x="0" y="14"/>
       </slices>
+      <slices cRef="verify_data1" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data1" transitive="false">
+        <visualDescription h="10" w="10" x="7" y="17"/>
+      </slices>
+      <slices cRef="verify4" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify4" transitive="false">
+        <visualDescription h="10" w="10" x="59" y="20"/>
+      </slices>
+      <slices cRef="verify3" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify3" transitive="false">
+        <visualDescription h="10" w="10" x="54" y="21"/>
+      </slices>
       <slices cRef="verify_data4" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data4" transitive="false">
         <visualDescription h="10" w="10" x="0" y="18"/>
+      </slices>
+      <slices cRef="verify2" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify2" transitive="false">
+        <visualDescription h="11" w="10" x="58" y="10"/>
+      </slices>
+      <slices cRef="verify1" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify1" transitive="false">
+        <visualDescription h="10" w="10" x="20" y="11"/>
       </slices>
       <visualDescription h="40" w="80" x="374" y="130"/>
     </unit>

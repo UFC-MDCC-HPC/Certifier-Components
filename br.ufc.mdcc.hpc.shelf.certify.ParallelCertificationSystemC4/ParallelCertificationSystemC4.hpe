@@ -20,7 +20,7 @@
         <visualDescription h="60" w="100" x="51" y="106">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="task_port_type" varName="X###1947020580"/>
+        <parameter formFieldId="task_port_type" varName="X###1035800883"/>
         <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
@@ -29,7 +29,7 @@
         <visualDescription h="36" w="83" x="145" y="231">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="task_port_type" varName="X###219075074"/>
+        <parameter formFieldId="task_port_type" varName="X###1202997999"/>
         <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
@@ -38,18 +38,66 @@
         <visualDescription h="32" w="84" x="267" y="206">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="task_port_type" varName="X###1207797760"/>
+        <parameter formFieldId="task_port_type" varName="X###228832688"/>
         <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
           <visualDescription h="20" w="20" x="5" y="2"/>
         </unitBounds>
       </port>
       <port index_replica="0" localRef="verify4" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
-        <visualDescription h="38" w="84" x="446" y="263">
+        <visualDescription h="38" w="84" x="470" y="284">
           <color b="255" g="255" r="255"/>
         </visualDescription>
-        <parameter formFieldId="task_port_type" varName="X###1441520876"/>
+        <parameter formFieldId="task_port_type" varName="X###1995259086"/>
         <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="peer">
           <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+      </port>
+      <port index_replica="0" localRef="verify_data1" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+        <visualDescription h="60" w="100" x="84" y="176">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="server_port_type" varName="X###1158776830"/>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+        <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
+          <visualDescription h="20" w="20" x="28" y="2"/>
+        </unitBounds>
+      </port>
+      <port index_replica="0" localRef="verify_data2" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+        <visualDescription h="60" w="100" x="216" y="239">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="server_port_type" varName="X###2113745057"/>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+        <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
+          <visualDescription h="20" w="20" x="28" y="2"/>
+        </unitBounds>
+      </port>
+      <port index_replica="0" localRef="verify_data3" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+        <visualDescription h="60" w="100" x="347" y="263">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="server_port_type" varName="X###1788089103"/>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+        <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
+          <visualDescription h="20" w="20" x="28" y="2"/>
+        </unitBounds>
+      </port>
+      <port index_replica="0" localRef="verify_data4" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/VerifyDataPortC4.hpe" multiple="false" name="VerifyDataPortC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+        <visualDescription h="60" w="100" x="474" y="187">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="server_port_type" varName="X###1687370145"/>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+        <unitBounds facet="1" facet_instance="0" parallel="false" uRef="server">
+          <visualDescription h="20" w="20" x="28" y="2"/>
         </unitBounds>
       </port>
       <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="true" uRef="certify">
@@ -60,10 +108,8 @@
       <visualDescription h="60" w="100" x="488" y="673">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="verify_data_port_server_type" varName="S"/>
-      <parameter formFieldId="verify_data_port_client_type" varName="C"/>
       <port index_replica="0" localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
-        <visualDescription h="38" w="84" x="446" y="263">
+        <visualDescription h="38" w="84" x="470" y="284">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <parameter formFieldId="task_port_type" varName="T"/>
@@ -72,7 +118,7 @@
         </unitBounds>
       </port>
       <port index_replica="0" localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
-        <visualDescription h="60" w="100" x="481" y="195">
+        <visualDescription h="60" w="100" x="474" y="187">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <parameter formFieldId="client_port_type" varName="C"/>
@@ -92,8 +138,6 @@
       <visualDescription h="60" w="100" x="164" y="685">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="verify_data_port_server_type" varName="S"/>
-      <parameter formFieldId="verify_data_port_client_type" varName="C"/>
       <port index_replica="0" localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
         <visualDescription h="36" w="83" x="145" y="231">
           <color b="255" g="255" r="255"/>
@@ -104,7 +148,7 @@
         </unitBounds>
       </port>
       <port index_replica="0" localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
-        <visualDescription h="49" w="122" x="198" y="265">
+        <visualDescription h="60" w="100" x="216" y="239">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <parameter formFieldId="client_port_type" varName="C"/>
@@ -124,8 +168,6 @@
       <visualDescription h="60" w="100" x="46" y="665">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="verify_data_port_server_type" varName="S"/>
-      <parameter formFieldId="verify_data_port_client_type" varName="C"/>
       <port index_replica="0" localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
         <visualDescription h="60" w="100" x="51" y="106">
           <color b="255" g="255" r="255"/>
@@ -136,7 +178,7 @@
         </unitBounds>
       </port>
       <port index_replica="0" localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
-        <visualDescription h="80" w="95" x="95" y="143">
+        <visualDescription h="60" w="100" x="84" y="176">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <parameter formFieldId="client_port_type" varName="C"/>
@@ -156,8 +198,6 @@
       <visualDescription h="60" w="100" x="340" y="679">
         <color b="255" g="255" r="255"/>
       </visualDescription>
-      <parameter formFieldId="verify_data_port_server_type" varName="S"/>
-      <parameter formFieldId="verify_data_port_client_type" varName="C"/>
       <port index_replica="0" localRef="verify" location="br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/TaskBindingBase.hpe" multiple="false" name="TaskBindingBase" package="br.ufc.mdcc.hpc.storm.binding.task" exposed="false">
         <visualDescription h="32" w="84" x="267" y="206">
           <color b="255" g="255" r="255"/>
@@ -168,7 +208,7 @@
         </unitBounds>
       </port>
       <port index_replica="0" localRef="verify_data" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" multiple="false" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
-        <visualDescription h="33" w="102" x="340" y="226">
+        <visualDescription h="60" w="100" x="347" y="263">
           <color b="255" g="255" r="255"/>
         </visualDescription>
         <parameter formFieldId="client_port_type" varName="C"/>
@@ -202,7 +242,7 @@
     </innerComponent>
     <supplyParameter cRef="verify_data_port_client_type" direct="true" varName="C"/>
     <supplyParameter cRef="verify_data_port_server_type" direct="true" varName="S"/>
-    <innerComponent localRef="C###1947020580" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
+    <innerComponent localRef="C###1035800883" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
       <visualDescription h="60" w="100" x="86" y="480">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -210,8 +250,8 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <supplyParameter cRef="C###1947020580" varName="X###1947020580"/>
-    <innerComponent localRef="C###219075074" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
+    <supplyParameter cRef="C###1035800883" varName="X###1035800883"/>
+    <innerComponent localRef="C###1202997999" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
       <visualDescription h="60" w="100" x="86" y="480">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -219,8 +259,8 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <supplyParameter cRef="C###219075074" varName="X###219075074"/>
-    <innerComponent localRef="C###1207797760" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
+    <supplyParameter cRef="C###1202997999" varName="X###1202997999"/>
+    <innerComponent localRef="C###228832688" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
       <visualDescription h="60" w="100" x="86" y="480">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -228,8 +268,8 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <supplyParameter cRef="C###1207797760" varName="X###1207797760"/>
-    <innerComponent localRef="C###1441520876" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
+    <supplyParameter cRef="C###228832688" varName="X###228832688"/>
+    <innerComponent localRef="C###1995259086" location="br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/VerifyPortType.hpe" multiple="false" name="VerifyPortType" package="br.ufc.mdcc.hpc.shelf.tactical.task" exposed="false">
       <visualDescription h="60" w="100" x="86" y="480">
         <color b="255" g="255" r="255"/>
       </visualDescription>
@@ -237,15 +277,102 @@
         <visualDescription h="20" w="20" x="5" y="2"/>
       </unitBounds>
     </innerComponent>
-    <supplyParameter cRef="C###1441520876" varName="X###1441520876"/>
-    <innerRenaming cNewName="verify_data2" cOldName="verify_data" cRef="isp_1" index_replica="0"/>
-    <innerRenaming cNewName="verify_data3" cOldName="verify_data" cRef="parTypes_2" index_replica="0"/>
-    <innerRenaming cNewName="verify3" cOldName="verify" cRef="parTypes_2" index_replica="0"/>
-    <innerRenaming cNewName="verify2" cOldName="verify" cRef="isp_1" index_replica="0"/>
-    <innerRenaming cNewName="verify_data4" cOldName="verify_data" cRef="isp_2" index_replica="0"/>
-    <innerRenaming cNewName="verify_data1" cOldName="verify_data" cRef="parTypes_1" index_replica="0"/>
-    <innerRenaming cNewName="verify1" cOldName="verify" cRef="parTypes_1" index_replica="0"/>
+    <supplyParameter cRef="C###1995259086" varName="X###1995259086"/>
+    <innerComponent localRef="C###1362310497" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="144" y="254">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###1362310497" varName="X###1362310497"/>
+    <innerComponent localRef="C###1158776830" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="99" y="261">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###1158776830" varName="X###1158776830"/>
+    <innerComponent localRef="C###32987167" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="144" y="254">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###32987167" varName="X###32987167"/>
+    <innerComponent localRef="C###2113745057" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="99" y="261">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###2113745057" varName="X###2113745057"/>
+    <innerComponent localRef="C###2038684325" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="144" y="254">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###2038684325" varName="X###2038684325"/>
+    <innerComponent localRef="C###1788089103" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="99" y="261">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###1788089103" varName="X###1788089103"/>
+    <innerComponent localRef="C###527398003" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="144" y="254">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###527398003" varName="X###527398003"/>
+    <innerComponent localRef="C###1687370145" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="99" y="261">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="C###1687370145" varName="X###1687370145"/>
     <innerRenaming cNewName="verify4" cOldName="verify" cRef="isp_2" index_replica="0"/>
+    <innerRenaming cNewName="verify_data3" cOldName="verify_data" cRef="parTypes_2" index_replica="0"/>
+    <innerRenaming cNewName="verify2" cOldName="verify" cRef="isp_1" index_replica="0"/>
+    <innerRenaming cNewName="verify_data2" cOldName="verify_data" cRef="isp_1" index_replica="0"/>
+    <innerRenaming cNewName="verify_data4" cOldName="verify_data" cRef="isp_2" index_replica="0"/>
+    <innerRenaming cNewName="verify1" cOldName="verify" cRef="parTypes_1" index_replica="0"/>
+    <innerRenaming cNewName="verify3" cOldName="verify" cRef="parTypes_2" index_replica="0"/>
+    <innerRenaming cNewName="verify_data1" cOldName="verify_data" cRef="parTypes_1" index_replica="0"/>
+    <fusion>
+      <pRef>verify_data2</pRef>
+      <cRefs>c4</cRefs>
+      <cRefs>isp_1</cRefs>
+    </fusion>
+    <fusion>
+      <pRef>verify_data3</pRef>
+      <cRefs>c4</cRefs>
+      <cRefs>parTypes_2</cRefs>
+    </fusion>
+    <fusion>
+      <pRef>verify_data1</pRef>
+      <cRefs>c4</cRefs>
+      <cRefs>parTypes_1</cRefs>
+    </fusion>
     <fusion>
       <pRef>verify4</pRef>
       <cRefs>isp_2</cRefs>
@@ -255,6 +382,11 @@
       <pRef>verify3</pRef>
       <cRefs>parTypes_2</cRefs>
       <cRefs>c4</cRefs>
+    </fusion>
+    <fusion>
+      <pRef>verify_data4</pRef>
+      <cRefs>c4</cRefs>
+      <cRefs>isp_2</cRefs>
     </fusion>
     <fusion>
       <pRef>verify2</pRef>
@@ -285,21 +417,37 @@
       <visualDescription h="40" w="80" x="549" y="46">
         <color b="255" g="0" r="0"/>
       </visualDescription>
-      <port name="verify1">
+      <port name="verify_data4">
         <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify1" sRef="c4"/>
-      </port>
-      <port name="verify2">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify2" sRef="c4"/>
+        <slice pRef="verify_data4" sRef="c4"/>
       </port>
       <port name="verify4">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify4" sRef="c4"/>
       </port>
+      <port name="verify1">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify1" sRef="c4"/>
+      </port>
       <port name="verify3">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify3" sRef="c4"/>
+      </port>
+      <port name="verify_data3">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data3" sRef="c4"/>
+      </port>
+      <port name="verify_data2">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data2" sRef="c4"/>
+      </port>
+      <port name="verify_data1">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data1" sRef="c4"/>
+      </port>
+      <port name="verify2">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify2" sRef="c4"/>
       </port>
       <action id="main">
         <protocol/>
@@ -324,13 +472,13 @@
       <visualDescription h="40" w="80" x="14" y="375">
         <color b="0" g="255" r="255"/>
       </visualDescription>
-      <port name="verify_data1">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify_data" sRef="parTypes_1"/>
-      </port>
       <port name="verify1">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify" sRef="parTypes_1"/>
+      </port>
+      <port name="verify_data1">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data" sRef="parTypes_1"/>
       </port>
       <action id="main">
         <protocol/>
@@ -355,13 +503,13 @@
       <visualDescription h="40" w="80" x="120" y="367">
         <color b="0" g="255" r="255"/>
       </visualDescription>
-      <port name="verify_data2">
-        <visualDescription h="10" w="10" x="0" y="0"/>
-        <slice pRef="verify_data" sRef="isp_1"/>
-      </port>
       <port name="verify2">
         <visualDescription h="10" w="10" x="0" y="0"/>
         <slice pRef="verify" sRef="isp_1"/>
+      </port>
+      <port name="verify_data2">
+        <visualDescription h="10" w="10" x="0" y="0"/>
+        <slice pRef="verify_data" sRef="isp_1"/>
       </port>
       <action id="main">
         <protocol/>
@@ -425,11 +573,23 @@
       </action>
     </interface>
     <unit facet="0" iRef="IRoot" multiple="true" private="false" replica="0" uRef="root" visibleInterface="true">
+      <slices cRef="verify_data2" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data2" transitive="true">
+        <visualDescription h="10" w="10" x="18" y="25"/>
+      </slices>
+      <slices cRef="verify_data3" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data3" transitive="true">
+        <visualDescription h="10" w="10" x="0" y="14"/>
+      </slices>
+      <slices cRef="verify_data1" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data1" transitive="true">
+        <visualDescription h="10" w="10" x="7" y="17"/>
+      </slices>
       <slices cRef="verify4" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify4" transitive="true">
         <visualDescription h="10" w="10" x="59" y="20"/>
       </slices>
       <slices cRef="verify3" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify3" transitive="true">
         <visualDescription h="10" w="10" x="54" y="21"/>
+      </slices>
+      <slices cRef="verify_data4" inner_replica="0" slice_replica="0" uRef="client" sliceName="verify_data4" transitive="true">
+        <visualDescription h="10" w="10" x="0" y="18"/>
       </slices>
       <slices cRef="verify2" inner_replica="0" slice_replica="0" uRef="peer" sliceName="verify2" transitive="true">
         <visualDescription h="11" w="10" x="58" y="10"/>
@@ -439,9 +599,13 @@
       </slices>
       <slices cRef="c4" inner_replica="0" slice_replica="0" uRef="certify" sliceName="c4" transitive="false">
         <visualDescription h="10" w="10" x="27" y="29"/>
+        <port>verify_data2</port>
+        <port>verify_data3</port>
+        <port>verify_data1</port>
         <port>verify4</port>
         <port>verify3</port>
         <port>verify2</port>
+        <port>verify_data4</port>
         <port>verify1</port>
       </slices>
       <visualDescription h="40" w="80" x="468" y="103"/>

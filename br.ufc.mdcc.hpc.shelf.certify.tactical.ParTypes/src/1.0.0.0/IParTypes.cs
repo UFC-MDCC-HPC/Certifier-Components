@@ -6,8 +6,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ISPType;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes
 {
-	public interface IParTypes<S> : BaseIParTypes<S>, ITactical<S,IISPType,IVerifyPortType>
-		where S:IVerifyDataPortServerTypeC4
+	public interface IParTypes : BaseIParTypes, ITactical<IVerifyDataPortServerTypeC4,IISPType,IVerifyPortType>
 	{
 	}
 }

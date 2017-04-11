@@ -53,6 +53,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.Binding
 		public const int GATHER_FLATTENED = 17;
 		public const int REDUCE = 18;
 		public const int REDUCE_ARRAY = 19;
+		public const int SYNC_SEND = 20;
 	};
 
 	public interface Aliencommunicator
@@ -72,6 +73,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.Binding
 		void Receive<T> (Tuple<int,int> source, int tag, out T value, out CompletedStatus status);
 
 		Request ImmediateSend<T> (T value, Tuple<int,int> dest, int tag);
+		Request ImmediateSyncSend<T> (T value, Tuple<int,int> dest, int tag);
 		ReceiveRequest ImmediateReceive<T> (Tuple<int,int> source, int tag);
 
 		// Array versions ... 
@@ -629,7 +631,9 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.Binding
 			List<Request> result = new List<Request>();
 			foreach (Request req in requests) 
 			{
+				Console.WriteLine ("req.Wait 1");
 				req.Wait ();
+				Console.WriteLine ("req.Wait 2");
 				result.Add (req);
 			}
 

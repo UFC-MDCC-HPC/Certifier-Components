@@ -20,6 +20,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 	public class IChannelRootImpl : BaseIChannelRootImpl, IChannelRoot
 	{
 		public const int TAG_SEND_OPERATION = 999;
+		public const int TAG_REPLY = 998;
 			
 		private IDictionary<int,Thread> thread_receive_requests = null;
 
@@ -219,6 +220,9 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 				case AliencommunicatorOperation.SEND_ARRAY:
 					(new Thread(() => handle_SEND (operation, status))).Start();
 					break;
+				case AliencommunicatorOperation.SYNC_SEND:
+					(new Thread(() => handle_SYNCSEND (operation, status))).Start();
+				break;
 				case AliencommunicatorOperation.RECEIVE:
 				case AliencommunicatorOperation.RECEIVE_ARRAY:
 					(new Thread(() => handle_RECEIVE (operation, status))).Start();
@@ -308,6 +312,12 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 				synchronizer_monitor.clientSendRequestAnyTag (envelop, message1, ref tag);
 			Trace.WriteLineIf(this.TraceFlag==true, status.Source + ": handle_SEND 5 --- operation = " + operation);
 
+		}
+
+		void handle_SYNCSEND (Tuple<int, int> operation, MPI.CompletedStatus status)
+		{
+			handle_SEND (operation, status);
+			this.RootCommunicator.Send<bool> (true, status.Source, TAG_REPLY);
 		}
 
 		//private object lock_recv = new object();
@@ -797,6 +807,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			string key=base.ToString();
 			switch (envelop.Item1) {
 			case AliencommunicatorOperation.SEND:
+			case AliencommunicatorOperation.SYNC_SEND:
 			case AliencommunicatorOperation.SEND_ARRAY:
 //				key = string.Format ("SR-{0}-{1}-{2}-{3}-{4}",envelop.Item2, envelop.Item3, envelop.Item4, envelop.Item5, envelop.Item6);
 				key = string.Format ("SR-{0}-{1}-{2}-{3}",envelop.Item2, envelop.Item3, envelop.Item4, envelop.Item5);

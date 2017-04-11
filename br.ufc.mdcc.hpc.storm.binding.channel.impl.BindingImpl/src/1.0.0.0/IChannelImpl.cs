@@ -13,6 +13,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 	public class IChannelImpl : BaseIChannelImpl, IChannel
 	{
 		public const int TAG_SEND_OPERATION = 999;
+		public const int TAG_REPLY = 998;
 
 		private int conversation_tag = 100;
 
@@ -77,8 +78,23 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 +  "> : " + tag);
 			byte[] value_packet = ObjectToByteArray (value);
 			MPI.Request root_request = this.RootCommunicator.ImmediateSend<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END SEND TO <" + dest.Item1 + "," + dest.Item2 );
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END SEND TO <" + dest.Item1 + "," + dest.Item2 + ">" );
 			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request.createRequest (root_request, dest);
+		}
+
+		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request ImmediateSyncSend<T> (T value, Tuple<int,int> dest, int tag)
+		{
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": CHECKING " + this.RootCommunicator.Rank + "," + dest.Item2 + ", tag=" + tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 +  "> : " + TAG_SEND_OPERATION);
+			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SYNC_SEND, tag), 0, TAG_SEND_OPERATION);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 +  "> : " + tag);
+			byte[] value_packet = ObjectToByteArray (value);
+			this.RootCommunicator.Send<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END SEND TO <" + dest.Item1 + "," + dest.Item2 + ">" );
+			MPI.Request root_request = this.RootCommunicator.ImmediateReceive<bool>	(0,	TAG_REPLY);
+
+			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request.createRequest (root_request, dest);
+
 		}
 
 		// Send Array

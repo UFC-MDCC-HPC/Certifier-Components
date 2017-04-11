@@ -52,10 +52,10 @@ namespace br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingBaseImpl
 
 			foreach (KeyValuePair<int,IDictionary<string,int>> facet in Channel.UnitSizeInFacet)
 				if (facet.Key != this.ThisFacetInstance)
-					foreach (KeyValuePair<string,int> unit_team in facet.Value) 
-						for (int i=0; i < unit_team.Value; i++)
+					foreach (KeyValuePair<string,int> unit_team in facet.Value)
+						for (int i = 0; i < unit_team.Value; i++) 
 						{
-							Trace.WriteLineIf(this.TraceFlag==true, "synchronize_action " + action_id + " LOOP SEND " + facet.Key + "/" + i);
+							Trace.WriteLineIf (this.TraceFlag == true, "synchronize_action " + action_id + " LOOP SEND " + facet.Key + "/" + i);
 							Request req = Channel.ImmediateSend<object> (value, new Tuple<int, int> (facet.Key, i), value);
 							request_list.Add (req);
 						}
@@ -90,12 +90,12 @@ namespace br.ufc.mdcc.hpc.storm.binding.task.impl.TaskBindingBaseImpl
 
 			lock (invoke_lock)
 			{
-				Trace.WriteLineIf (this.TraceFlag == true, this.ThisFacetInstance + "/" + this.Rank + ": INVOKE SYNC " + action_id + " BEFORE LOCK");
+				Trace.WriteLineIf (this.TraceFlag == true, this.ThisFacetInstance + "/" + this.Rank + ": INVOKE SYNC " + action_id.GetHashCode() + " BEFORE LOCK");
 				RequestList request_list = synchronize_action (action_id);
 
-				Trace.WriteLineIf (this.TraceFlag == true, this.ThisFacetInstance + "/" + this.Rank + ": INVOKE SYNC " + action_id + " BEFORE WAIT ALL");
+				Trace.WriteLineIf (this.TraceFlag == true, this.ThisFacetInstance + "/" + this.Rank + ": INVOKE SYNC " + action_id.GetHashCode() + " BEFORE WAIT ALL");
 				request_list.WaitAll ();
-				Trace.WriteLineIf (this.TraceFlag == true, this.ThisFacetInstance + "/" + this.Rank + ": INVOKE SYNC " + action_id + " AFTER WAIT ALL");
+				Trace.WriteLineIf (this.TraceFlag == true, this.ThisFacetInstance + "/" + this.Rank + ": INVOKE SYNC " + action_id.GetHashCode() + " AFTER WAIT ALL");
 			}
 		}
 

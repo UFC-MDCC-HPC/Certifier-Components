@@ -12,15 +12,21 @@ using br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl
 {
-	public class ISWC2Impl : BaseISWC2Impl, ICertify
+	public class ISWC2Impl : BaseISWC2Impl,ISWC2
 	{
-		public string mCRL2_file = "map-reduce-test.mcrl2";
-		public int num_properties = 20;
+		private string work_path = null;
+		private string mCRL2_file = System.Environment.GetEnvironmentVariable("MCRL2_FILE");
+		private int num_properties = 20;
 
 		public string[] properties_files;
 
 		public override void main()
 		{
+			work_path = System.Environment.GetEnvironmentVariable ("PATH_CERTIFIER");
+			if (work_path == null)
+				work_path = System.Environment.GetEnvironmentVariable ("HOME");
+			Console.WriteLine ("WORK PATH OF CERTIFIER is " + work_path + Path.DirectorySeparatorChar);
+
 			Stopwatch sw = new Stopwatch();
 			sw.Start();
 			setData();
@@ -37,41 +43,38 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl
 			Verify1.invoke (IVerify.VERIFY_INCONCLUSIVE, out future_inconclusive);
 			future_iteration.addAction (future_inconclusive);
 
-			future_iteration.waitAny ();
+			IActionFuture result = future_iteration.waitAny ();
 
 			sw.Stop();
 
-			Console.WriteLine("Tempo total de verificação={0}",sw.Elapsed);
+			Console.WriteLine("Tempo total de verificação={0} : INCONCLUSIVE ? {1}",sw.Elapsed, result == future_inconclusive);
 		}
 
 		public void setData()
 		{			
+			Console.WriteLine ("setData *** num_properties = {0}", num_properties);
 			Verify_data1.Client.setNumProperties (num_properties);
 
 			properties_files = new string[num_properties];
 
-			StreamReader sr = new StreamReader(mCRL2_file);
+			StreamReader sr = new StreamReader(work_path + Path.DirectorySeparatorChar + mCRL2_file);
 			string line = sr.ReadToEnd();
 
-			Verify_data1.Client.setMcrl2File (ref line);
+			Verify_data1.Client.setMcrl2File (line);
 
 			int i;
 			for (i = 0; i < num_properties; i++) 
 			{
-				sr = new StreamReader ("property" + i + ".mcf");
+				sr = new StreamReader (work_path + Path.DirectorySeparatorChar + "property" + i + ".mcf");
 				line = sr.ReadToEnd ();
 				properties_files [i] = line;
 			}
 
-			Verify_data1.Client.setPropertyFiles (ref properties_files);
+			Verify_data1.Client.setPropertyFiles (properties_files);
 
 			Verify_data1.Client.setNumPropsTacticals ();
 			Verify_data1.Client.setIndexFirstPropTacticals ();
 			Verify_data1.Client.setPropertiesTacticals ();
 		}
-
-
-
-
 	}
 }

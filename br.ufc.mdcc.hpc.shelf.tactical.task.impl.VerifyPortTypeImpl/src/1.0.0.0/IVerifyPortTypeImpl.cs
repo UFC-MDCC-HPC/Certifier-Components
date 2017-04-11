@@ -13,9 +13,9 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.task.impl.VerifyPortTypeImpl
 		{
 			Console.WriteLine ("SETTING ADVANCE ACTIONS --- on_initialize of ITaskPortTypeAdvanceImpl");
 
-			ActionDef.action_ids[IVerify.VERIFY_CONCLUSIVE] = IVerify.VERIFY_CONCLUSIVE.GetHashCode();
-			ActionDef.action_ids[IVerify.VERIFY_INCONCLUSIVE] = IVerify.VERIFY_INCONCLUSIVE.GetHashCode();
-			ActionDef.action_ids[IVerify.VERIFY_PERFORM] = IVerify.VERIFY_PERFORM.GetHashCode();
+			ActionDef.action_ids[IVerify.VERIFY_PERFORM] = 20;
+			ActionDef.action_ids[IVerify.VERIFY_CONCLUSIVE] = 21;
+			ActionDef.action_ids[IVerify.VERIFY_INCONCLUSIVE] = 22;
 		}
 	}
 }

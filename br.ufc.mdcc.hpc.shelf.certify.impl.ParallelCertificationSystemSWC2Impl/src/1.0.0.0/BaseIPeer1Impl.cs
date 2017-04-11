@@ -27,14 +27,14 @@ namespace br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl
 				return this.verify1;
 			}
 		}
-		private IMCRL2<IVerifyDataPortServerTypeSWC2> mcrl2_1 = null;
+		private IMCRL2 mcrl2_1 = null;
 
-		protected IMCRL2<IVerifyDataPortServerTypeSWC2> MCRL2_1
+		protected IMCRL2 MCRL2_1
 		{
 			get
 			{
 				if (this.mcrl2_1 == null)
-					this.mcrl2_1 = (IMCRL2<IVerifyDataPortServerTypeSWC2>) Services.getPort("mcrl2_1");
+					this.mcrl2_1 = (IMCRL2) Services.getPort("mcrl2_1");
 				return this.mcrl2_1;
 			}
 		}

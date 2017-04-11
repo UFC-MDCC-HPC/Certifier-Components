@@ -1,19 +1,15 @@
 ﻿<Properties StartupItem="HPC-Shelf-Certification.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/src/1.0.0.0/IVerifyPortType.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs">
     <Files>
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer1.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer2.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer3.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IPeer4.cs" Line="15" Column="5" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl/src/1.0.0.0/IRoot.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.impl.ParallelCertificationSystemSWC2Impl/src/1.0.0.0/IPeer1.cs" Line="1" Column="1" />
-      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/src/1.0.0.0/IVerifyPortType.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelRootImpl.cs" Line="151" Column="16" />
+      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs" Line="18" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl/src/1.0.0.0/ITacticalmCRL2Impl.cs" line="2" column="7" />
+      <Breakpoint file="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortSWC2Impl/src/1.0.0.0/IVerifyServerPortSWC2.cs" line="66" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

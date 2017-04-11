@@ -8,8 +8,8 @@ namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeSWC
 	{
 		//SWC2
 		void setNumProperties(int numProperties);
-		void setMcrl2File (ref string mCRL2_file);
-		void setPropertyFiles (ref string[] property_files);
+		void setMcrl2File (string mCRL2_file);
+		void setPropertyFiles (string[] property_files);
 
 		void setNumPropsTacticals ();
 		void setIndexFirstPropTacticals ();

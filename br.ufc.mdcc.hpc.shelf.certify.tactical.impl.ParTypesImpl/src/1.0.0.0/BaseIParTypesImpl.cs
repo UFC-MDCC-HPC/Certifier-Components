@@ -13,8 +13,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl 
 {
-	public abstract class BaseIParTypesImpl<S>: Computation, BaseIParTypes<S>
-		where S:IVerifyDataPortServerTypeC4
+	public abstract class BaseIParTypesImpl: Computation, BaseIParTypes
 	{
 		private ITaskPort<IVerifyPortType> verify = null;
 
@@ -27,14 +26,14 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 				return this.verify;
 			}
 		}
-		private IVerifyServerPort<S> verify_data = null;
+		private IVerifyServerPort<IVerifyDataPortServerTypeC4> verify_data = null;
 
-		public IVerifyServerPort<S> Verify_data
+		public IVerifyServerPort<IVerifyDataPortServerTypeC4> Verify_data
 		{
 			get
 			{
 				if (this.verify_data == null)
-					this.verify_data = (IVerifyServerPort<S>) Services.getPort("verify_data");
+					this.verify_data = (IVerifyServerPort<IVerifyDataPortServerTypeC4>) Services.getPort("verify_data");
 				return this.verify_data;
 			}
 		}
