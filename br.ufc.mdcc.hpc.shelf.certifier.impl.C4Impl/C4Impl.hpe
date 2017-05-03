@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="00240000048000009400000006020000002400005253413100040000110000007b34f10ff2f019bcefeb28e8114edb54edf2b82cd1c6fb2e145874b1a47864bb30700cad8673377683ddedaa353f2214bc3d64868557a90f5bf725c67a55675cdd0a77eb2647c7cf779ba1d34ee03b8d6054fe0ac0a5411f7c6910a60b1a71fc1d946baec8ee17db7ecbe9fbbc0ba74841718f355c0d8a182eac88f5aa9a9989" isAbstract="false" kind="Computation" name="C4Impl" packagePath="br.ufc.mdcc.hpc.shelf.certifier.impl">
+  <header hash_component_UID="00240000048000009400000006020000002400005253413100040000110000007b34f10ff2f019bcefeb28e8114edb54edf2b82cd1c6fb2e145874b1a47864bb30700cad8673377683ddedaa353f2214bc3d64868557a90f5bf725c67a55675cdd0a77eb2647c7cf779ba1d34ee03b8d6054fe0ac0a5411f7c6910a60b1a71fc1d946baec8ee17db7ecbe9fbbc0ba74841718f355c0d8a182eac88f5aa9a9989" isAbstract="false" kind="Certifier" name="C4Impl" packagePath="br.ufc.mdcc.hpc.shelf.certifier.impl">
     <baseType>
       <extensionType>
         <implements>true</implements>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000001120408f1e70062f0008b12ca4e9ff58dfb0a2b6ff0f2edb113d3174a4596157d3f9be1fb8b40de97e69b4711cfdcac2e6384ab83904e3e39c5af223f89c59ffdc87c2000bfa74000d11ed731d6727ceee533ae6c1f7030843098d7a1eee117a263c53c60f7db6f75072e0d722a39270603e963e8bc29fca6034d62c2e6cdaf" isAbstract="true" kind="Computation" name="MCRL2" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000001120408f1e70062f0008b12ca4e9ff58dfb0a2b6ff0f2edb113d3174a4596157d3f9be1fb8b40de97e69b4711cfdcac2e6384ab83904e3e39c5af223f89c59ffdc87c2000bfa74000d11ed731d6727ceee533ae6c1f7030843098d7a1eee117a263c53c60f7db6f75072e0d722a39270603e963e8bc29fca6034d62c2e6cdaf" isAbstract="true" kind="Tactical" name="MCRL2" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical">
     <baseType>
       <extensionType>
         <extends>true</extends>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="00240000048000009400000006020000002400005253413100040000110000004915c83120755567a2ee4a1ea5e706412b0d204ee81d21512214b8c577bcef1d3754c811ce0f0783b0e827dbc889bcf77476fbfe577cfd565deaa92d7883207fdc9358f9e2b38eb0ff0719bdc5bf307cdbdf9ca05976167598d3c3168693cc1b1a21b44ecad3cbf151dd19b45826de329f7c719c3a040c6687c92d8db1b1f88b" isAbstract="true" kind="Computation" name="ISP" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical">
+  <header hash_component_UID="00240000048000009400000006020000002400005253413100040000110000004915c83120755567a2ee4a1ea5e706412b0d204ee81d21512214b8c577bcef1d3754c811ce0f0783b0e827dbc889bcf77476fbfe577cfd565deaa92d7883207fdc9358f9e2b38eb0ff0719bdc5bf307cdbdf9ca05976167598d3c3168693cc1b1a21b44ecad3cbf151dd19b45826de329f7c719c3a040c6687c92d8db1b1f88b" isAbstract="true" kind="Tactical" name="ISP" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical">
     <baseType>
       <extensionType>
         <extends>true</extends>

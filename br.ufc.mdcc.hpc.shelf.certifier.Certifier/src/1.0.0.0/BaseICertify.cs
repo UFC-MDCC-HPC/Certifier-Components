@@ -4,7 +4,7 @@ using br.ufc.pargo.hpe.kinds;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.Certifier
 {
-	public interface BaseICertify : IComputationKind 
+	public interface BaseICertify : ICertifierKind 
 	{
 	}
 }

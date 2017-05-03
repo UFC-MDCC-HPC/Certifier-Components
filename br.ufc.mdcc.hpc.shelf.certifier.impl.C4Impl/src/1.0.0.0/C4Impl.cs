@@ -21,8 +21,6 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl
 {
 	public class C4Impl : BaseC4Impl, ICertify
 	{
-		
-
 		public static ConcurrentDictionary <string, LogicActionInstantiate> InstantiateActions = new ConcurrentDictionary<string, LogicActionInstantiate>();
 		public static ConcurrentDictionary <string, LogicActionCompute> ComputeActions = new ConcurrentDictionary<string, LogicActionCompute>();
 		public static TypeRegistry variables = new TypeRegistry();
@@ -40,42 +38,30 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl
 
 		public override void main()
 		{
-
 			verify_actions.Add (1, Verify1);
 			verify_actions.Add (2, Verify2);
 
 			Stopwatch sw = new Stopwatch();
 			sw.Start();
-			setData();
 
+			setData();
 
 			performOrchestration ();
 
 			finishCertifier ();
 
-
-
-
-
-
-
 			sw.Stop();
 
-
-
-
 			Console.WriteLine("Total time of verification={0}",sw.Elapsed);
-
-
-	
-
-
-
-
 		}
 
+		public override string Orchestration {
+			get {
+				return null;
+			}
+		}
 
-		public void setData(){
+		public override void setData(){
 
 			tactical_names = new string[number_tacticals];
 			tactical_names [0] = "ISP1"; tactical_names [1] = "ISP2";

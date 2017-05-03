@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000a339213bf1da97078c1e8ec31fa816bbc784ce73708a0a31a134003023aed47c7b4591db8681a3368d71148ead1c517661ba866ab1136cc2f9e0e698e7b38808cef0ee439f9308c0733f74e68fc6f2e4d93f5bdad074c24290aee64aa66c17550040fcd165091313a170efc23264a20dd7cb66d76f4b49a3c5a5c654c4de048c" isAbstract="true" kind="Computation" name="Certifier" packagePath="br.ufc.mdcc.hpc.shelf.certifier">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000a339213bf1da97078c1e8ec31fa816bbc784ce73708a0a31a134003023aed47c7b4591db8681a3368d71148ead1c517661ba866ab1136cc2f9e0e698e7b38808cef0ee439f9308c0733f74e68fc6f2e4d93f5bdad074c24290aee64aa66c17550040fcd165091313a170efc23264a20dd7cb66d76f4b49a3c5a5c654c4de048c" isAbstract="true" kind="Certifier" name="Certifier" packagePath="br.ufc.mdcc.hpc.shelf.certifier">
     <versions field1="1" field2="0" field3="0" field4="0"/>
     <visualAttributes>
       <color b="255" g="255" r="255"/>

@@ -8,7 +8,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ParTypesType;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ParTypes
 {
-	public interface BaseIParTypes : BaseITactical<IVerifyDataPortServerTypeC4,IParTypesType,IVerifyPortType>, IComputationKind 
+	public interface BaseIParTypes : BaseITactical<IVerifyDataPortServerTypeC4,IParTypesType,IVerifyPortType>, ITacticalKind 
 	{
 	}
 }

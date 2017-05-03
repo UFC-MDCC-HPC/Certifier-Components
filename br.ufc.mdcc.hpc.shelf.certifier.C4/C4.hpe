@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b30734546701c5793cd20cd7eb2ad7a6a4b9bc13c935176ea1e2a0ff25c1ddcc3b3a56e5c732702ab7ca89b90557500df26600d9e47cefe0cb50e1977025b2c89cbafb1ff840f4129e443d1563f80139a9551daa3f0b7536b95fe5fc35411c24a055e2e92fcdaad65a9632e016bf1e58b2dee1578f968635b7f1e99e3a8f5f9f" isAbstract="true" kind="Computation" name="C4" packagePath="br.ufc.mdcc.hpc.shelf.certifier">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000b30734546701c5793cd20cd7eb2ad7a6a4b9bc13c935176ea1e2a0ff25c1ddcc3b3a56e5c732702ab7ca89b90557500df26600d9e47cefe0cb50e1977025b2c89cbafb1ff840f4129e443d1563f80139a9551daa3f0b7536b95fe5fc35411c24a055e2e92fcdaad65a9632e016bf1e58b2dee1578f968635b7f1e99e3a8f5f9f" isAbstract="true" kind="Certifier" name="C4" packagePath="br.ufc.mdcc.hpc.shelf.certifier">
     <baseType>
       <extensionType>
         <extends>true</extends>

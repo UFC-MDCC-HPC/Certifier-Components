@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.MCRL2Impl 
 {
-	public abstract class BaseIMCRL2Impl: Computation, BaseIMCRL2
+	public abstract class BaseIMCRL2Impl: Tactical, BaseIMCRL2
 	{
 		private ITaskPort<IVerifyPortType> verify = null;
 

@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ISPImpl 
 {
-	public abstract class BaseIISPImpl: Computation, BaseIISP
+	public abstract class BaseIISPImpl: Tactical, BaseIISP
 	{
 		private IVerifyServerPort<IVerifyDataPortServerTypeC4> verify_data = null;
 

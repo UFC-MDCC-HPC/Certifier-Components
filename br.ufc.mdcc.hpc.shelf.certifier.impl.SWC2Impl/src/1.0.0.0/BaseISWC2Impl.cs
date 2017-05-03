@@ -12,7 +12,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2;
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl 
 {
-	public abstract class BaseISWC2Impl: Computation, BaseISWC2
+	public abstract class BaseISWC2Impl: br.ufc.pargo.hpe.kinds.Certifier, BaseISWC2
 	{
 		private IVerifyClientPortSWC2 verify_data1 = null;
 

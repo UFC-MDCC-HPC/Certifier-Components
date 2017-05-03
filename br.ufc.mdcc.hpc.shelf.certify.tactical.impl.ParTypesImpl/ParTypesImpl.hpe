@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000fde1c0fa516840202c9f2d3ed8fcddd004dd02823675c9824a10db36155d727914f0b1417c01e112dc0811d3c5f296d0695159af1e0b51e5753e0670ed54147e05586113811f0181f5602e376d2184817a3f74c0257b7b6e9a63d6f3b18202e1edccee60d697a3ff4d8367943da1568f3d1f2bf995c0ba47d468807ff7435990" isAbstract="false" kind="Computation" name="ParTypesImpl" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical.impl">
+  <header hash_component_UID="0024000004800000940000000602000000240000525341310004000011000000fde1c0fa516840202c9f2d3ed8fcddd004dd02823675c9824a10db36155d727914f0b1417c01e112dc0811d3c5f296d0695159af1e0b51e5753e0670ed54147e05586113811f0181f5602e376d2184817a3f74c0257b7b6e9a63d6f3b18202e1edccee60d697a3ff4d8367943da1568f3d1f2bf995c0ba47d468807ff7435990" isAbstract="false" kind="Tactical" name="ParTypesImpl" packagePath="br.ufc.mdcc.hpc.shelf.certify.tactical.impl">
     <baseType>
       <extensionType>
         <implements>true</implements>

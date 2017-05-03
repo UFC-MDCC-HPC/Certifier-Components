@@ -9,7 +9,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.ISPType;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.ISP
 {
-	public interface BaseIISP : BaseITactical<IVerifyDataPortServerTypeC4,IISPType,IVerifyPortType>, IComputationKind 
+	public interface BaseIISP : BaseITactical<IVerifyDataPortServerTypeC4,IISPType,IVerifyPortType>, ITacticalKind 
 	{
 	}
 }

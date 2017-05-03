@@ -13,7 +13,7 @@ using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl 
 {
-	public abstract class BaseIParTypesImpl: Computation, BaseIParTypes
+	public abstract class BaseIParTypesImpl: Tactical, BaseIParTypes
 	{
 		private ITaskPort<IVerifyPortType> verify = null;
 

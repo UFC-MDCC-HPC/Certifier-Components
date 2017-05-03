@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="HPC-Shelf-Certification.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs">
     <Files>
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelRootImpl.cs" Line="151" Column="16" />
-      <File FileName="../br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl/src/1.0.0.0/IChannelImpl.cs" Line="18" Column="38" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.SWC2/src/1.0.0.0/ISWC2.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.SWC2/src/1.0.0.0/BaseISWC2.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/IISP.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

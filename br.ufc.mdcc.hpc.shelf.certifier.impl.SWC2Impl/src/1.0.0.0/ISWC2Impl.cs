@@ -22,36 +22,30 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl
 
 		public override void main()
 		{
+			Stopwatch sw = new Stopwatch();
+			sw.Start();
+
+			setData();		
+			CerificationResult result = perform_certify ();
+
+			sw.Stop();
+
+			Console.WriteLine("Tempo total de verificação={0} : INCONCLUSIVE ? {1}",sw.Elapsed, result == CerificationResult.Inconclusive);
+		}
+
+		public override string Orchestration {
+			get {
+				return null;
+			}
+		}
+
+		public override void setData()
+		{			
 			work_path = System.Environment.GetEnvironmentVariable ("PATH_CERTIFIER");
 			if (work_path == null)
 				work_path = System.Environment.GetEnvironmentVariable ("HOME");
 			Console.WriteLine ("WORK PATH OF CERTIFIER is " + work_path + Path.DirectorySeparatorChar);
 
-			Stopwatch sw = new Stopwatch();
-			sw.Start();
-			setData();
-		
-			Verify1.invoke (IVerify.VERIFY_PERFORM);		
-
-			IActionFutureSet future_iteration = null;
-
-			IActionFuture future_conclusive = null; 
-			Verify1.invoke (IVerify.VERIFY_CONCLUSIVE, out future_conclusive);
-			future_iteration = future_conclusive.createSet ();
-
-			IActionFuture future_inconclusive = null; 
-			Verify1.invoke (IVerify.VERIFY_INCONCLUSIVE, out future_inconclusive);
-			future_iteration.addAction (future_inconclusive);
-
-			IActionFuture result = future_iteration.waitAny ();
-
-			sw.Stop();
-
-			Console.WriteLine("Tempo total de verificação={0} : INCONCLUSIVE ? {1}",sw.Elapsed, result == future_inconclusive);
-		}
-
-		public void setData()
-		{			
 			Console.WriteLine ("setData *** num_properties = {0}", num_properties);
 			Verify_data1.Client.setNumProperties (num_properties);
 
@@ -76,5 +70,25 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl
 			Verify_data1.Client.setIndexFirstPropTacticals ();
 			Verify_data1.Client.setPropertiesTacticals ();
 		}
+		
+		public CerificationResult perform_certify()
+		{
+			Verify1.invoke (IVerify.VERIFY_PERFORM);		
+
+			IActionFutureSet future_iteration = null;
+
+			IActionFuture future_conclusive = null; 
+			Verify1.invoke (IVerify.VERIFY_CONCLUSIVE, out future_conclusive);
+			future_iteration = future_conclusive.createSet ();
+
+			IActionFuture future_inconclusive = null; 
+			Verify1.invoke (IVerify.VERIFY_INCONCLUSIVE, out future_inconclusive);
+			future_iteration.addAction (future_inconclusive);
+
+			IActionFuture result = future_iteration.waitAny ();
+
+			return result == future_conclusive ? CerificationResult.Conclusive : CerificationResult.Inconclusive;
+		}
+
 	}
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <component:component xmlns:component="http://www.example.org/HashComponent">
-  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000019aa69e7ca7be3ee4825e96509c7b6463c663fe4244c8e30ce5f1beb9a682f50e464d312d1d0847f4f49f307d378417320aacf3c92d4d24ea22e23f2bcd0ca62c14f47328609a3b87bb6380818d4595a7eb42567ccfab53ef958a095a7f85d3efb282dda86ef5b2255e1507f5ebd1604bed356a1f8f055c9a024b2da414e3cb3" isAbstract="false" kind="Computation" name="SWC2Impl" packagePath="br.ufc.mdcc.hpc.shelf.certifier.impl">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000019aa69e7ca7be3ee4825e96509c7b6463c663fe4244c8e30ce5f1beb9a682f50e464d312d1d0847f4f49f307d378417320aacf3c92d4d24ea22e23f2bcd0ca62c14f47328609a3b87bb6380818d4595a7eb42567ccfab53ef958a095a7f85d3efb282dda86ef5b2255e1507f5ebd1604bed356a1f8f055c9a024b2da414e3cb3" isAbstract="false" kind="Certifier" name="SWC2Impl" packagePath="br.ufc.mdcc.hpc.shelf.certifier.impl">
     <baseType>
       <extensionType>
         <implements>true</implements>

@@ -10,7 +10,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType;
 
 namespace br.ufc.mdcc.hpc.shelf.tactical.Tactical
 {
-	public interface BaseITactical<S, N, T> : IComputationKind 
+	public interface BaseITactical<S, N, T> : ITacticalKind 
 		where S:IVerifyDataPortServerType
 		where N:ITacticalType
 		where T:IVerifyPortType

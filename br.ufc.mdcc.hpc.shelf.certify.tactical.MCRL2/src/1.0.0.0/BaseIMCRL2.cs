@@ -11,7 +11,7 @@ using br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type;
 
 namespace br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2
 {
-	public interface BaseIMCRL2 : BaseITactical<IVerifyDataPortServerTypeSWC2,IMCRL2Type,IVerifyPortType>, IComputationKind 
+	public interface BaseIMCRL2 : BaseITactical<IVerifyDataPortServerTypeSWC2,IMCRL2Type,IVerifyPortType>, ITacticalKind 
 	{
 	}
 }
