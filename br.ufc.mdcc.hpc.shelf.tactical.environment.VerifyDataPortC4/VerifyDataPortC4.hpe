@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ASCII"?>
+<component:component xmlns:component="http://www.example.org/HashComponent">
+  <header hash_component_UID="002400000480000094000000060200000024000052534131000400001100000079c4e25cfdb138535fae2dc5e1a7c3c54f627cdc0bfb9f53208c25336e3de9a4c21e695cceb92fd5f362d3bd0abe5409351d0ca39bb5cf9418642ade7f35da466ba000f3fcfdb0e7ebeb681958ce00085f5083b0878968c99fd3ff81a077b66ff3fd7f13197fdaf24d63dc40c8622a92ea6b2d8b15e5577ff14cdc6005f0ff95" isAbstract="true" kind="Synchronizer" name="VerifyDataPortC4" packagePath="br.ufc.mdcc.hpc.shelf.tactical.environment">
+    <baseType>
+      <extensionType>
+        <extends>true</extends>
+      </extensionType>
+      <component hash_component_UID="00240000048000009400000006020000002400005253413100040000110000001fe9fadb4c1025e72aff28872fb5fbd238acd27e3d59d16e734e425c608135074599beae81df8b2193cf66ac4a87453b65f16017f4c611002dade04d3f82bf6986d94bfa38d4b444c7d94c7719bc8a691694252f2420c876b05b018f3484646da636160dfbd9fde5e058a2cd7e21a6cd05ee431194528c8dd5536c7f41c9c7b5" localRef="base" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/VerifyDataPort.hpe" name="VerifyDataPort" package="br.ufc.mdcc.hpc.shelf.tactical.environment" version="1.0.0.0">
+        <visualDescription h="60" w="100" x="168" y="191">
+          <color b="255" g="255" r="255"/>
+        </visualDescription>
+        <parameter formFieldId="client_port_type" varName="C"/>
+        <parameter formFieldId="server_port_type" varName="S"/>
+        <unitBounds facet="0" facet_instance="0" facet_instance_enclosing="0" parallel="false" uRef="client">
+          <visualDescription h="20" w="20" x="5" y="2"/>
+        </unitBounds>
+        <unitBounds facet="1" facet_instance="0" facet_instance_enclosing="1" parallel="false" uRef="server">
+          <visualDescription h="20" w="20" x="28" y="2"/>
+        </unitBounds>
+      </component>
+    </baseType>
+    <versions field1="1" field2="0" field3="0" field4="0"/>
+    <visualAttributes>
+      <color b="255" g="255" r="255"/>
+    </visualAttributes>
+    <facet_configuration facet="0" multiple="false"/>
+    <facet_configuration facet="1" multiple="false"/>
+  </header>
+  <componentInfo>
+    <parameter componentRef="server_port_type" formFieldId="server_port_type" order="0" variance="invariant" varName="S"/>
+    <innerComponent localRef="client_port_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/VerifyDataPortClientTypeC4.hpe" multiple="false" name="VerifyDataPortClientTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" exposed="false">
+      <visualDescription h="60" w="100" x="144" y="254">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <innerComponent localRef="server_port_type" location="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/VerifyDataPortServerTypeC4.hpe" multiple="false" name="VerifyDataPortServerTypeC4" package="br.ufc.mdcc.hpc.shelf.tactical.environment" parameter_id="server_port_type" exposed="false">
+      <visualDescription h="60" w="100" x="130" y="353">
+        <color b="255" g="255" r="255"/>
+      </visualDescription>
+      <unitBounds facet="0" facet_instance="0" parallel="true" uRef="environment_port_type">
+        <visualDescription h="20" w="20" x="5" y="2"/>
+      </unitBounds>
+    </innerComponent>
+    <supplyParameter cRef="client_port_type" direct="true" varName="C"/>
+    <interface iRef="IVerifyClientPortC4" nArgs="0">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4&#xA;{&#xA;&#x9;public interface BaseIVerifyClientPortC4 : BaseIVerifyClientPort&lt;IVerifyDataPortClientTypeC4>, ISynchronizerKind &#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="BaseIVerifyClientPortC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/bin/1.0.0.0/BaseIVerifyClientPortC4.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIClientMulticastInter.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4&#xA;{&#xA;&#x9;public interface IVerifyClientPortC4 : BaseIVerifyClientPortC4, IVerifyClientPort&lt;IVerifyDataPortClientTypeC4>&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IVerifyClientPortC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/bin/1.0.0.0/IVerifyClientPortC4.dll" versionId="1.0.0.0">
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/bin/1.0.0.0/BaseIVerifyClientPortC4.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IClientMulticastInter.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="195" x="37" y="92">
+        <color b="0" g="255" r="255"/>
+      </visualDescription>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <interface iRef="IVerifyServerPortC4" nArgs="1">
+      <sources sourceType="C# Language" versionId="1.0.0.0">
+        <file contents="/* AUTOMATICALLY GENERATE CODE */&#xA;&#xA;using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4&#xA;{&#xA;&#x9;public interface BaseIVerifyServerPortC4&lt;S> : BaseIVerifyServerPort&lt;S>, ISynchronizerKind &#xA;&#x9;&#x9;where S:IVerifyDataPortServerTypeC4&#xA;&#x9;{&#xA;&#x9;}&#xA;}&#xA;" name="BaseIVerifyServerPortC4.cs" srcType="base" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/bin/1.0.0.0/BaseIVerifyServerPortC4.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIServerMulticastInter.dll</dependency>
+        </file>
+        <file contents="using br.ufc.pargo.hpe.kinds;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;&#xA;using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort;&#xA;&#xA;namespace br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4&#xA;{&#xA;&#x9;public interface IVerifyServerPortC4&lt;S> : BaseIVerifyServerPortC4&lt;S>, IVerifyServerPort&lt;S>&#xA;&#x9;&#x9;where S:IVerifyDataPortServerTypeC4&#xA;&#x9;{&#xA;&#x9;}&#xA;}" name="IVerifyServerPortC4.cs" srcType="user" uri="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/bin/1.0.0.0/IVerifyServerPortC4.dll" versionId="1.0.0.0">
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4/bin/1.0.0.0/IVerifyDataPortServerTypeC4.dll</dependency>
+          <dependency>%WORKSPACE/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/bin/1.0.0.0/BaseIVerifyServerPortC4.dll</dependency>
+          <dependency>br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IServerMulticastInter.dll</dependency>
+        </file>
+      </sources>
+      <visualDescription h="40" w="163" x="311" y="97">
+        <color b="0" g="165" r="255"/>
+      </visualDescription>
+      <parameter iname="IVerifyDataPortServerTypeC4" order="0" parid="server_port_type" uname="environment_port_type" varid="S"/>
+      <action id="main">
+        <protocol/>
+      </action>
+    </interface>
+    <unit facet="0" iRef="IVerifyClientPortC4" multiple="false" private="false" replica="0" uRef="client" visibleInterface="true">
+      <super cRef="base" uRef="client"/>
+      <visualDescription h="40" w="80" x="53" y="280"/>
+    </unit>
+    <unit facet="1" iRef="IVerifyServerPortC4" multiple="false" private="false" replica="0" uRef="server" visibleInterface="true">
+      <super cRef="base" uRef="server"/>
+      <visualDescription h="40" w="80" x="362" y="303"/>
+    </unit>
+  </componentInfo>
+</component:component>

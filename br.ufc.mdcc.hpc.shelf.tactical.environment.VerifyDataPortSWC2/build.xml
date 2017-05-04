@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<project xmlns="http://nant.sf.net/release/0.86-beta1/nant.xsd" basedir="/home/heron/hpe/heron/cache" default="all" name="VerifyDataPortSWC2">
+  <property name="nant.settings.currentframework" value="mono-2.0"/>
+  <property name="build" value="bin"/>
+  <property name="src" value="src"/>
+  <target name="VerifyDataPortSWC2-1.0.0.0">
+    <ifnot targetexists="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0">
+      <mkdir dir="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0"/>
+    </ifnot>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/VerifyDataPortSWC2.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0/BaseIClientPortTypeSWC2.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/src/1.0.0.0/BaseIClientPortTypeSWC2.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIClientMulticastInter.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/VerifyDataPortSWC2.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0/IClientPortTypeSWC2.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/src/1.0.0.0/IClientPortTypeSWC2.cs"/>
+      </sources>
+      <references>
+        <include name="/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0/BaseIClientPortTypeSWC2.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IClientMulticastInter.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/VerifyDataPortSWC2.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0/BaseIServerPortTypeSWC2.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/src/1.0.0.0/BaseIServerPortTypeSWC2.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2/bin/1.0.0.0/IVerifyDataPortServerTypeSWC2.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/BaseIServerMulticastInter.dll"/>
+        <include/>
+      </references>
+    </csc>
+    <csc debug="true" keyfile="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/VerifyDataPortSWC2.snk" optimize="true" output="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0/IServerPortTypeSWC2.dll" target="library" unsafe="false">
+      <sources>
+        <include name="/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/src/1.0.0.0/IServerPortTypeSWC2.cs"/>
+      </sources>
+      <references>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeSWC2/bin/1.0.0.0/IVerifyDataPortServerTypeSWC2.dll"/>
+        <include name="/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/bin/1.0.0.0/BaseIServerPortTypeSWC2.dll"/>
+        <include name="br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPort/bin/1.0.0.0/IServerMulticastInter.dll"/>
+        <include/>
+      </references>
+    </csc>
+  </target>
+  <target depends="VerifyDataPortSWC2-1.0.0.0" name="all"/>
+</project>
