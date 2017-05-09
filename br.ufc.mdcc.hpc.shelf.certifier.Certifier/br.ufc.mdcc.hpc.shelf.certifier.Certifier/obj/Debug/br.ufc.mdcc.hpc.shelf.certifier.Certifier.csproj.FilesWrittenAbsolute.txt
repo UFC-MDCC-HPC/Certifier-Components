@@ -14,3 +14,5 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/DGAC.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/MPI.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/MySql.Data.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/ExpressionEvaluator.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.Certifier/br.ufc.mdcc.hpc.shelf.certifier.Certifier/bin/Debug/Antlr3.Runtime.dll

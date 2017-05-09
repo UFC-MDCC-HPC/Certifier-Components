@@ -14,3 +14,5 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/DGAC.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/MPI.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/MySql.Data.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/ExpressionEvaluator.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/Antlr3.Runtime.dll

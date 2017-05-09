@@ -12,19 +12,13 @@ using System.Threading;
 using System.Xml.Schema;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using ExpressionEvaluator;
-using br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierImpl.action.logic;
-using br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierImpl.util;
-using br.ufc.mdcc.hpcshelf.certifier.impl.computation.CertfierImpl.grammar;
+
 
 namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl
 {
 	public class C4Impl : BaseC4Impl, ICertify
 	{
-		public static ConcurrentDictionary <string, LogicActionInstantiate> InstantiateActions = new ConcurrentDictionary<string, LogicActionInstantiate>();
-		public static ConcurrentDictionary <string, LogicActionCompute> ComputeActions = new ConcurrentDictionary<string, LogicActionCompute>();
-		public static TypeRegistry variables = new TypeRegistry();
-		public static MultiKeyConcurrentDictionary <string,string, bool> formal_properties = new MultiKeyConcurrentDictionary <string, string, bool>();
+		
 		public static int number_tacticals=2;
 		public static string[] tactical_names;
 		public int num_programs=7;
@@ -34,26 +28,8 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl
 		public int [][]num_units_program;
 		public string[] arr_transfer_prop;
 
-		public static Dictionary <int, ITaskPort<IVerifyPortType>> verify_actions;
-
-		public override void main()
-		{
-			verify_actions.Add (1, Verify1);
-			verify_actions.Add (2, Verify2);
-
-			Stopwatch sw = new Stopwatch();
-			sw.Start();
-
-			setData();
-
-			performOrchestration ();
-
-			finishCertifier ();
-
-			sw.Stop();
-
-			Console.WriteLine("Total time of verification={0}",sw.Elapsed);
-		}
+		
+		
 
 		public override string Orchestration {
 			get {
@@ -144,37 +120,6 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.C4Impl
 
 
 
-	
-		public void performOrchestration(){
-
-			CertifierOrchestrationParser parser = new CertifierOrchestrationParser();
-			parser.readOrchestrationXML(CertifierConstants.ORCHESTRATION_FILE_TEST);
-			CertifierConsoleLogger.write(parser.getOrchestration().toString()); // get orchestration from the concrete certifier component
-
-			variables.Add ("formal_properties", formal_properties);
-
-
-			parser.getOrchestration().run(); // run orchestration to prove formal contracts
-
-
-		}
-
-		public void finishCertifier(){
-			Console.WriteLine ("iterating remaining start threads");
-			foreach (KeyValuePair <String, LogicActionInstantiate> entry in InstantiateActions)
-			{
-				if (entry.Value._thread != null) {
-					entry.Value._thread.Join ();
-				}
-			}
-			foreach (KeyValuePair <String, LogicActionCompute> entry in ComputeActions)
-			{
-				if (entry.Value._thread != null) {
-					entry.Value._thread.Join();
-				}
-
-			}
-		}
 	
 	}
 
