@@ -56,5 +56,12 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientType.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll.mdb
+<<<<<<< HEAD
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/ExpressionEvaluator.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/Antlr3.Runtime.dll
+=======
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll.mdb
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/ExpressionEvaluator.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.Tactical/br.ufc.mdcc.hpc.shelf.tactical.Tactical/bin/Debug/Antlr3.Runtime.dll
+>>>>>>> 44c2627096897512a08fea169efa6d4214dc5c64

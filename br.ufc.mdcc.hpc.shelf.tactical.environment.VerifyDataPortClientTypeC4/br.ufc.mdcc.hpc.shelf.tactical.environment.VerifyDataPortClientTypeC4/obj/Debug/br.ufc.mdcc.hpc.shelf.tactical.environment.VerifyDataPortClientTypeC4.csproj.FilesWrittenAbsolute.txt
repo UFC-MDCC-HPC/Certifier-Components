@@ -68,5 +68,12 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll.mdb
+<<<<<<< HEAD
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/ExpressionEvaluator.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/Antlr3.Runtime.dll
+=======
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/ExpressionEvaluator.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/Antlr3.Runtime.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortClientTypeC4/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll.mdb
+>>>>>>> 44c2627096897512a08fea169efa6d4214dc5c64

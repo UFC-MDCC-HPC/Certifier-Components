@@ -14,5 +14,10 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/DGAC.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/MPI.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/MySql.Data.dll
+<<<<<<< HEAD
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/ExpressionEvaluator.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/Antlr3.Runtime.dll
+=======
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/ExpressionEvaluator.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType/bin/Debug/Antlr3.Runtime.dll
+>>>>>>> 44c2627096897512a08fea169efa6d4214dc5c64

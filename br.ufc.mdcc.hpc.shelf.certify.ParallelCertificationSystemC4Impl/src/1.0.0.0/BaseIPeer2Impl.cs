@@ -38,14 +38,14 @@ namespace br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl
 				return this.verify_data2;
 			}
 		}
-		private IISP<IVerifyDataPortServerTypeC4> isp_1 = null;
+		private IISP isp_1 = null;
 
-		protected IISP<IVerifyDataPortServerTypeC4> ISP_1
+		protected IISP ISP_1
 		{
 			get
 			{
 				if (this.isp_1 == null)
-					this.isp_1 = (IISP<IVerifyDataPortServerTypeC4>) Services.getPort("isp_1");
+					this.isp_1 = (IISP) Services.getPort("isp_1");
 				return this.isp_1;
 			}
 		}

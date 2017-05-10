@@ -38,14 +38,14 @@ namespace br.ufc.mdcc.hpc.shelf.certify.ParallelCertificationSystemC4Impl
 				return this.verify_data3;
 			}
 		}
-		private IParTypes<IVerifyDataPortServerTypeC4> parTypes_2 = null;
+		private IParTypes parTypes_2 = null;
 
-		protected IParTypes<IVerifyDataPortServerTypeC4> ParTypes_2
+		protected IParTypes ParTypes_2
 		{
 			get
 			{
 				if (this.parTypes_2 == null)
-					this.parTypes_2 = (IParTypes<IVerifyDataPortServerTypeC4>) Services.getPort("parTypes_2");
+					this.parTypes_2 = (IParTypes) Services.getPort("parTypes_2");
 				return this.parTypes_2;
 			}
 		}

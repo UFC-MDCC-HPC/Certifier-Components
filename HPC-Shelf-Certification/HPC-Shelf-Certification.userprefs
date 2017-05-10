@@ -1,11 +1,15 @@
 ﻿<Properties StartupItem="HPC-Shelf-Certification.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/src/1.0.0.0/ISWC2Impl.cs">
     <Files>
       <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.SWC2/src/1.0.0.0/ISWC2.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.SWC2/src/1.0.0.0/BaseISWC2.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/IISP.cs" Line="1" Column="1" />
       <File FileName="../br.ufc.mdcc.hpc.shelf.certify.tactical.ISP/src/1.0.0.0/BaseIISP.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortC4/src/1.0.0.0/BaseIVerifyClientPortC4.cs" Line="1" Column="1" />
+      <File FileName="../../../../../opt/monodevelop/lib/mono/4.5/Microsoft.Common.targets" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortSWC2/src/1.0.0.0/BaseIVerifyClientPortSWC2.cs" Line="1" Column="1" />
+      <File FileName="../br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/src/1.0.0.0/ISWC2Impl.cs" Line="23" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -61,84 +61,6 @@
     <Compile Include="..\src\1.0.0.0\util\MultikeyConcurrentDictionary.cs">
       <Link>util\MultikeyConcurrentDictionary.cs</Link>
     </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicBreakOper.cs">
-      <Link>visitor.logic\LogicBreakOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicCancelOper.cs">
-      <Link>visitor.logic\LogicCancelOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicContinueOper.cs">
-      <Link>visitor.logic\LogicContinueOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicParallelOper.cs">
-      <Link>visitor.logic\LogicParallelOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicPerformOper.cs">
-      <Link>visitor.logic\LogicPerformOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicRepeatOper.cs">
-      <Link>visitor.logic\LogicRepeatOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSelectOper.cs">
-      <Link>visitor.logic\LogicSelectOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSequenceOper.cs">
-      <Link>visitor.logic\LogicSequenceOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSkipOper.cs">
-      <Link>visitor.logic\LogicSkipOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicStartOper.cs">
-      <Link>visitor.logic\LogicStartOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicSwitchOper.cs">
-      <Link>visitor.logic\LogicSwitchOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\LogicWaitOper.cs">
-      <Link>visitor.logic\LogicWaitOper.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor.logic\ParallelJob.cs">
-      <Link>visitor.logic\ParallelJob.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\action.logic\LogicAction.cs">
-      <Link>action.logic\LogicAction.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\action.logic\LogicActionCompute.cs">
-      <Link>action.logic\LogicActionCompute.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\action.logic\LogicActionInstantiate.cs">
-      <Link>action.logic\LogicActionInstantiate.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestration.cs">
-      <Link>grammar\CertifierOrchestration.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationElement.cs">
-      <Link>grammar\CertifierOrchestrationElement.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationOperation.cs">
-      <Link>grammar\CertifierOrchestrationOperation.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationParser.cs">
-      <Link>grammar\CertifierOrchestrationParser.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\grammar\CertifierOrchestrationValidator.cs">
-      <Link>grammar\CertifierOrchestrationValidator.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\grammar\Certifier_Orchestration.cs">
-      <Link>grammar\Certifier_Orchestration.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\grammar\ObjectFactory.cs">
-      <Link>grammar\ObjectFactory.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor\AbstractCertifierElementLogic.cs">
-      <Link>visitor\AbstractCertifierElementLogic.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor\CertifierVisitorImpl.cs">
-      <Link>visitor\CertifierVisitorImpl.cs</Link>
-    </Compile>
-    <Compile Include="..\src\1.0.0.0\visitor\ICertifierVisitor.cs">
-      <Link>visitor\ICertifierVisitor.cs</Link>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -205,11 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="util\" />
-    <Folder Include="visitor.logic\" />
-    <Folder Include="action.logic\" />
     <Folder Include="xml\" />
-    <Folder Include="grammar\" />
-    <Folder Include="visitor\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\src\1.0.0.0\xml\Certifier_Orchestration.xsd">

@@ -20,22 +20,10 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl
 
 		public string[] properties_files;
 
-		public override void main()
-		{
-			Stopwatch sw = new Stopwatch();
-			sw.Start();
-
-			setData();		
-			CerificationResult result = perform_certify ();
-
-			sw.Stop();
-
-			Console.WriteLine("Tempo total de verificação={0} : INCONCLUSIVE ? {1}",sw.Elapsed, result == CerificationResult.Inconclusive);
-		}
 
 		public override string Orchestration {
 			get {
-				return null;
+				return null;	
 			}
 		}
 
@@ -71,24 +59,7 @@ namespace br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl
 			Verify_data1.Client.setPropertiesTacticals ();
 		}
 		
-		public CerificationResult perform_certify()
-		{
-			Verify1.invoke (IVerify.VERIFY_PERFORM);		
-
-			IActionFutureSet future_iteration = null;
-
-			IActionFuture future_conclusive = null; 
-			Verify1.invoke (IVerify.VERIFY_CONCLUSIVE, out future_conclusive);
-			future_iteration = future_conclusive.createSet ();
-
-			IActionFuture future_inconclusive = null; 
-			Verify1.invoke (IVerify.VERIFY_INCONCLUSIVE, out future_inconclusive);
-			future_iteration.addAction (future_inconclusive);
-
-			IActionFuture result = future_iteration.waitAny ();
-
-			return result == future_conclusive ? CerificationResult.Conclusive : CerificationResult.Inconclusive;
-		}
+		
 
 	}
 }

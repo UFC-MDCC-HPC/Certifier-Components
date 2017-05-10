@@ -18,5 +18,10 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/Debug/MPI.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/Debug/MySql.Data.dll
+<<<<<<< HEAD
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/Debug/ExpressionEvaluator.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/Debug/Antlr3.Runtime.dll
+=======
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/Debug/ExpressionEvaluator.dll
+/home/allberson/Dropbox/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType/bin/Debug/Antlr3.Runtime.dll
+>>>>>>> 44c2627096897512a08fea169efa6d4214dc5c64
