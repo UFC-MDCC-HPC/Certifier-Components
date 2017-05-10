@@ -42,3 +42,5 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/Debug/br.ufc.mdcc.hpc.storm.binding.channel.Binding.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/Debug/br.ufc.mdcc.hpc.storm.kind.Binding.dll.mdb
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/Debug/ExpressionEvaluator.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/br.ufc.mdcc.hpc.shelf.certifier.impl.SWC2Impl/bin/Debug/Antlr3.Runtime.dll

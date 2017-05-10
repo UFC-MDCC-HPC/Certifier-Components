@@ -64,3 +64,5 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.MCRL2Type.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/Debug/br.ufc.mdcc.hpc.shelf.certify.tactical.qualifier.TacticalType.dll.mdb
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/Debug/ExpressionEvaluator.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/br.ufc.mdcc.hpc.shelf.certify.tactical.MCRL2/bin/Debug/Antlr3.Runtime.dll

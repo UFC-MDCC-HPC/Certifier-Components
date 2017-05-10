@@ -26,3 +26,5 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/Debug/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/Debug/MPI.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/Debug/MySql.Data.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/Debug/ExpressionEvaluator.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerType/bin/Debug/Antlr3.Runtime.dll

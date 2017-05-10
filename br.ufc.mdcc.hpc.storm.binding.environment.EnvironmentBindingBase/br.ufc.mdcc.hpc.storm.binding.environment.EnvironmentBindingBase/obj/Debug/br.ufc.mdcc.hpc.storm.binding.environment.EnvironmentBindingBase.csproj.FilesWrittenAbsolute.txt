@@ -18,3 +18,5 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/Debug/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentPortType.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/Debug/MPI.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/Debug/MySql.Data.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/Debug/ExpressionEvaluator.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/br.ufc.mdcc.hpc.storm.binding.environment.EnvironmentBindingBase/bin/Debug/Antlr3.Runtime.dll

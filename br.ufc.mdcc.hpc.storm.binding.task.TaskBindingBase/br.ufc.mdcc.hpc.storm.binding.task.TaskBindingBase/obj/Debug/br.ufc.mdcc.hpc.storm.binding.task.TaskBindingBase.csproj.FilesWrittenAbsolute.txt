@@ -18,3 +18,5 @@
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/Debug/br.ufc.mdcc.hpc.storm.binding.task.TaskPortType.dll.mdb
 /home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/Debug/MySql.Data.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/Debug/ExpressionEvaluator.dll
+/home/heron/Dropbox/Copy/ufc_mdcc_hpc/HPC-Shelf-Certification/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/br.ufc.mdcc.hpc.storm.binding.task.TaskBindingBase/bin/Debug/Antlr3.Runtime.dll

@@ -35,7 +35,7 @@
       <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\DGAC.dll</HintPath>
     </Reference>
     <Reference Include="MPI">
-      <HintPath>..\..\..\Hash-Programming-Environment\HPE_BackEnd\bin\MPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\opt\mono-4.2.2\lib\mono\MPI\MPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
