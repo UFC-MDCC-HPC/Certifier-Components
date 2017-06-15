@@ -3,6 +3,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{7C4CD88A-478E-4463-8D06-9B23282D8003}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl</RootNamespace>
@@ -32,10 +34,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="MPI">
-      <HintPath>..\..\..\..\..\..\..\..\usr\lib\mono\MPI\MPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\opt\mono-4.2.2\lib\mono\MPI\MPI.dll</HintPath>
     </Reference>
     <Reference Include="DGAC">
-      <HintPath>..\..\..\..\..\..\..\..\usr\lib\mono\DGAC\DGAC.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\opt\mono-4.2.2\lib\mono\DGAC\DGAC.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

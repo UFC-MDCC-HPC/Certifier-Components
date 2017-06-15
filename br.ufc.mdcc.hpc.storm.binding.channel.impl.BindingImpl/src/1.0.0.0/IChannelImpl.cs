@@ -17,6 +17,11 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 
 		private int conversation_tag = 100;
 
+		public override void after_initialize()
+		{
+			this.TraceFlag = true;
+		}
+
 		object sync = new object();
 
 		private int takeNextConversationTag()
@@ -29,7 +34,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 					conversation_tag ++;
 					break;
 				case int.MaxValue:
-					conversation_tag = 10;
+					conversation_tag = 100;
 					break;
 				}
 			}
@@ -69,7 +74,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END SEND TO <" + dest.Item1 + "," + dest.Item2+  ">");
 		}
 
-		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request ImmediateSend<T> (T value, Tuple<int,int> dest, int tag)
+		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.IRequest ImmediateSend<T> (T value, Tuple<int,int> dest, int tag)
 		{
 			//int conversation_tag = takeNextConversationTag();
 			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": CHECKING " + this.RootCommunicator.Rank + "," + dest.Item2 + ", tag=" + tag);
@@ -79,10 +84,10 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			byte[] value_packet = ObjectToByteArray (value);
 			MPI.Request root_request = this.RootCommunicator.ImmediateSend<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
 			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END SEND TO <" + dest.Item1 + "," + dest.Item2 + ">" );
-			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request.createRequest (root_request, dest);
+			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.MPIRequest.createRequest (root_request, dest);
 		}
 
-		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request ImmediateSyncSend<T> (T value, Tuple<int,int> dest, int tag)
+		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.IRequest ImmediateSyncSend<T> (T value, Tuple<int,int> dest, int tag)
 		{
 			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": CHECKING " + this.RootCommunicator.Rank + "," + dest.Item2 + ", tag=" + tag);
 			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 +  "> : " + TAG_SEND_OPERATION);
@@ -93,7 +98,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END SEND TO <" + dest.Item1 + "," + dest.Item2 + ">" );
 			MPI.Request root_request = this.RootCommunicator.ImmediateReceive<bool>	(0,	TAG_REPLY);
 
-			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request.createRequest (root_request, dest);
+			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.MPIRequest.createRequest (root_request, dest);
 
 		}
 
@@ -102,22 +107,24 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Send<T> (T[] values, Tuple<int,int> dest, int tag)
 		{
 			//int conversation_tag = takeNextConversationTag();
+			Trace.WriteLineIf(this.TraceFlag == true, this.PeerRank + ": 1 - BEGIN CSEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + TAG_SEND_OPERATION);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SEND_ARRAY, tag), 0, TAG_SEND_OPERATION);
+			Trace.WriteLineIf(this.TraceFlag == true, this.PeerRank + ": 2 - BEGIN CSEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + tag);
 			byte[] value_packet = ObjectToByteArray (values);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
+			Trace.WriteLineIf(this.TraceFlag == true, this.PeerRank + ": 3 - END CSEND TO <" + dest.Item1 + "," + dest.Item2 + ">");
 		}
 
-		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request ImmediateSend<T> (T[] values, Tuple<int,int> dest, int tag)
+		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.IRequest ImmediateSend<T> (T[] values, Tuple<int,int> dest, int tag)
 		{
 			//int conversation_tag = takeNextConversationTag();	
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": CHECKING " + this.RootCommunicator.Rank + "," + dest.Item2);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + TAG_SEND_OPERATION);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN ISEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + TAG_SEND_OPERATION);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.SEND_ARRAY, tag), 0, TAG_SEND_OPERATION);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN SEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN ISEND TO <" + dest.Item1 + "," + dest.Item2 + "> : " + tag);
 			byte[] value_packet = ObjectToByteArray (values);
 			MPI.Request root_request = this.RootCommunicator.ImmediateSend<Tuple<int,int,int,byte[]>> (new Tuple<int,int,int,byte[]>(dest.Item1, dest.Item2, tag, value_packet), 0, tag);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END SEND TO <" + dest.Item1 + "," + dest.Item2 + ">");
-			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.Request.createRequest (root_request, dest);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - END ISEND TO <" + dest.Item1 + "," + dest.Item2 + ">");
+			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.MPIRequest.createRequest (root_request, dest);
 		}
 
 		// Receive
@@ -140,31 +147,31 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 		public void Receive<T> (Tuple<int,int> source, int tag, out T value, out br.ufc.mdcc.hpc.storm.binding.channel.Binding.CompletedStatus status)
 		{
 			int conversation_tag = takeNextConversationTag();
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN CRECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.RECEIVE, conversation_tag), 0, TAG_SEND_OPERATION);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN CRECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int,int,int>> (new Tuple<int,int,int>(source.Item1, source.Item2, tag), 0, conversation_tag);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - BEGIN CRECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
 			MPI.CompletedStatus status_root;
 			byte[] v;
 			/* lock (lock_mpi) */ this.RootCommunicator.Receive<byte[]> (0, tag, out v, out status_root);
 			value = (T) ByteArrayToObject(v);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 4 - END RECV FROM <" + source.Item1 + "," + source.Item2 + ">");
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 4 - END CRECV FROM <" + source.Item1 + "," + source.Item2 + ">");
 
-			status = br.ufc.mdcc.hpc.storm.binding.channel.Binding.CompletedStatus.createStatus(status_root, source);
+			status = br.ufc.mdcc.hpc.storm.binding.channel.Binding.MPICompletedStatus.createStatus(status_root, source);
 		}
 
-		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.ReceiveRequest ImmediateReceive<T> (Tuple<int,int> source, int tag)
+		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.IReceiveRequest ImmediateReceive<T> (Tuple<int,int> source, int tag)
 		{
 			int conversation_tag = takeNextConversationTag();
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN IRECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.RECEIVE, conversation_tag), 0, TAG_SEND_OPERATION);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN IRECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int,int,int>> (new Tuple<int,int,int>(source.Item1, source.Item2, tag), 0, conversation_tag);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - BEGIN IRECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
 			MPI.ReceiveRequest root_request = this.RootCommunicator.ImmediateReceive<byte[]>(0, tag);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 4 - END RECV FROM <" + source.Item1 + "," + source.Item2 + ">");
-			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.ValueReceiveRequest<T>.createRequest(root_request, source);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 4 - END IRECV FROM <" + source.Item1 + "," + source.Item2 + ">");
+			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.MPIValueReceiveRequest<T>.createRequest(root_request, source);
 		}
 
 		// Receive Array
@@ -190,21 +197,21 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			for (int i=0; i<size; i++)
 				values[i] = values_[i];
 
-			status = br.ufc.mdcc.hpc.storm.binding.channel.Binding.CompletedStatus.createStatus(status_root, source);
+			status = br.ufc.mdcc.hpc.storm.binding.channel.Binding.MPICompletedStatus.createStatus(status_root, source);
 
 		}
 
-		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.ReceiveRequest ImmediateReceive<T> (Tuple<int,int> source, int tag, T[] values)
+		public br.ufc.mdcc.hpc.storm.binding.channel.Binding.IReceiveRequest ImmediateReceive<T> (Tuple<int,int> source, int tag, T[] values)
 		{
 			int conversation_tag = takeNextConversationTag();
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 1 - BEGIN IARECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + TAG_SEND_OPERATION);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.RECEIVE_ARRAY, conversation_tag), 0, TAG_SEND_OPERATION);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 2 - BEGIN IARECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + conversation_tag);
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int,int,int>> (new Tuple<int,int,int>(source.Item1, source.Item2, tag), 0, conversation_tag);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - BEGIN RECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 3 - BEGIN IARECV FROM <" + source.Item1 + "," + source.Item2 + "> : " + tag);
 			MPI.ReceiveRequest root_request = this.RootCommunicator.ImmediateReceive<byte[]>(0, tag);
-			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 4 - END RECV FROM <" + source.Item1 + "," + source.Item2 + ">");
-			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.ArrayReceiveRequest<T>.createRequest (root_request, source, values);
+			Trace.WriteLineIf(this.TraceFlag==true, this.PeerRank + ": 4 - END IARECV FROM <" + source.Item1 + "," + source.Item2 + ">");
+			return br.ufc.mdcc.hpc.storm.binding.channel.Binding.MPIArrayReceiveRequest<T>.createRequest (root_request, source, values);
 		}
 
 		// Probe
@@ -243,7 +250,7 @@ namespace br.ufc.mdcc.hpc.storm.binding.channel.impl.BindingImpl
 			/* lock (lock_mpi) */ this.RootCommunicator.Send<Tuple<int, int>>(new Tuple<int, int>(AliencommunicatorOperation.ALL_GATHER, conversation_tag), 0, TAG_SEND_OPERATION);
 			throw new NotImplementedException ();
 		}
-		 
+
 		// All Gather Flattened
 
 		public void AllgatherFlattened<T> (int facet, T[] inValues, int count, ref T[] outValues)
