@@ -7,6 +7,9 @@ using System.Diagnostics;
 using br.ufc.mdcc.hpc.shelf.tactical.environment.impl.VerifyDataPortC4Impl;
 using  br.ufc.mdcc.hpc.shelf.tactical.task.VerifyPortType;
 using System.Threading;
+using System.Runtime.Remoting;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Channels.Tcp;
 using MPI;
 using br.ufc.mdcc.hpc.shelf.tactical.environment.VerifyDataPortServerTypeC4;
 
@@ -16,17 +19,20 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 	{
 		public string []programs; 
 		public int num_programs; 
-		public string[] args_programs;
-		public int []num_units_program;
+		//public string[] args_programs;
+		//public int []num_units_program;
 		public int num_threads = 1;
 		public int number_thread=0; 
 		public int number_progs_consumed=0;
 		public bool verification_is_inconclusive = false;
 		public int number_programs_consumed=0;
 		public int [] num_programs_thread;
-		public string [][] programs_properties_status;
-		public string path;
-		public string []property_names;
+		//public string [][] programs_properties_status;
+		public string host="partypes.ddns.net";
+		public int port = 9998;
+		public int verification_status;
+		//public string []property_names;
+		
 		public Boolean status_verification_properties;
 		public override void main()
 		{
@@ -51,7 +57,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 
 		}
 
-		void setNumProgs(int number){
+		/*void setNumProgs(int number){
 			path =System.Environment.GetEnvironmentVariable("PATH_TAC_ISP_EXEC");
 			Console.WriteLine("path " + path); 
 			property_names = new string[4];
@@ -84,7 +90,7 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 			this.args_programs = args_programs;
 
 			//Communicator.world.Receive<string>(certifier,dataCertifierTactical, ref args_programs);
-		}
+		}*/
 		void setProgs(ref string [] programs){
 			this.programs = programs;
 
@@ -117,22 +123,22 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 							prog = number_progs_consumed;
 							number_progs_consumed += num_programs_thread [my_number_thread];
 						}
-						Console.WriteLine ("TACTICAL ISP - CREATING THREAD: " + my_number_thread + " from " + this.Rank + " num programs " + num_programs + " num programs thread " + num_programs_thread [my_number_thread]);
+						Console.WriteLine ("TACTICAL ParTypes - CREATING THREAD: " + my_number_thread + " from " + this.Rank + " num programs " + num_programs + " num programs thread " + num_programs_thread [my_number_thread]);
 						for (int j = 0; j < num_programs_thread [my_number_thread]; j++) {
 
 							Console.WriteLine ("Thread " + my_number_thread + " from " + 
 								this.Rank + 
 								" dealing with program " + programs[prog + j] );
 
-							TacticalAdapterISP t = new TacticalAdapterISP (path, programs[prog + j], 
-								num_units_program[prog + j], args_programs[prog + j], 9900+2*this.Rank + my_number_thread);
+							TacticalAdapterParTypes t = new TacticalAdapterParTypes (host, port, programs[prog + j]); 
+								//num_units_program[prog + j], args_programs[prog + j], 9900+2*this.Rank + my_number_thread);
 							int result = t.run ();
 							Console.WriteLine ("Thread" + my_number_thread + " de " + this.Rank + ":Result of verification of program " +programs[prog + j]+ ": " + result + " storing status for " + (prog + j));
 							if (result == -1){
 								verification_is_inconclusive = true;
 							}
-
-							programs_properties_status[prog + j]=t.get_property_results();
+							verification_status=result;
+							//programs_properties_status[prog + j]=t.get_property_results();
 
 
 						}
@@ -143,19 +149,21 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 				}
 
 				for (int i = 0; i < num_threads; i++) {
-					Console.WriteLine ("TACTICAL ISP - waiting threads : " + i + "from " + this.Rank);
+					Console.WriteLine ("TACTICAL ParTypes - waiting threads : " + i + "from " + this.Rank);
 					threadv [i].Join ();
 				}
 			} else {
 				for (int j = 0; j < num_programs; j++) {
 
 					Console.WriteLine ( this.Rank + " dealing with program " + programs[j]);
-					TacticalAdapterISP t = new TacticalAdapterISP (path, programs[j], num_units_program[j], args_programs[j], 9800+2*this.Rank+j);
+					TacticalAdapterParTypes t = new TacticalAdapterParTypes (host, port, programs[j]);
 					int result = t.run ();
 					Console.WriteLine ( this.Rank + ":Result of verification of program " +programs[j]+ ": " + result + " storing status for " + j);
-					if (result == -1)
+					if (result == -1) {
 						verification_is_inconclusive = true;
-					programs_properties_status[j]=t.get_property_results();
+					}
+					verification_status=result;
+					//programs_properties_status[j]=t.get_property_results();
 
 				}
 
@@ -166,17 +174,21 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 
 		}
 	}
-	class TacticalAdapterISP
+
+	interface VerificationInterface
+	{
+		int verify(string stringToPrint);
+	}
+	class TacticalAdapterParTypes
 
 	{  
-		string mpi_file; int number_units_mpi_file; //int result;
-		string path;
-		string params_mpi_file;
+		string mpi_file; //int result;
+		string host;
+		VerificationInterface remoteObject;
 		int port;
-		bool is_inconclusive = false;
-		string []property_results;
+		//bool is_inconclusive = false;
 
-		public static void _Main(){
+		/*public static void _Main(){
 			Console.WriteLine ("Teste Adaptador Tático ISP");
 
 			TacticalAdapterISP t = new TacticalAdapterISP 
@@ -186,29 +198,39 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 			int result = t.run ();
 
 			Console.WriteLine ("Resultado da verificação das propriedades: " + result);
-		}
-		public TacticalAdapterISP (string path, string mpi_file, int number_units_mpi_file, string params_mpi_file, int port)
+		}*/
+		public TacticalAdapterParTypes (string host,  int port, string mpi_file)
 		{
-			this.path = path;
+			this.host = host;
 			this.mpi_file = mpi_file;
-			this.number_units_mpi_file = number_units_mpi_file;
-			this.params_mpi_file = params_mpi_file;
+			/*this.number_units_mpi_file = number_units_mpi_file;
+			this.params_mpi_file = params_mpi_file;*/
 			this.port = port;
-			property_results = new string[4];
-			/*property_results[0]  =false;//deadlock_absence
+			/*property_results = new string[4];
+			property_results[0]  =false;//deadlock_absence
 			property_results[1]= true; //no_object_leak 
 			property_results[2] = true; //no_comm_races 
-			property_results[3]  = false;//no_irrelevant_barriers*/
+			property_results[3]  = false;//no_irrelevant_barriers
 			property_results [2] = "no MPI object leaks";
-			property_results [3] = "no communication races"; 
+			property_results [3] = "no communication races"; */
 
 		}
-		public string[] get_property_results(){
+		/*public string[] get_property_results(){
 			return property_results;
-		}
+		}*/
 		public int run(){
 
-			Process proc = new System.Diagnostics.Process ();
+		
+		
+			int result;
+			Type requiredType = typeof(VerificationInterface);
+
+			remoteObject = (VerificationInterface)Activator.GetObject(requiredType,
+			"tcp://"+host+":"+port+"/VerificationParTypes");
+			result = remoteObject.verify(mpi_file);
+			Console.WriteLine("Verification result of {0}: {1}",mpi_file,result);
+			return result;//-1 inconclusiva  0-falso 1-verdadeira
+			/*Process proc = new System.Diagnostics.Process ();
 			proc.StartInfo.FileName = "/bin/bash";
 			//proc.StartInfo.WorkingDirectory = "/home/00292431309/Dropbox/HPC-Shelf-MapReduce-master/br.ufc.mdcc.hpcshelf.mapreduce.impl.computation.ReducerImpl/src/1.0.0.0";
 
@@ -265,14 +287,14 @@ namespace br.ufc.mdcc.hpc.shelf.certify.tactical.impl.ParTypesImpl
 				//result Convert.ToBoolean(result);
 			}
 
-			/*if (deadlock_absence && no_irrelevant_barriers && no_object_leak && no_comm_races) {
+			if (deadlock_absence && no_irrelevant_barriers && no_object_leak && no_comm_races) {
 				return 0;
-			}*/
+			}
 			if (is_inconclusive) {
 				return -1;
 			} else {
 				return 0;
-			}
+			}*/
 
 		}
 	}
